@@ -3,10 +3,6 @@ package com.project.blogforum.domain;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * TAG DOMAIN
- */
-
 @Entity
 @Table(name = "tag")
 public class Tag implements Serializable {
