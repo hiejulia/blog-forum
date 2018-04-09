@@ -16,12 +16,27 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + REST doc : Swagger (docs, UI)
 + ElasticSearch 
 + JPA - Hibernate 
++ Docker 
+
+
+### Features of the project 
++ Database schema as part of Continuous Delivery 
++ Database migration tool - stored in the version control system 
++ Docker image to start MySQL database 
++ 
+
 
 ### How to run the project
 + Initial installation 
     + Flyway : `brew install flyway`
     + ElasticSearch 
     + Redis / Memcache  
+    
+    
++ Flyway CLI Command 
+    + `mvn flywayMigrate -i`    
+    
+    
 + Paging: `?page=0&size=2`
 + Sorting: `?sort=title,asc&sort=id,desc`
 

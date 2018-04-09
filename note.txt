@@ -51,7 +51,7 @@ https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/bl
 
 
 
-Book :
+Book : - ElasticSearch
 + Learning ElasticSearch
 + ElasticSearch essentials
 + Monitoring ElasticSearch
@@ -59,3 +59,12 @@ Book :
 + ElasticSearch server
 + Mastering ElasticSearch 5.x
 + Nhung sach khac co chap ve noi dung cua elastic search
+
+
+
+
+Book : - Flyway (check nhung sach co bai lien quan den Flyway )
+
+
+Book : Spring boot
++ Spring boot 2.0 cookbook - second edition

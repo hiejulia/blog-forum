@@ -31,6 +31,8 @@
 		<database.url>jdbc:mysql://localhost:3306/forumblog?autoreconnect=true</database.url>
 		<database.username>root</database.username>
 		<database.password>password</database.password>
+		<database.name>forumblog</database.name>
+		<database.serverId>forumblog_db</database.serverId>
 	</properties>
 
 	<dependencies>
@@ -181,42 +183,77 @@
 					<!--</dependency>-->
 				<!--</dependencies>-->
 			<!--</plugin>-->
-			<plugin>
-				<groupId>org.flywaydb</groupId>
-				<artifactId>flyway-maven-plugin</artifactId>
-				<version>${flyway.version}</version>
-				<configuration>
-					<driver>${database.driver}</driver>
-					<url>${database.url}</url>
-					<user>${database.username}</user>
-					<password>${database.password}</password>
-					<schemas>
-						<schema>customer_dev</schema>
-					</schemas>
-					<locations>
-						<location>sql/migrations</location>
-					</locations>
-					<encoding>ISO-8859-1</encoding>
-					<cleanOnValidationError>true</cleanOnValidationError>
-					<placeholders>
-						<email_type.primary>Primary</email_type.primary>
-						<email_type.work>Work</email_type.work>
-						<phone_type.home>Home</phone_type.home>
-					</placeholders>
-				</configuration>
-				<executions>
-					<execution>
-						<id>flyway database migration</id>
-						<phase>pre-integration-test</phase>
-						<goals>
-							<goal>clean</goal>
-							<goal>baseline</goal>
-							<goal>migrate</goal>
-							<goal>info</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+			<!--<plugin>-->
+				<!--<groupId>org.flywaydb</groupId>-->
+				<!--<artifactId>flyway-maven-plugin</artifactId>-->
+				<!--<version>${flyway.version}</version>-->
+				<!--<configuration>-->
+					<!--<driver>${database.driver}</driver>-->
+					<!--<url>${database.url}</url>-->
+					<!--<user>${database.username}</user>-->
+					<!--<password>${database.password}</password>-->
+					<!--<schemas>-->
+						<!--<schema>forumblog</schema>-->
+					<!--</schemas>-->
+					<!--<locations>-->
+						<!--<location>db/migration</location>-->
+					<!--</locations>-->
+					<!--<encoding>ISO-8859-1</encoding>-->
+					<!--<cleanOnValidationError>true</cleanOnValidationError>-->
+					<!--<placeholders>-->
+						<!--<email_type.primary>Primary</email_type.primary>-->
+						<!--<email_type.work>Work</email_type.work>-->
+						<!--<phone_type.home>Home</phone_type.home>-->
+					<!--</placeholders>-->
+				<!--</configuration>-->
+				<!--<executions>-->
+					<!--<execution>-->
+						<!--<id>flyway database migration</id>-->
+						<!--<phase>pre-integration-test</phase>-->
+						<!--<goals>-->
+							<!--<goal>clean</goal>-->
+							<!--<goal>baseline</goal>-->
+							<!--<goal>migrate</goal>-->
+							<!--<goal>info</goal>-->
+						<!--</goals>-->
+					<!--</execution>-->
+				<!--</executions>-->
+			<!--</plugin>-->
+			<!--<plugin>-->
+				<!--<groupId>com.googlecode.flyway</groupId>-->
+				<!--<artifactId>flyway-maven-plugin</artifactId>-->
+				<!--<version>2.3.1</version>-->
+				<!--<inherited>false</inherited>-->
+				<!--<executions>-->
+					<!--<execution>-->
+						<!--<id>package</id>-->
+						<!--<goals>-->
+							<!--<goal>migrate</goal>-->
+						<!--</goals>-->
+					<!--</execution>-->
+				<!--</executions>-->
+				<!--<configuration>-->
+					<!--<driver>${database.driver}</driver>-->
+					<!--<url>${database.url}</url>-->
+					<!--<serverId>${database.serverId}</serverId>-->
+					<!--<schemas>-->
+						<!--<schema>${database.name}</schema>-->
+					<!--</schemas>-->
+					<!--<locations>-->
+						<!--<location>-->
+							<!--filesystem:${user.home}/app/db/migration-->
+						<!--</location>-->
+					<!--</locations>-->
+					<!--<initOnMigrate>true</initOnMigrate>-->
+					<!--<sqlMigrationPrefix>Migration-</sqlMigrationPrefix>-->
+					<!--<placeholderPrefix>#[</placeholderPrefix>-->
+					<!--<placeholderSuffix>]</placeholderSuffix>-->
+					<!--placeholderReplacement>true</placeholderReplacement>-->
+					<!--<placeholders>-->
+						<!--<db.name>${database.name}</db.name>-->
+					<!--</placeholders>-->
+				<!--</configuration>-->
+			<!--</plugin>-->
 
 		</plugins>
 	</build>
