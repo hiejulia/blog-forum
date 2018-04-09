@@ -146,6 +146,11 @@
 			<artifactId>swagger-springmvc</artifactId>
 			<version>1.0.2</version>
 		</dependency>
+		<!--add Flyway for migration-->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
