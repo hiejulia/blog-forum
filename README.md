@@ -17,7 +17,11 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + ElasticSearch 
 + JPA - Hibernate 
 
-### How to run the project 
+### How to run the project
++ Initial installation 
+    + Flyway : `brew install flyway`
+    + ElasticSearch 
+    + Redis / Memcache  
 + Paging: `?page=0&size=2`
 + Sorting: `?sort=title,asc&sort=id,desc`
 
