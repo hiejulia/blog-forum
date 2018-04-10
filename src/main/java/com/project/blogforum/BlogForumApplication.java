@@ -1,7 +1,7 @@
 package com.project.blogforum;
 
 import com.mangofactory.swagger.plugin.EnableSwagger;
-import org.flywaydb.core.Flyway;
+//import org.flywaydb.core.Flyway;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -31,21 +31,21 @@ public class BlogForumApplication {
 //	@Value("${Connect.database}")
 	private String database = "forumblog";
 
-	@Bean(initMethod = "migrate")
-	public Flyway flyway() {
-		/**
-		 As flyway Db need url seperetaly that is why we extracting only
-		 url from  given string
-		 */
-		String urlWithoutDatabaseName=
-				url.substring(0,url.lastIndexOf("/"));
-		Flyway flyway = new Flyway();
-		flyway.setDataSource(urlWithoutDatabaseName, userName,
-				password); // init datasource
-		flyway.setSchemas(database); //set schema
-		flyway.setBaselineOnMigrate(true);
-		return flyway;
-	}
+//	@Bean(initMethod = "migrate")
+//	public Flyway flyway() {
+//		/**
+//		 As flyway Db need url seperetaly that is why we extracting only
+//		 url from  given string
+//		 */
+//		String urlWithoutDatabaseName=
+//				url.substring(0,url.lastIndexOf("/"));
+//		Flyway flyway = new Flyway();
+//		flyway.setDataSource(urlWithoutDatabaseName, userName,
+//				password); // init datasource
+//		flyway.setSchemas(database); //set schema
+//		flyway.setBaselineOnMigrate(true);
+//		return flyway;
+//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(BlogForumApplication.class, args);
