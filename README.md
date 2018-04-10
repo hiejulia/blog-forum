@@ -43,7 +43,8 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
     
     
 + Start ElasticSearch database server (local): `brew services start elasticsearch`    
-    
+    + `_cat/indices?v`
+    + `/_search?pretty`
     
   
     

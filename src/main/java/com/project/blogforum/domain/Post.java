@@ -12,7 +12,8 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "post")
-@Document(indexName = "forumblog", type = "posts")
+//@Document(indexName = "forumblog", type = "posts")
+@Document(indexName = "post", type = "post", shards = 1, replicas = 0)
 public class Post implements Serializable {
     @Id
     @Column(name = "id")

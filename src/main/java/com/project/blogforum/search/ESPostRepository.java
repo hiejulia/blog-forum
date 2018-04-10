@@ -9,12 +9,16 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 
-public interface ESPostRepository extends ElasticsearchRepository<Post, Long> {
+public interface ESPostRepository extends ElasticsearchRepository<Post, Long>{
+//
 
     // Find post by author
     Page<Post> findByAuthor(String author, Pageable pageable);
 
     // Find post by title
     List<Post> findByTitle(String title);
+
+    // Find by tag name
+    List<Post> findByTagList(String tag);
 
 }

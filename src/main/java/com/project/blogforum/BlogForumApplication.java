@@ -6,11 +6,17 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
 @EnableSwagger
+@EnableElasticsearchRepositories(basePackages = "com.project.blogforum.search")
+@EnableJpaRepositories(basePackages = {"com.project.blogforum.repository"})
+@EnableAsync
 public class BlogForumApplication {
 
 	@Value("${spring.datasource.url}")
