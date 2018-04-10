@@ -164,6 +164,17 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 		</dependency>
+		<!--ElasticSearch-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.vanroy</groupId>
+			<artifactId>spring-boot-starter-data-jest</artifactId>
+			<version>2.2.0.RELEASE</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

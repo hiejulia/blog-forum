@@ -50,7 +50,6 @@ https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/bl
 
 BOOK
 
-
 Book : - ElasticSearch
 + Learning ElasticSearch
 + ElasticSearch essentials
@@ -61,7 +60,9 @@ Book : - ElasticSearch
 + Nhung sach khac co chap ve noi dung cua elastic search
 
 
-Book : MySQL (or PostgreSQL )
+Book : MySQL
++ MySQL 8 cookbook
++ MySQL
 
 
 Book : - Flyway (check nhung sach co bai lien quan den Flyway ) : DONE
