@@ -61,9 +61,10 @@ Book : - ElasticSearch
 + Nhung sach khac co chap ve noi dung cua elastic search
 
 
+Book : MySQL (or PostgreSQL )
 
 
-Book : - Flyway (check nhung sach co bai lien quan den Flyway )
+Book : - Flyway (check nhung sach co bai lien quan den Flyway ) : DONE
 
 
 Book : Spring boot

@@ -1,0 +1,4 @@
+INSERT INTO tag VALUES (2,"Project",1);
+INSERT INTO tag VALUES (3,"Work",1);
+INSERT INTO tag VALUES (4,"Love",1);
+INSERT INTO tag VALUES (5,"IT",1);
