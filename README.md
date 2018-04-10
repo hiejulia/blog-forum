@@ -5,6 +5,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 
 ### Tech stack 
 + Spring boot
++ Lombok
 + Restful API
     + API version 
     + API error handling
@@ -25,6 +26,10 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Docker image to start MySQL database 
 + 
 
+### Set up docker-compose
++ pack application : `mvn package`
++ start docker-compose : `docker-compose up`
+
 
 ### How to run the project
 + Initial installation 
@@ -35,6 +40,14 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
     
 + Flyway CLI Command 
     + `mvn flywayMigrate -i`    
+    
+    
+    
+    
++ Run with Docker  
+    + `docker run --name user-mysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql:5.7`
+    +    
+    
     
     
 + Paging: `?page=0&size=2`

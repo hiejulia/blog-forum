@@ -154,6 +154,11 @@
 			<artifactId>swagger-springmvc</artifactId>
 			<version>1.0.2</version>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
 		<!--add Flyway for migration-->
 		<dependency>
 			<groupId>org.flywaydb</groupId>
