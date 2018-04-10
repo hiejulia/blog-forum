@@ -34,7 +34,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 ### How to run the project
 + Initial installation 
     + Flyway : `brew install flyway`
-    + ElasticSearch 
+    + ElasticSearch : `brew install elasticsearch` 
     + Redis / Memcache  
     
     
@@ -42,6 +42,10 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
     + `mvn flywayMigrate -i`    
     
     
++ Start ElasticSearch database server (local): `brew services start elasticsearch`    
+    
+    
+  
     
     
 + Run with Docker  

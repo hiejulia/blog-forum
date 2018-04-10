@@ -2,6 +2,7 @@ package com.project.blogforum.domain;
 
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.data.elasticsearch.annotations.Document;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -11,6 +12,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "post")
+@Document(indexName = "forumblog", type = "posts")
 public class Post implements Serializable {
     @Id
     @Column(name = "id")
