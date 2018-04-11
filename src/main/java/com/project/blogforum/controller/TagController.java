@@ -3,6 +3,7 @@ package com.project.blogforum.controller;
 import com.project.blogforum.domain.Tag;
 import com.project.blogforum.dto.TagDTO;
 import com.project.blogforum.service.impl.TagService;
+import com.project.blogforum.solr.SolrTagRepository;
 import com.wordnik.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,12 +20,20 @@ public class TagController {
     @Autowired
     private TagService tagService;
 
+    @Autowired
+    private SolrTagRepository solrTagRepository;
+
     /**
-     * GET ALL TAGS
+     * GET ALL TAGS``
      */
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<?> getAllTags(){
         return new ResponseEntity<>(tagService.findAllTags(), HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.GET,value = "/search/{name}")
+    public ResponseEntity<?> getAllTagsSolr(@PathVariable("name") String name){
+        return new ResponseEntity<>(solrTagRepository.findByName(name), HttpStatus.OK);
     }
 
 
@@ -48,8 +57,6 @@ public class TagController {
     }
 
 
-
-
     /**
      * UPDATE TAG NAME BY ID
      */
@@ -70,6 +77,16 @@ public class TagController {
     public ResponseEntity<?> deleteTagById(@PathVariable Long id){
         tagService.deleteTagById(id);
         return new ResponseEntity<>(id, HttpStatus.OK);
+
+    }
+
+    // Create tag with Solr index
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<?> saveTag(
+            @RequestBody Tag tagDTO
+    ) {
+        solrTagRepository.save(tagDTO);
+        return new ResponseEntity<>(tagDTO.getId(), HttpStatus.OK);
 
     }
 }

@@ -63,6 +63,7 @@ public class BlogForumApplication {
 	}
 
 
+	// Config Solr server
 	@Bean
 	public HttpSolrServer solrServer() {
 		return new HttpSolrServer("http://localhost:8983/solr");
