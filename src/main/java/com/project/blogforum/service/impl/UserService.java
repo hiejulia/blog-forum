@@ -12,6 +12,9 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+//    @Autowired
+//    private PasswordEncoder passwordEncoder;
+
     public void save(User user) {
         userRepository.save(user);
     }
@@ -34,5 +37,12 @@ public class UserService {
 
     public void deleteUserById(Long id) {
         userRepository.deleteUserById(id);
+    }
+
+    //Change user password
+    public void changePassword(String password, Long id) {
+        User u = userRepository.findUserById(id);
+        u.setPassword(password);// set raw password for dev / on staging & prod : use MD5 or Hash / encrypt lib from spring security
+        userRepository.save(u);
     }
 }

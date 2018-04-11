@@ -4,6 +4,7 @@ package com.project.blogforum.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.hibernate.annotations.Type;
+import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
@@ -35,6 +36,7 @@ public class User implements Serializable {
 
     @Column(name = "email", length = 50)
     @NotEmpty
+    @Email
     private String email;
 
     @Column(name = "login", length = 50)

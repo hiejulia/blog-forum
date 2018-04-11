@@ -28,6 +28,9 @@ public class Post implements Serializable {
     @Column(name = "content")
     private String content;
 
+    @Column(name = "summary")
+    private String summany;
+
     @Column(name = "date", length = 50)
     private String date;
 
