@@ -39,7 +39,8 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
     
     
 + Flyway CLI Command 
-    + `mvn flywayMigrate -i`    
+    + `mvn flywayMigrate -i`   
+    + `/flyway` 
     
     
 + Start ElasticSearch database server (local): `brew services start elasticsearch`    
