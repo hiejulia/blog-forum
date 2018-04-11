@@ -8,6 +8,8 @@ import com.mangofactory.swagger.plugin.EnableSwagger;
 //import org.elasticsearch.common.transport.InetSocketTransportAddress;
 //import org.elasticsearch.common.transport.TransportAddress;
 //import org.elasticsearch.traansport.client.PreBuiltTransportClient;
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import org.flywaydb.core.Flyway;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -15,6 +17,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 //import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.solr.core.SolrTemplate;
+import org.springframework.data.solr.repository.config.EnableSolrRepositories;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
@@ -24,6 +28,7 @@ import java.net.InetAddress;
 @EnableScheduling
 @EnableSwagger
 //@EnableElasticsearchRepositories(basePackages = "com.project.blogforum.search")
+@EnableSolrRepositories("com.project.blogforum.solr")
 @EnableJpaRepositories(basePackages = {"com.project.blogforum.repository"})
 @EnableAsync
 public class BlogForumApplication {
@@ -55,6 +60,17 @@ public class BlogForumApplication {
 		flyway.setBaselineOnMigrate(true);
 		System.out.print("=========== FLYWAY==========");
 		return flyway;
+	}
+
+
+	@Bean
+	public HttpSolrServer solrServer() {
+		return new HttpSolrServer("http://localhost:8983/solr");
+	}
+
+	@Bean
+	public SolrTemplate solrTemplate(HttpSolrServer server) throws Exception {
+		return new SolrTemplate(server);
 	}
 
 	public static void main(String[] args) {

@@ -15,7 +15,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Memcache (for caching in the back end )- or redis 
 + MySQL - with Flyway migration 
 + REST doc : Swagger (docs, UI)
-+ ElasticSearch 
++ Solr server
 + JPA - Hibernate 
 + Docker 
 
@@ -34,8 +34,8 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 ### How to run the project
 + Initial installation 
     + Flyway : `brew install flyway`
-    + ElasticSearch : `brew install elasticsearch` 
-    + Redis / Memcache  
+    + Solr : `brew install solr` 
+    + Memcache :  
     
     
 + Flyway CLI Command 
@@ -43,9 +43,8 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
     + `/flyway` 
     
     
-+ Start ElasticSearch database server (local): `brew services start elasticsearch`    
-    + `_cat/indices?v`
-    + `/_search?pretty`
++ Start Solr server (local)
+    + `solr start`
     
   
     
@@ -60,10 +59,10 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Sorting: `?sort=title,asc&sort=id,desc`
 
 
-### Target
-+ Sync data between MySQL and ElasticSearch
+### Target (TODO)
++ Sync data between MySQL and Solr
 + Performance tuning for MySQL 
-+ Performance tuning for ElasticSearch server 
++ Performance tuning for Solr server  
 + Import dump csv file to some table in MySQL database 
 + Bulk insert in MySQL database 
 + Full text index search in 
