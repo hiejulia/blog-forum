@@ -41,6 +41,7 @@ https://dzone.com/articles/spring-boot-creating
 
 https://github.com/loroxxx/luo-blog/tree/master/src/main/java/com/luo/modules/app/entity
 
+https://github.com/paulwinner1995/web-store
 
 test:
 https://github.com/shekhargulati/blogger/blob/master/src/test/java/com/example/blogger/services/BlogServiceTests.java
