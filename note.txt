@@ -46,28 +46,37 @@ test:
 https://github.com/shekhargulati/blogger/blob/master/src/test/java/com/example/blogger/services/BlogServiceTests.java
 https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/blog/domain
 
-
-
+TODO
+ELasticSearch - Spring boot
 BOOK
-
 Book : - ElasticSearch
 + Learning ElasticSearch
 + ElasticSearch essentials
-+ Monitoring ElasticSearch
 + ElasticSearch: a complete guide
 + ElasticSearch server
 + Mastering ElasticSearch 5.x
 
-+ Nhung sach khac co chap ve noi dung cua elastic search
++ Nhung sach khac co chap ve noi dung cua elastic search : dang check
 
-
+MySQL
 Book : MySQL
 + MySQL 8 cookbook
-+ MySQL
++ MySQL for Internet of things
++ Check Back end current project
 
 
-Book : - Flyway (check nhung sach co bai lien quan den Flyway ) : DONE
+Flyway
+
+DONE - Book : - Flyway (check nhung sach co bai lien quan den Flyway )
++ Doc documentation
++ Book (Search google)
 
 
 Book : Spring boot
 + Spring boot 2.0 cookbook - second edition
+
+
+Github project
++ Spring boot + Flyway
++ Spring boot + Elasticsearch
++

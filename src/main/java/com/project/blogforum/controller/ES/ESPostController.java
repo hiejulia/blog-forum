@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
+//import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,27 +27,27 @@ import java.time.LocalDate;
 @RestController
 @RequestMapping("/v1/api/es/posts")
 public class ESPostController {
-    @Autowired
-    private ElasticsearchOperations es;
+//    @Autowired
+//    private ElasticsearchOperations es;
 
 
-    @Autowired
-    private ESPostService esPostService;
-
-
-
-
-    @RequestMapping(method = RequestMethod.GET,value = "/test")
-    public ResponseEntity<Page<Post>> getAllPosts(Pageable pageable){
-        esPostService.save(new Post( "Elasticsearch Basics", "Rambabu Posa", "23.01.2017","A","B"));
-        esPostService.save(new Post( "Apache Lucene Basics", "Rambabu Posa", "13-MAR-2017","A","B"));
-        esPostService.save(new Post( "Apache Solr Basics", "Rambabu Posa", "21-MAR-2017","A","B"));
-
-        //fuzzey search
-        Page<Post> books = esPostService.findByAuthor("Rambabu", new PageRequest(0, 10));
-        return new ResponseEntity<Page<Post>>(books, HttpStatus.OK);
-    }
-
+//    @Autowired
+//    private ESPostService esPostService;
+//
+//
+//
+//
+//    @RequestMapping(method = RequestMethod.GET,value = "/test")
+//    public ResponseEntity<Page<Post>> getAllPosts(Pageable pageable){
+//        esPostService.save(new Post( "Elasticsearch Basics", "Rambabu Posa", "23.01.2017","A","B"));
+//        esPostService.save(new Post( "Apache Lucene Basics", "Rambabu Posa", "13-MAR-2017","A","B"));
+//        esPostService.save(new Post( "Apache Solr Basics", "Rambabu Posa", "21-MAR-2017","A","B"));
+//
+//        //fuzzey search
+//        Page<Post> books = esPostService.findByAuthor("Rambabu", new PageRequest(0, 10));
+//        return new ResponseEntity<Page<Post>>(books, HttpStatus.OK);
+//    }
+//
 
 
 //    @RequestMapping(value = "/{id}",method = RequestMethod.GET)

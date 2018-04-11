@@ -1,0 +1,1 @@
+INSERT INTO tag VALUES (7,"Hien1",1);
