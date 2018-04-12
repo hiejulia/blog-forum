@@ -63,24 +63,24 @@ public class PostController {
 //    /**
 //     * ADD NEW POST
 //     */
-//    @ApiOperation(value = "Add new post", notes = "By authenticated users only.", position = 3)
-//    @ApiResponses(value = {
-//            @ApiResponse(code = 201, message = "Created")
-//    })
-//    @RequestMapping(method = RequestMethod.POST)
-//    public ResponseEntity<?> addNewPost(
-//            @ApiParam(value = "Created post object", required = true) @Valid @RequestBody PostDTO postDTO) {
-//        Post post = new Post();
-//        post.setTitle(postDTO.getTitle());
-//        post.setSubtitle(postDTO.getSubtitle());
-//        post.setContent(postDTO.getContent());
-//        post.setDate(LocalDate.now().toString());
-//        post.setAuthor(postDTO.getAuthor());
-//
-//        postService.save(post);
-//        return new ResponseEntity<>(postDTO.getTitle(),HttpStatus.CREATED);
-//    }
-//
+    @ApiOperation(value = "Add new post", notes = "By authenticated users only.", position = 3)
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created")
+    })
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<Post> addNewPost(
+            @ApiParam(value = "Created post object", required = true) @Valid @RequestBody PostDTO postDTO) {
+        Post post = new Post();
+        post.setTitle(postDTO.getTitle());
+        post.setSubtitle(postDTO.getSubtitle());
+        post.setContent(postDTO.getContent());
+        post.setDate(LocalDate.now().toString());
+        post.setAuthor(postDTO.getAuthor());
+
+
+        return new ResponseEntity<>(postService.save(post),HttpStatus.CREATED);
+    }
+
 //    /**
 //     * DELETE ONE POST BY ID
 //     */

@@ -76,8 +76,17 @@ public class ESPostController {
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> addNewPost(
             @ApiParam(value = "Created post object", required = true) @Valid @RequestBody Post postDTO) {
-        // Save post in the MySQL database first
+        PostDTO post1 = new PostDTO();
 
+        // Save post in the MySQL database first
+        postService.save(postDTO);
+
+        post1.setAuthor(postDTO.getAuthor());
+        post1.setContent(postDTO.getContent());
+        post1.setSubtitle(postDTO.getSubtitle());
+        post1.setTitle(postDTO.getTitle());
+        post1.setDate(postDTO.getDate());
+        // Set id (the same id generate )
 
         esPostService.save(postDTO);
         // take the id
