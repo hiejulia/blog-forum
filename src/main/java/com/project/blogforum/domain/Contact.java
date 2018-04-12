@@ -34,7 +34,9 @@ public class Contact {
     private User user;
 
     private String name;
+
     private String email;
+
     private String phone;
 
 }

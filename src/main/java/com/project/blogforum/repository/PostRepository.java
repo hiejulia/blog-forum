@@ -10,6 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.time.Instant;
 import java.util.List;
 
 
@@ -50,5 +51,15 @@ public interface PostRepository extends JpaRepository<Post, Long>{
 
     @Query("select p FROM Post p where p.category=:category")
     List<Post> getBlogpostsByCategory(@Param("category")String category);
+
+
+    // find created at post between date
+    @Query(value = ""
+            + "SELECT p.author,p.content,p.subtitle,p.title "
+            + "FROM Post AS p "
+            + "WHERE p.createdAt BETWEEN :startDate AND :endDate "
+            + "ORDER BY q.insertDate "
+            + "")
+    List<Post> findByInsertDateBetween(@Param("startDate") Instant startDate, @Param("endDate") Instant endDate);
 
 }

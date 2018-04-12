@@ -2,12 +2,15 @@ package com.project.blogforum.domain;
 
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -41,6 +44,18 @@ public class Post implements Serializable {
 
     @Column(name = "category")
     private String category;
+
+    @Column(name = "createdAt")
+    @CreatedDate
+    private Date createdAt;
+
+
+
+    // Post created date
+
+
+
+    // Post updated date
 
     // comment
     @OneToMany
