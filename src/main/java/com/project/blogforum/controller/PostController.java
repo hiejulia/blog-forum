@@ -5,6 +5,7 @@ import com.project.blogforum.domain.Tag;
 import com.project.blogforum.dto.CommentDTO;
 import com.project.blogforum.dto.PostDTO;
 import com.project.blogforum.dto.TagDTO;
+import com.project.blogforum.repository.PostRepository;
 import com.project.blogforum.service.impl.CommentService;
 import com.project.blogforum.service.impl.PostService;
 import com.project.blogforum.service.impl.TagService;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
+import java.util.List;
 
 @Api(value = "Posts", description = "Post API")
 @RestController
@@ -31,6 +33,9 @@ public class PostController {
 
     @Autowired
     private TagService tagService;
+
+    @Autowired
+    private PostRepository postRepository;
 //    /**
 //     * GET ALL POSTS
 //     */
@@ -180,4 +185,12 @@ public class PostController {
 //    ){
 //        return new ResponseEntity<>(tagService.findTagsByPostId(id),HttpStatus.OK);
 //    }
+
+
+    @GetMapping(value = "/category/{category}")
+    public List<Post> blogpostsByCategory(@PathVariable String category) {
+        return postRepository.getBlogpostsByCategory(category);
+    }
+
+
 }
