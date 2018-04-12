@@ -41,6 +41,9 @@ public class ESPostController {
 
     @Autowired
     private ESPostRepository esPostService;
+
+    @Autowired
+    private PostService postService;
 //
 //
 //
@@ -73,8 +76,11 @@ public class ESPostController {
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> addNewPost(
             @ApiParam(value = "Created post object", required = true) @Valid @RequestBody Post postDTO) {
+        // Save post in the MySQL database first
+
 
         esPostService.save(postDTO);
+        // take the id
         return new ResponseEntity<>(postDTO,HttpStatus.CREATED);
     }
 //    @ApiOperation(value = "Delete post by id", notes = "By authenticated users only.", position = 4)

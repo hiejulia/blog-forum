@@ -23,14 +23,14 @@ import java.time.LocalDate;
 @RestController
 @RequestMapping("/v1/api/posts")
 public class PostController {
-//    @Autowired
-//    private PostService postService;
-//
-//    @Autowired
-//    private CommentService commentService;
-//
-//    @Autowired
-//    private TagService tagService;
+    @Autowired
+    private PostService postService;
+
+    @Autowired
+    private CommentService commentService;
+
+    @Autowired
+    private TagService tagService;
 //    /**
 //     * GET ALL POSTS
 //     */

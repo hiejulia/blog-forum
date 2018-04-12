@@ -9,34 +9,34 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-//@Service
-//@Transactional
+@Service
+@Transactional
 public class PostService {
 
-//    @Autowired
-//    private PostRepository postRepository;
-//
-//    public Page<Post> findAll(Pageable pageable) {
-//        return postRepository.findAll(pageable);
-//    }
-//
-//    public Post findOnePostById(Long id) {
-//        return postRepository.findOnePostById(id);
-//    }
-//
-//    public void save(Post post) {
-//        postRepository.save(post);
-//    }
-//
-//    public void deletePostById(Long id) {
-//        postRepository.delete(id);
-//    }
-//
-////    public void updateContentById(PostDTO postDTO) {
-////        postRepository.updateContentById(postDTO.getContent(), postDTO.getId());
-////    }
-//
-//    public void deleteAllPosts() {
-//        postRepository.deleteAll();
-//    }
+    @Autowired
+    private PostRepository postRepository;
+
+    public Page<Post> findAll(Pageable pageable) {
+        return postRepository.findAll(pageable);
+    }
+
+    public Post findOnePostById(Long id) {
+        return postRepository.findOnePostById(id);
+    }
+
+    public void save(Post post) {
+        postRepository.save(post);
+    }
+
+    public void deletePostById(Long id) {
+        postRepository.delete(id);
+    }
+
+    public void updateContentById(PostDTO postDTO) {
+        postRepository.updateContentById(postDTO.getContent(), postDTO.getId());
+    }
+
+    public void deleteAllPosts() {
+        postRepository.deleteAll();
+    }
 }
