@@ -67,5 +67,11 @@ public class User implements Serializable {
   private List<Ranking> rankings;
   // group
 
+    // add contact
+
+    @JsonIgnore
+    @OneToMany(mappedBy ="user")
+    private List<Contact> contacts;
+
 
 }

@@ -13,6 +13,8 @@ public interface UserRepository extends JpaRepository<User, Integer> {
      * FIND USER BY ID
      */
 
+    User findById(Long id);
+
     @Query(value = "select u from User u where u.id = ?1")
     User findUserById(Long id);
 
