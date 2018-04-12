@@ -58,7 +58,7 @@ public interface PostRepository extends JpaRepository<Post, Long>{
             + "SELECT p.author,p.content,p.subtitle,p.title "
             + "FROM Post AS p "
             + "WHERE p.createdAt BETWEEN :startDate AND :endDate "
-            + "ORDER BY q.insertDate "
+            + "ORDER BY p.createdAt "
             + "")
     List<Post> findByInsertDateBetween(@Param("startDate") Instant startDate, @Param("endDate") Instant endDate);
 
