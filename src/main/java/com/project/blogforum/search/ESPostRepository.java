@@ -1,6 +1,7 @@
 package com.project.blogforum.search;
 
 import com.project.blogforum.domain.Post;
+import com.project.blogforum.dto.PostDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 /*import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;*/
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 //@Repository
-public interface ESPostRepository extends ElasticsearchRepository<Post, Long> {
+public interface ESPostRepository extends ElasticsearchRepository<PostDTO, Long> {
 
 //
 //

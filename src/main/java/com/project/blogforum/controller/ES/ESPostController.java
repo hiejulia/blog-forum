@@ -79,7 +79,7 @@ public class ESPostController {
         PostDTO post1 = new PostDTO();
 
         // Save post in the MySQL database first
-        postService.save(postDTO);
+        Post p = postService.save(postDTO);
 
         post1.setAuthor(postDTO.getAuthor());
         post1.setContent(postDTO.getContent());
@@ -87,10 +87,11 @@ public class ESPostController {
         post1.setTitle(postDTO.getTitle());
         post1.setDate(postDTO.getDate());
         // Set id (the same id generate )
+        post1.setId(p.getId());
 
-        esPostService.save(postDTO);
+        esPostService.save(post1);
         // take the id
-        return new ResponseEntity<>(postDTO,HttpStatus.CREATED);
+        return new ResponseEntity<>(post1,HttpStatus.CREATED);
     }
 //    @ApiOperation(value = "Delete post by id", notes = "By authenticated users only.", position = 4)
 //    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
@@ -143,9 +144,9 @@ public class ESPostController {
 
 
     @GetMapping(value = "/all")
-    public List<Post> searchAll() {
-        List<Post> postList = new ArrayList<>();
-        Iterable<Post> userses = esPostService.findAll();
+    public List<PostDTO> searchAll() {
+        List<PostDTO> postList = new ArrayList<>();
+        Iterable<PostDTO> userses = esPostService.findAll();
         userses.forEach(postList::add);
         return postList;
     }
