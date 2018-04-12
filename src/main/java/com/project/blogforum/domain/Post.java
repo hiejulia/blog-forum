@@ -1,10 +1,13 @@
 package com.project.blogforum.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 
 import javax.persistence.*;
@@ -24,6 +27,7 @@ public class Post implements Serializable {
 
     @Column(name = "title")
     @NotEmpty
+    @Field(type = FieldType.String)
     private String title;
 
     @Column(name = "subtitle")
@@ -46,6 +50,7 @@ public class Post implements Serializable {
     private String category;
 
     @Column(name = "createdAt")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss", timezone="GMT+8")
     @CreatedDate
     private Date createdAt;
 

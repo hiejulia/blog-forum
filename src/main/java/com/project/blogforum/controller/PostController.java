@@ -10,6 +10,7 @@ import com.project.blogforum.service.impl.CommentService;
 import com.project.blogforum.service.impl.PostService;
 import com.project.blogforum.service.impl.TagService;
 import io.swagger.annotations.*;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -189,7 +190,13 @@ public class PostController {
 
     @GetMapping(value = "/category/{category}")
     public List<Post> blogpostsByCategory(@PathVariable String category) {
-        return postRepository.getBlogpostsByCategory(category);
+        if (StringUtils.isBlank(category)) {
+            return null;
+        }else {
+            return postRepository.getBlogpostsByCategory(category);
+        }
+
+
     }
 
 

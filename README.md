@@ -15,7 +15,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Memcache (for caching in the back end )- or redis 
 + MySQL - with Flyway migration 
 + REST doc : Swagger (docs, UI)
-+ Solr server
++ ElasticSearch - Kibana (visualize ElasticSearch)
 + JPA - Hibernate 
 + Docker 
 
@@ -61,7 +61,8 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Multi search API
 + Data pagination and re index 
 + Bulk processing 
-
++ Install ES plugin 
+    + 
 
 
 
@@ -104,4 +105,12 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Performance tuning for Solr server  
 + Import dump csv file to some table in MySQL database 
 + Bulk insert in MySQL database 
-+ Full text index search in 
++ Full text index search in
+
+
+
++ Relational DB + ES 
++ Database      + Indice 
++ Table         + Type 
++ Row           + Document
++ Colume        + Field  

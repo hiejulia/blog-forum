@@ -2,6 +2,11 @@ GITHUB PROJECT : spring-boot+ flyway(done),
 
 
 tham khao
+https://github.com/CornePlas/jpatest
+Check json view : https://github.com/charlesheidemann/enron_web
+https://github.com/karlazzam/TvBuddy-api
+https://github.com/marvel80/SearchApi
+
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/IsResultXaL/blog
 https://github.com/chaokunyang/amanda
@@ -53,8 +58,8 @@ TODO
 ELasticSearch - Spring boot
 BOOK
 Book : - ElasticSearch
-+ Learning ElasticSearch
-+ ElasticSearch essentials(bay gio den project portfolio)
++ Learning ElasticSearch (bh den project portfolio)
++ ElasticSearch essentials(dang practice project)
 + ElasticSearch: a complete guide
 + ElasticSearch server
 + Mastering ElasticSearch 5.x
