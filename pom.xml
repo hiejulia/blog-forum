@@ -35,11 +35,6 @@
 		<database.serverId>forumblog_db</database.serverId>
 		<!--<elasticsearch.version>6.1.0</elasticsearch.version>-->
 		<!--<elasticsearch.version>3.0.6.RELEASE</elasticsearch.version>&lt;!&ndash;&ndash;&gt;-->
-		<!-- JasperReports -->
-		<jasperreports.version>6.3.0</jasperreports.version>
-
-		<!-- JasperReports Fonts -->
-		<jasperreports-fonts.version>6.0.0</jasperreports-fonts.version>
 	</properties>
 
 	<dependencies>
@@ -238,20 +233,6 @@
 			<!--<artifactId>spring-boot-starter-data-jest</artifactId>-->
 			<!--<version>2.2.0.RELEASE</version>-->
 		<!--</dependency>-->
-		<!--Jasper Report-->
-		<dependency>
-			<groupId>net.sf.jasperreports</groupId>
-			<artifactId>jasperreports</artifactId>
-			<version>${jasperreports.version}</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>net.sf.jasperreports</groupId>
-			<artifactId>jasperreports-fonts</artifactId>
-			<version>${jasperreports-fonts.version}</version>
-			<scope>compile</scope>
-		</dependency>
 
 	</dependencies>
 

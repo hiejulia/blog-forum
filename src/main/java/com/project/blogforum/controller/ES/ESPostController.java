@@ -24,6 +24,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Api(value = "Posts ES", description = "Post API ES")
 @RestController
@@ -73,7 +75,7 @@ public class ESPostController {
             @ApiParam(value = "Created post object", required = true) @Valid @RequestBody Post postDTO) {
 
         esPostService.save(postDTO);
-        return new ResponseEntity<>(postDTO.getTitle(),HttpStatus.CREATED);
+        return new ResponseEntity<>(postDTO,HttpStatus.CREATED);
     }
 //    @ApiOperation(value = "Delete post by id", notes = "By authenticated users only.", position = 4)
 //    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
@@ -113,7 +115,25 @@ public class ESPostController {
 //        postService.deleteAllPosts();
 //        return new ResponseEntity<>(HttpStatus.OK);
 //    }
+//    @GetMapping(value = "/name/{text}")
+//    public List<Post> searchName(@PathVariable final String text) {
+//        return esPostS.findByName(text);
+//    }
+//
+//
+//    @GetMapping(value = "/salary/{salary}")
+//    public List<Users> searchSalary(@PathVariable final Long salary) {
+//        return usersRepository.findBySalary(salary);
+//    }
 
+
+    @GetMapping(value = "/all")
+    public List<Post> searchAll() {
+        List<Post> postList = new ArrayList<>();
+        Iterable<Post> userses = esPostService.findAll();
+        userses.forEach(postList::add);
+        return postList;
+    }
 
 
 
