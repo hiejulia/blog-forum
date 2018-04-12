@@ -39,6 +39,9 @@ public class Post implements Serializable {
     @Column(name = "author", length = 50)
     private String author;
 
+    @Column(name = "category")
+    private String category;
+
     // comment
     @OneToMany
     @JoinColumn(name = "post_id", referencedColumnName = "id")

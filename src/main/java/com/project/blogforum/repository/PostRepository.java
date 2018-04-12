@@ -39,15 +39,16 @@ public interface PostRepository extends JpaRepository<Post, Long>{
     @Query(value = "delete from Post p where p.id=?1")
     void delete(Long id);
 
-
+    // Count number of post
     @Query("select count(p) from Post p")
     int countBlogposts();
 
-    @Query("select count(e) FROM Blogpost e where e.category=:category")
+
+    @Query("select count(p) FROM Post p where p.category=:category")
     int countBlogpostsByCategory(@Param("category")String category);
 
 
-    @Query("select e FROM Blogpost e where e.category=:category")
+    @Query("select p FROM Post p where p.category=:category")
     List<Post> getBlogpostsByCategory(@Param("category")String category);
 
 }
