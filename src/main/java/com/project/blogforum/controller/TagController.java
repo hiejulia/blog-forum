@@ -20,21 +20,21 @@ public class TagController {
     @Autowired
     private TagService tagService;
 
-    @Autowired
-    private SolrTagRepository solrTagRepository;
+//    @Autowired
+//    private SolrTagRepository solrTagRepository;
 
     /**
      * GET ALL TAGS``
      */
-    @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<?> getAllTags(){
-        return new ResponseEntity<>(tagService.findAllTags(), HttpStatus.OK);
-    }
-
-    @RequestMapping(method = RequestMethod.GET,value = "/search/{name}")
-    public ResponseEntity<?> getAllTagsSolr(@PathVariable("name") String name){
-        return new ResponseEntity<>(solrTagRepository.findByName(name), HttpStatus.OK);
-    }
+//    @RequestMapping(method = RequestMethod.GET)
+//    public ResponseEntity<?> getAllTags(){
+//        return new ResponseEntity<>(tagService.findAllTags(), HttpStatus.OK);
+//    }
+//
+//    @RequestMapping(method = RequestMethod.GET,value = "/search/{name}")
+//    public ResponseEntity<?> getAllTagsSolr(@PathVariable("name") String name){
+//        return new ResponseEntity<>(solrTagRepository.findByName(name), HttpStatus.OK);
+//    }
 
 
     /**
@@ -80,15 +80,15 @@ public class TagController {
 
     }
 
-    // Create tag with Solr index
-    @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> saveTag(
-            @RequestBody Tag tagDTO
-    ) {
-        solrTagRepository.save(tagDTO);
-        return new ResponseEntity<>(tagDTO.getId(), HttpStatus.OK);
-
-    }
+//    // Create tag with Solr index
+//    @RequestMapping(method = RequestMethod.POST)
+//    public ResponseEntity<?> saveTag(
+//            @RequestBody Tag tagDTO
+//    ) {
+//        solrTagRepository.save(tagDTO);
+//        return new ResponseEntity<>(tagDTO.getId(), HttpStatus.OK);
+//
+//    }
 }
 
 

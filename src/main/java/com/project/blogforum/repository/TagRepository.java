@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+//@RepositoryRestResource(collectionResourceRel = "data", path = "sales")
 @Repository
 public interface TagRepository  extends JpaRepository<Tag, Integer> {
     /**

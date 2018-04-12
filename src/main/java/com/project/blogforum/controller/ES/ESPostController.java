@@ -6,6 +6,7 @@ import com.project.blogforum.domain.Tag;
 import com.project.blogforum.dto.CommentDTO;
 import com.project.blogforum.dto.PostDTO;
 import com.project.blogforum.dto.TagDTO;
+import com.project.blogforum.search.ESPostRepository;
 import com.project.blogforum.search.ESPostService;
 import com.project.blogforum.service.impl.CommentService;
 import com.project.blogforum.service.impl.PostService;
@@ -16,6 +17,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 //import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
+import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,8 +33,12 @@ public class ESPostController {
 //    private ElasticsearchOperations es;
 
 
-//    @Autowired
-//    private ESPostService esPostService;
+    @Autowired
+    ElasticsearchOperations operations;
+
+
+    @Autowired
+    private ESPostRepository esPostService;
 //
 //
 //
@@ -62,19 +68,13 @@ public class ESPostController {
 //    }
 
 //
-//    @RequestMapping(method = RequestMethod.POST)
-//    public ResponseEntity<?> addNewPost(
-//            @ApiParam(value = "Created post object", required = true) @Valid @RequestBody PostDTO postDTO) {
-//        Post post = new Post();
-//        post.setTitle(postDTO.getTitle());
-//        post.setSubtitle(postDTO.getSubtitle());
-//        post.setContent(postDTO.getContent());
-//        post.setDate(LocalDate.now().toString());
-//        post.setAuthor(postDTO.getAuthor());
-//
-//        postService.save(post);
-//        return new ResponseEntity<>(postDTO.getTitle(),HttpStatus.CREATED);
-//    }
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<?> addNewPost(
+            @ApiParam(value = "Created post object", required = true) @Valid @RequestBody Post postDTO) {
+
+        esPostService.save(postDTO);
+        return new ResponseEntity<>(postDTO.getTitle(),HttpStatus.CREATED);
+    }
 //    @ApiOperation(value = "Delete post by id", notes = "By authenticated users only.", position = 4)
 //    @RequestMapping(value = "/{id}",method = RequestMethod.DELETE)
 //    public ResponseEntity<?> deletePostById(
