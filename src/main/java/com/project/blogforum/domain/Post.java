@@ -13,7 +13,6 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "post")
-@Document(indexName = "posts", type = "posts", shards = 1)
 public class Post implements Serializable {
     @Id
     @Column(name = "id")

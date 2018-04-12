@@ -1,10 +1,12 @@
 package com.project.blogforum.dto;
 import com.project.blogforum.domain.Comment;
 import com.project.blogforum.domain.Tag;
+import org.springframework.data.elasticsearch.annotations.Document;
 
 import java.io.Serializable;
 import java.util.List;
 
+@Document(indexName = "posts", type = "posts", shards = 1)
 public class PostDTO implements Serializable {
     private Long id;
     private String title;

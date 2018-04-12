@@ -52,7 +52,7 @@ ELasticSearch - Spring boot
 BOOK
 Book : - ElasticSearch
 + Learning ElasticSearch
-+ ElasticSearch essentials
++ ElasticSearch essentials(bay gio den project portfolio)
 + ElasticSearch: a complete guide
 + ElasticSearch server
 + Mastering ElasticSearch 5.x
