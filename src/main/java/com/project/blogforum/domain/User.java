@@ -6,6 +6,7 @@ import lombok.Data;
 import org.hibernate.annotations.Type;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.data.elasticsearch.annotations.Document;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -13,6 +14,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
+@Document(indexName = "users", type = "users", shards = 1)
 @Entity
 @Data
 @Table(

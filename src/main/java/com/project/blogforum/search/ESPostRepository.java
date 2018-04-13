@@ -17,20 +17,20 @@ public interface ESPostRepository extends ElasticsearchRepository<PostDTO, Long>
 //
 //
     // Find post by author
-    Page<Post> findByAuthor(String author, Pageable pageable);
+    Page<PostDTO> findByAuthor(String author, Pageable pageable);
 
     // Find post by title
-    List<Post> findByTitle(String title);
+    List<PostDTO> findByTitle(String title);
 
     // Find by tag name
-    List<Post> findByTagList(String tag);
+    List<PostDTO> findByTagList(String tag);
 
     // Find by category like
-    List<Post> findByCategoryLike(String c);
+    List<PostDTO> findByCategoryLike(String c);
 
     // Find by title and author
-    List<Post> findByTitleAndAuthor(String t, String a);
+    List<PostDTO> findByTitleAndAuthor(String t, String a);
 
-    List<Post> findByAuthorNot(String a);
+    List<PostDTO> findByAuthorNot(String a);
 
 }
