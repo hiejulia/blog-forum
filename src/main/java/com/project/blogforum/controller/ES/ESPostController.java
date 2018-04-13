@@ -30,6 +30,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Api(value = "Posts ES", description = "Post API ES")
 @RestController
@@ -180,28 +182,28 @@ public class ESPostController {
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
-    /**
-     * GET  /
-     */
-    @RequestMapping(value = "/getall",
-            method = RequestMethod.GET,
-            produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Post>> getAll(@RequestParam(value = "page" , required = false) Integer offset,
-                                               @RequestParam(value = "per_page", required = false) Integer limit)
-            throws URISyntaxException {
-        Page<Post> page = surveyRepository.findAll(PaginationUtil.generatePageRequest(offset, limit));
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/surveys", offset, limit);
-        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
-    }
+//    /**
+//     * GET  /all with Pageable
+//     */
+//    @RequestMapping(value = "/getall/page",
+//            method = RequestMethod.GET,
+//            produces = MediaType.APPLICATION_JSON_VALUE)
+//    public ResponseEntity<List<Post>> getAll(@RequestParam(value = "page" , required = false) Integer offset,
+//                                               @RequestParam(value = "per_page", required = false) Integer limit)
+//            throws URISyntaxException {
+//        Page<Post> page = esPostService.findAll(PaginationUtil.generatePageRequest(offset, limit));
+//        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/surveys", offset, limit);
+//        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
+//    }
 
 
-    @RequestMapping(value = "/_search/surveys/{query}",
-            method = RequestMethod.GET,
-            produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Survey> search(@PathVariable String query) {
-        return StreamSupport
-                .stream(surveySearchRepository.search(queryString(query)).spliterator(), false)
-                .collect(Collectors.toList());
-    }
+//    @RequestMapping(value = "/_search//{query}",
+//            method = RequestMethod.GET,
+//            produces = MediaType.APPLICATION_JSON_VALUE)
+//    public List<Post> search(@PathVariable String query) {
+//        return StreamSupport
+//                .stream(surveySearchRepository.search(queryString(query)).spliterator(), false)
+//                .collect(Collectors.toList());
+//    }
 
 }
