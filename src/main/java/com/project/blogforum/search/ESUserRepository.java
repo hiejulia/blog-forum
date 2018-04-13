@@ -17,6 +17,6 @@ public interface ESUserRepository extends ElasticsearchRepository<User, Long> {
 
 
     List<User> findByUsername(String u);
-    
+
 
 }
