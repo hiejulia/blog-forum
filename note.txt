@@ -6,6 +6,7 @@ https://github.com/CornePlas/jpatest
 Check json view : https://github.com/charlesheidemann/enron_web
 https://github.com/karlazzam/TvBuddy-api
 https://github.com/marvel80/SearchApi
+https://github.com/CherishCai/blog
 
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/IsResultXaL/blog
@@ -59,7 +60,7 @@ ELasticSearch - Spring boot
 BOOK
 Book : - ElasticSearch
 + Learning ElasticSearch (bh den project portfolio)
-+ ElasticSearch essentials(dang practice project)
++ ElasticSearch essentials(dang practice project: chua : chap 3 , )
 + ElasticSearch: a complete guide
 + ElasticSearch server
 + Mastering ElasticSearch 5.x

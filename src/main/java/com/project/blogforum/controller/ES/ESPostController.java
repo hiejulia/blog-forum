@@ -18,14 +18,18 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 //import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.net.URISyntaxException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Api(value = "Posts ES", description = "Post API ES")
 @RestController
@@ -75,9 +79,12 @@ public class ESPostController {
 //
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> addNewPost(
-            @ApiParam(value = "Created post object", required = true) @Valid @RequestBody Post postDTO) {
-        PostDTO post1 = new PostDTO();
+            @ApiParam(value = "Created post object", required = true) @Valid @RequestBody Post postDTO)  throws URISyntaxException {
+        if(postDTO.getTitle() == null){
+            return ResponseEntity.badRequest().header("Failure", "A post cannot have empty title ").build();
 
+        }
+        PostDTO post1 = new PostDTO();
         // Save post in the MySQL database first
         Post p = postService.save(postDTO);
 
@@ -150,8 +157,51 @@ public class ESPostController {
         userses.forEach(postList::add);
         return postList;
     }
+    // Delete post
+    @RequestMapping(value = "/{id}",
+            method = RequestMethod.DELETE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public String delete(@PathVariable Long id) {
+
+        postService.deletePostById(id);
+        esPostService.delete(id);
+        return "OK";
+    }
+    // Get one post by ES database
+
+    @RequestMapping(value = "/{id}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Post> get(@PathVariable Long id) {
+        return Optional.ofNullable(postService.findOnePostById(id))
+                .map(p -> new ResponseEntity<>(
+                        p,
+                        HttpStatus.OK))
+                .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    }
+
+    /**
+     * GET  /
+     */
+    @RequestMapping(value = "/getall",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Post>> getAll(@RequestParam(value = "page" , required = false) Integer offset,
+                                               @RequestParam(value = "per_page", required = false) Integer limit)
+            throws URISyntaxException {
+        Page<Post> page = surveyRepository.findAll(PaginationUtil.generatePageRequest(offset, limit));
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/surveys", offset, limit);
+        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
+    }
 
 
-
+    @RequestMapping(value = "/_search/surveys/{query}",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Survey> search(@PathVariable String query) {
+        return StreamSupport
+                .stream(surveySearchRepository.search(queryString(query)).spliterator(), false)
+                .collect(Collectors.toList());
+    }
 
 }

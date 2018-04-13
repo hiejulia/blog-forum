@@ -62,7 +62,11 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Data pagination and re index 
 + Bulk processing 
 + Install ES plugin 
-    + 
++ View mappings 
+    + `curl –XGET localhost:9200/index_name/_mapping?pretty`
+    + `curl –XGET localhost:9200/index_name/type_name/_mapping?pretty`
+    
+    
 
 
 
