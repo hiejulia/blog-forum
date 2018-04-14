@@ -14,7 +14,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
-@Document(indexName = "users", type = "users", shards = 1)
+@Document(indexName = "users", type = "users", shards = 1,replicas = 0, refreshInterval = "-1")
 @Entity
 @Data
 @Table(
