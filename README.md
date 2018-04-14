@@ -108,10 +108,17 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 ### Target (TODO)
 + Sync data between MySQL and Solr
 + Performance tuning for MySQL 
-+ Performance tuning for Solr server  
++ Performance tuning for ElasticSearch server  
 + Import dump csv file to some table in MySQL database 
 + Bulk insert in MySQL database 
-+ Full text index search in
++ Full text index search in MySQL 
++ Run ES cluster in Docker container while running integration test 
+
+
+
+
+
+
 
 
 

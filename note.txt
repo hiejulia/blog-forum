@@ -60,7 +60,7 @@ ELasticSearch - Spring boot
 BOOK
 Book : - ElasticSearch
 + Learning ElasticSearch (bh den project portfolio)
-+ ElasticSearch essentials(dang practice project: chua : chap 3 , )
++ ElasticSearch essentials(dang practice project: chua : chap 3 , ) : Nhung chap can add vao project : 9 ,
 + ElasticSearch: a complete guide
 + ElasticSearch server
 + Mastering ElasticSearch 5.x

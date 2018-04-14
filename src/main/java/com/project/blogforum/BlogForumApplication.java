@@ -53,6 +53,7 @@ public class BlogForumApplication {
 //	@Value("${Connect.database}")
 	private String database = "forumblog";
 
+	// Config Flyway
 	@Bean(initMethod = "migrate")
 	public Flyway flyway() {
 		/**
@@ -62,9 +63,11 @@ public class BlogForumApplication {
 		String urlWithoutDatabaseName=
 				url.substring(0,url.lastIndexOf("/"));
 		Flyway flyway = new Flyway();
+		// set datasource
 		flyway.setDataSource(urlWithoutDatabaseName, userName,
 				password); // init datasource
 		flyway.setSchemas(database); //set schema
+		flyway.migrate();
 		flyway.setBaselineOnMigrate(true);
 		System.out.print("=========== FLYWAY==========");
 		return flyway;
