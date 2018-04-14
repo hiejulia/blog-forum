@@ -192,6 +192,10 @@
 			<artifactId>jquery</artifactId>
 			<version>3.2.1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+		</dependency>
 		<!--ElasticSearch-->
 		<!--<dependency>-->
 			<!--<groupId>org.springframework.boot</groupId>-->
