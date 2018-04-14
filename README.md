@@ -18,6 +18,8 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + ElasticSearch - Kibana (visualize ElasticSearch)
 + JPA - Hibernate 
 + Docker 
++ Logback
+
 
 
 ### Features of the project 

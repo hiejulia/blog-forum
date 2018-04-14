@@ -13,7 +13,7 @@ import java.util.List;
 public interface ESUserRepository extends ElasticsearchRepository<User, Long> {
 
 
-    Page<User> findByEmal(String email, Pageable pageable);
+    Page<User> findByEmail(String email, Pageable pageable);
 
 
     List<User> findByUsername(String u);

@@ -214,16 +214,16 @@ public class ESPostController {
         return esPostService.findByTitleAndAuthor(t, a);
     }
 
+//
+//    @RequestMapping( method = RequestMethod.GET)
+//    public List<PostDTO> findByAuthorNot(@RequestParam(value = "author") String a) {
+//        return esPostService.findByAuthorNot(a);
+//    }
 
-    @RequestMapping( method = RequestMethod.GET)
-    public List<PostDTO> findByAuthorNot(@RequestParam(value = "author") String a) {
-        return esPostService.findByAuthorNot(a);
-    }
 
-
-    @RequestMapping( method = RequestMethod.GET)
-    public List<PostDTO> findByDescriptionLike(@RequestParam(value = "category") String c) {
-        return esPostService.findByCategoryLike(c);
-    }
+//    @RequestMapping( method = RequestMethod.GET)
+//    public List<PostDTO> findByDescriptionLike(@RequestParam(value = "category") String c) {
+//        return esPostService.findByCategoryLike(c);
+//    }
 
 }
