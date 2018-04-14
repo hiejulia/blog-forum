@@ -66,7 +66,7 @@ https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/bl
 FOR NEXT ES PROJECT
 https://github.com/svetli-n/es-watcher
 https://github.com/newlyfei/spring-boot-starter-elasticseach
-
+https://github.com/agebhar1/spring-boot-6508-jackson-elasticsearch
 
 
 TODO
@@ -96,7 +96,7 @@ Book
 
 
 
------- Messaging - RabbitMQ - JMS - KAFKA
+------ Messaging - RabbitMQ - JMS - KAFKA - AMQP
 Book
 + Spring boot messaging
 +

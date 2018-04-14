@@ -24,6 +24,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.net.URISyntaxException;
 import java.time.LocalDate;
@@ -51,6 +52,8 @@ public class ESPostController {
 
     @Autowired
     private PostService postService;
+
+
 //
 //
 //
@@ -225,6 +228,23 @@ public class ESPostController {
 //    @RequestMapping( method = RequestMethod.GET)
 //    public List<PostDTO> findByDescriptionLike(@RequestParam(value = "category") String c) {
 //        return esPostService.findByCategoryLike(c);
+//    }
+
+//    @RequestMapping(value = "/searchByTitleContaining/{name}", method = RequestMethod.GET)
+//    public PostDTO getByNameLike(@PathVariable String name,
+//                                @RequestParam(name = "page", defaultValue = "0", required = false) int page,
+//                                @RequestParam(name = "size", defaultValue = "0", required = false) int size,
+//                                @RequestParam(name = "sort", defaultValue = "", required = false) String[] sort,
+//                                HttpServletResponse response) {
+//
+////        page = page >= 0 ? page : page * -1;
+////        size = size <= 0 ? minResults : (size > maxResults ? maxResults : size);
+//        sort = sort.length == 2 ? (sort[1].equalsIgnoreCase("asc") || sort[1].equalsIgnoreCase("desc")
+//                ? new String[] { String.join(",", sort) } : sort) : sort;
+//
+//        Page<PostDTO> moviePage = esPostService.(name, page, size, sort);
+//
+//        return PostDTO.builder().movies(moviePage.getContent()).build();
 //    }
 
 }

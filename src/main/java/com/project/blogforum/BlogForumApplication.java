@@ -18,6 +18,7 @@ import org.flywaydb.core.Flyway;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 //import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.context.annotation.ComponentScan;
@@ -39,6 +40,7 @@ import java.net.InetAddress;
 @EnableJpaRepositories(basePackages = {"com.project.blogforum.repository"})
 @EnableAsync
 @ComponentScan
+@EnableCaching
 public class BlogForumApplication {
 
 	@Value("${spring.datasource.url}")
