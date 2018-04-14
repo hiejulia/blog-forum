@@ -36,6 +36,7 @@ import java.util.stream.StreamSupport;
 @Api(value = "Posts ES", description = "Post API ES")
 @RestController
 @RequestMapping("/v1/api/es/posts")
+@CrossOrigin
 public class ESPostController {
 //    @Autowired
 //    private ElasticsearchOperations es;

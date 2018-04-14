@@ -201,6 +201,17 @@
 			<artifactId>elasticsearch</artifactId>
 			<version>2.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-to-slf4j</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.6.2</version>
+		</dependency>
 		<!--ElasticSearch-->
 		<!--<dependency>-->
 			<!--<groupId>org.springframework.boot</groupId>-->

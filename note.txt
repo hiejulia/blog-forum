@@ -7,6 +7,10 @@ Check json view : https://github.com/charlesheidemann/enron_web
 https://github.com/karlazzam/TvBuddy-api
 https://github.com/marvel80/SearchApi
 https://github.com/CherishCai/blog
+https://github.com/anirban99/SpringBootElasticSearch
+https://github.com/rnkoaa/spring-boot-batch
+Big project : https://github.com/LushX/LushX-BE
+https://github.com/JerryOrange/Spring-Boot-Tech-Repository
 
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/IsResultXaL/blog
@@ -58,30 +62,25 @@ https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/bl
 TODO
 ELasticSearch - Spring boot
 BOOK
-Book : - ElasticSearch
-+ Learning ElasticSearch (bh den project portfolio)
-+ ElasticSearch essentials(dang practice project: chua : chap 3 , ) : Nhung chap can add vao project : 9 ,
-+ ElasticSearch: a complete guide
-+ ElasticSearch server
-+ Mastering ElasticSearch 5.x
+------Book : - ElasticSearch: DONE
 
-+ Nhung sach khac co chap ve noi dung cua elastic search : dang check
 
-MySQL
+------MySQL: dang check
 Book : MySQL
 + MySQL 8 cookbook
 + MySQL for Internet of things
-+ Check Back end current project
++ Check nhug sach co chap ve MySQL : dang check
++ Youtube : MySQL with Spring boot
 
 
-Flyway
-
+------Flyway
 DONE - Book : - Flyway (check nhung sach co bai lien quan den Flyway )
-+ Doc documentation
++ Doc documentation :
 + Book (Search google)
++ Youtube : Flyway with Spring boot(dang check)
 
 
-Book : Spring boot
+------Book : Spring boot
 + Spring boot 2.0 cookbook - second edition
 
 
