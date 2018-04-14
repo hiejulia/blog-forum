@@ -6,6 +6,7 @@ import com.project.blogforum.search.ESPostRepository;
 import com.project.blogforum.util.PageableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,9 @@ import java.util.List;
 public class ESPostService {
 
     @Autowired
+    private ApplicationEventPublisher publisher;
+
+    @Autowired
     private ESPostRepository esPostRepository;
 
 
@@ -24,4 +28,13 @@ public class ESPostService {
         Page<PostDTO> pageResult = (Page<PostDTO>) esPostRepository.findByTitleContaining(name, pageable);
         return pageResult;
     }
+    // Save post
+    public PostDTO saveNewPost(PostDTO post){
+        esPostRepository.save(post);
+        // Publish event
+        publisher.publishEvent(new );
+
+
+    }
+
 }

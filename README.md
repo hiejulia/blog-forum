@@ -4,6 +4,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 
 
 ### Tech stack 
++ Java 8+
 + Spring boot
 + Lombok
 + Restful API
@@ -20,7 +21,14 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Docker 
 + Logback - LogStash  
 + Messaging  
++ Spring Batch 
++ Spring Integration  
++ AOP - Aspect in Spring framework 
 
+
+
+
++ Testing : JUnit, Selenium , Robot Framework
 
 
 
