@@ -22,6 +22,7 @@ public class PostDTO implements Serializable {
     private String category;
     @Field(type = FieldType.Object)
     private List<Comment> commentList;
+    @Field(type = FieldType.Nested)
     private List<Tag> tagList;
 
 

@@ -225,6 +225,11 @@
 			<artifactId>spring-data-commons</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+		</dependency>
+
 		<!--<dependency>-->
 			<!--<scope>test</scope>-->
 			<!--<groupId>org.elasticsearch</groupId>-->

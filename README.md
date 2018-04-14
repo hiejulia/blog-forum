@@ -19,6 +19,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + JPA - Hibernate 
 + Docker 
 + Logback - LogStash  
++ Messaging  
 
 
 

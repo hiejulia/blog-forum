@@ -33,4 +33,9 @@ public interface ESPostRepository extends ElasticsearchRepository<PostDTO, Long>
 
     /*List<PostDTO> findByAuthorNot(String a);*/
 
+
+    public Page<PostDTO> findByTitleContaining(String name, Pageable pageable);
+
+//    public Page<PostDTO> findByRatingBetween(Double beginning, Double end, Pageable pageable);
+
 }
