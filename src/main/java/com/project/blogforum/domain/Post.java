@@ -42,10 +42,12 @@ public class Post implements Serializable {
     @Column(name = "date", length = 50)
     private String date;
 
+
     // join author = user
     @Column(name = "author", length = 50)
     private String author;
 
+    @Field(type = FieldType.String)
     @Column(name = "category")
     private String category;
 

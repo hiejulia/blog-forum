@@ -11,6 +11,8 @@ https://github.com/anirban99/SpringBootElasticSearch
 https://github.com/rnkoaa/spring-boot-batch
 Big project : https://github.com/LushX/LushX-BE
 https://github.com/JerryOrange/Spring-Boot-Tech-Repository
+https://github.com/EugeneVanchugov/Android-REST-Server
+https://github.com/reydward/springboot
 
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/IsResultXaL/blog
@@ -59,9 +61,17 @@ test:
 https://github.com/shekhargulati/blogger/blob/master/src/test/java/com/example/blogger/services/BlogServiceTests.java
 https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/blog/domain
 
+
+
+FOR NEXT ES PROJECT
+https://github.com/svetli-n/es-watcher
+https://github.com/newlyfei/spring-boot-starter-elasticseach
+
+
+
 TODO
 ELasticSearch - Spring boot
-BOOK
+DONE: BOOK
 ------Book : - ElasticSearch: DONE
 
 

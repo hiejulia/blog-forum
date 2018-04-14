@@ -7,6 +7,8 @@ import org.hibernate.annotations.Type;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -55,6 +57,10 @@ public class User implements Serializable {
     @Type(type="yes_no")
     @NotEmpty
     private boolean admin;
+
+    @Field(type = FieldType.Integer)
+    @Column(name = "age")
+    private Integer age;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "user_authority",

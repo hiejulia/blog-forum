@@ -9,7 +9,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 import java.io.Serializable;
 import java.util.List;
 
-@Document(indexName = "posts", type = "posts", shards = 1)
+@Document(indexName = "posts", type = "posts", shards = 1, replicas = 0, refreshInterval = "-1")
 @Data
 public class PostDTO implements Serializable {
     private Long id;
@@ -20,6 +20,7 @@ public class PostDTO implements Serializable {
     private String date;
     private String author;
     private String category;
+    @Field(type = FieldType.Object)
     private List<Comment> commentList;
     private List<Tag> tagList;
 
