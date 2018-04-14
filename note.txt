@@ -90,8 +90,14 @@ DONE - Book : - Flyway (check nhung sach co bai lien quan den Flyway )
 + Youtube : Flyway with Spring boot(dang check)
 
 
-------Book : Spring boot
+------ Spring boot
+Book
 + Spring boot 2.0 cookbook - second edition
+
+
+
+------ Messaging - RabbitMQ - JMS - KAFKA
+
 
 
 Github project
