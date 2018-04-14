@@ -6,10 +6,11 @@ import com.project.blogforum.dto.PostDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-//@Repository
+@Repository
 public interface ESUserRepository extends ElasticsearchRepository<User, Long> {
 
 

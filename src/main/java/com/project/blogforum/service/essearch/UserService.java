@@ -9,16 +9,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class UserService {
 
-    @Autowired
-    private ESUserRepository esUserRepository;
-
-    public Iterable<User> findByDesc(String desc) {
-
-        QueryBuilder queryBuilder = QueryBuilders.matchQuery("desc", desc);
-        return esUserRepository.search(queryBuilder);
-    }
+//    @Autowired
+//    private ESUserRepository esUserRepository;
+//
+//    public Iterable<User> findByDesc(String desc) {
+//
+//        QueryBuilder queryBuilder = QueryBuilders.matchQuery("desc", desc);
+//        return esUserRepository.search(queryBuilder);
+//    }
 
 }
