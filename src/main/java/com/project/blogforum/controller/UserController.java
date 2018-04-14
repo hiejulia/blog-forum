@@ -32,7 +32,7 @@ public class UserController {
     public List<Contact> getCustomerContacts(@PathVariable("id") Long id) {
         return userRepository.findById(id).getContacts();
     }
-    // Create new user -> save to ElasticSearch 
+    // Create new user -> save to ElasticSearch
     @RequestMapping( method = RequestMethod.POST)
     public User saveUser(@Valid @RequestBody User user) {
         esUserRepository.save(user);

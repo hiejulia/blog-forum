@@ -97,4 +97,7 @@ DONE - Book : - Flyway (check nhung sach co bai lien quan den Flyway )
 Github project
 + Spring boot + Flyway
 + Spring boot + Elasticsearch
++ Spring boot + RabbitMQ
++ Spring boot + Memcache
++ Spring boot + Redis
 +

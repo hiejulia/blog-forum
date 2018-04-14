@@ -11,15 +11,15 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
     + API error handling
     + Pagination 
     + Sorting 
-+ Cache 
-+ Memcache (for caching in the back end )- or redis 
+    + Hateoas
++ Memcache or redis 
 + MySQL - with Flyway migration 
 + REST doc : Swagger (docs, UI)
 + ElasticSearch - Kibana (visualize ElasticSearch)
 + JPA - Hibernate 
 + Docker 
 + Logback - LogStash  
-+ Kibana 
+
 
 
 
