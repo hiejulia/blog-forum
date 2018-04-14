@@ -3,6 +3,8 @@ import com.project.blogforum.domain.Comment;
 import com.project.blogforum.domain.Tag;
 import lombok.Data;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,6 +13,7 @@ import java.util.List;
 @Data
 public class PostDTO implements Serializable {
     private Long id;
+    @Field(type = FieldType.String)
     private String title;
     private String subtitle;
     private String content;
