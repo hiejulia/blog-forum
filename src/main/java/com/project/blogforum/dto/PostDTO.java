@@ -29,7 +29,7 @@ public class PostDTO implements Serializable {
     @Field(type = FieldType.Date, index = FieldIndex.not_analyzed, store = true,
             format = DateFormat.custom, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZZ")
     private Date createdAt;
-    
+
     @Field(type = FieldType.Date, index = FieldIndex.not_analyzed, store = true,
             format = DateFormat.custom, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZZ")
     private Date lastModifiedDate;

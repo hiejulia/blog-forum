@@ -102,7 +102,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Views / Materialized View 
 + Events
 + Getting information about databases and table 
-
++ Dump data 
 
 
 
