@@ -130,6 +130,10 @@ Book : AMQP
 
 
 
+Book for practice
++
+
+
 -----
 
 
