@@ -97,9 +97,29 @@ Book
 
 
 ------ Messaging - RabbitMQ - JMS - KAFKA - AMQP
-Book
+Book : Messaging
 + Spring boot messaging
-+
++ Check nhug book co chap ve messaging(dang check )
+
+Book : RabbitMQ
+
+
+Book : JMS
+
+
+Book : Kafka
+
+
+Book : AMQP
+
+
+
+
+
+-----
+
+
+
 
 
 

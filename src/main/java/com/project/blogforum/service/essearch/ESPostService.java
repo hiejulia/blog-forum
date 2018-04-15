@@ -2,6 +2,7 @@ package com.project.blogforum.service.essearch;
 
 
 import com.project.blogforum.dto.PostDTO;
+import com.project.blogforum.event.NewPostEvent;
 import com.project.blogforum.search.ESPostRepository;
 import com.project.blogforum.util.PageableUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,9 +33,8 @@ public class ESPostService {
     public PostDTO saveNewPost(PostDTO post){
         esPostRepository.save(post);
         // Publish event
-        publisher.publishEvent(new );
-
-
+        publisher.publishEvent(new NewPostEvent(this,post));
+        return post;
     }
 
 }

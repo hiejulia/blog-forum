@@ -86,6 +86,9 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 
 
 
+### Messaging JMS
++ Message Type: BytesMessage, MapMessage, ObjectMessage, StreamMessage, TextMesage 
+
 
 ### How to run the project
 + Initial installation 

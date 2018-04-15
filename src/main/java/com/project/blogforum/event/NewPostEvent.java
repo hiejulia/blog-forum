@@ -2,6 +2,7 @@ package com.project.blogforum.event;
 
 
 import com.project.blogforum.domain.Post;
+import com.project.blogforum.dto.PostDTO;
 import org.springframework.context.ApplicationEvent;
 
 
@@ -12,12 +13,14 @@ public class NewPostEvent extends ApplicationEvent {
 
     private Post post;
 
-    public NewPostEvent(Object source,Post post) {
+    private PostDTO postDTO;
+
+    public NewPostEvent(Object source,PostDTO post) {
         super(source);
-        this.post = post;
+        this.postDTO = postDTO;
     }
 
-    public Post getPost() {
-        return post;
+    public PostDTO getPost() {
+        return postDTO;
     }
 }
