@@ -1,6 +1,7 @@
 package com.project.blogforum.service.essearch;
 
 
+import com.project.blogforum.domain.Post;
 import com.project.blogforum.dto.PostDTO;
 import com.project.blogforum.event.NewPostEvent;
 import com.project.blogforum.search.ESPostRepository;
@@ -35,6 +36,23 @@ public class ESPostService {
         // Publish event
         publisher.publishEvent(new NewPostEvent(this,post));
         return post;
+    }
+
+    public void update(Long id, Post resource) {
+        PostDTO crusher = esPostRepository.findOne(id);
+        if (crusher != null) {
+            esPostRepository.save(crusher);
+        }
+    }
+
+    public Page<Entity> findAllPaginatedAndSorted(int page, int size, String sortBy, String sortOrder) {
+        return repository.findAll(constructPageRequest(page, size, sortBy, sortOrder));
+    }
+
+
+    public Page<Entity> search(int page, int size, String sortBy, String sortOrder, Map<String, String[]> filters) {
+        QueryBuilder query = addFilters(filters);
+        return repository.search(query, constructPageRequest(page, size, sortBy, sortOrder));
     }
 
 }
