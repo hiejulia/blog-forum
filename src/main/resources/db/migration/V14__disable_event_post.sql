@@ -1,0 +1,1 @@
+ALTER EVENT post_audit DISABLE;
