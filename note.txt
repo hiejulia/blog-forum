@@ -16,6 +16,7 @@ https://github.com/reydward/springboot
 https://github.com/pjjesus/poc-player-search
 https://github.com/hawkinshawk/elasticsearch-example
 https://github.com/f1024557668/SpringBoot
+https://github.com/LiHongTai/spring-boot-elasticsearch
 
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/IsResultXaL/blog
@@ -72,6 +73,10 @@ https://github.com/newlyfei/spring-boot-starter-elasticseach
 https://github.com/agebhar1/spring-boot-6508-jackson-elasticsearch
 https://github.com/mahieddine-ichir/elasticsearch-javaapi
 https://github.com/MrMoner/SpringBoot-Elasticsearch-example-using-JEST
+https://github.com/Baozi2/spring-boot-elasticsearch
+https://github.com/myrepozz/spring-boot-elasticsearch
+https://github.com/gaowenming/spring-boot-elasticsearch
+https://github.com/Fillavacancy/spring-boot-elasticsearch-demo
 
 
 

@@ -5,9 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.elasticsearch.annotations.Document;
-import org.springframework.data.elasticsearch.annotations.Field;
-import org.springframework.data.elasticsearch.annotations.FieldType;
+import org.springframework.data.elasticsearch.annotations.*;
 
 
 import javax.persistence.*;
@@ -55,6 +53,9 @@ public class Post implements Serializable {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss", timezone="GMT+8")
     @CreatedDate
     private Date createdAt;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern ="yyyy-MM-dd'T'HH:mm:ss.SSSZZ")
+    private Date lastModifiedDate;
 
 
 

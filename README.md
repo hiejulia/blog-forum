@@ -144,6 +144,8 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Sorting: `?sort=title,asc&sort=id,desc`
 
 
++ Run test `mvn clean test`
+
 ### Target (TODO)
 + Sync data between MySQL and Solr
 + Performance tuning for MySQL 
