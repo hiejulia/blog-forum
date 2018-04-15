@@ -1,5 +1,6 @@
 package com.project.blogforum.controller.ES;
 
+import com.google.common.base.Preconditions;
 import com.project.blogforum.domain.Comment;
 import com.project.blogforum.domain.Post;
 import com.project.blogforum.domain.Tag;
@@ -84,8 +85,11 @@ public class ESPostController {
 
 //
     @RequestMapping(method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.CREATED)
+    @ApiOperation(value = "Create post with index in ElasticSearch", notes = "Create a new post with Elasticsearch index")
     public ResponseEntity<?> addNewPost(
-            @ApiParam(value = "Created post object", required = true) @Valid @RequestBody Post postDTO)  throws URISyntaxException {
+            @ApiParam(value = "Created post object", required = true) @Valid @RequestBody final Post postDTO)  throws URISyntaxException {
+        Preconditions.checkNotNull(postDTO, "Resource provided is null!!!");
         if(postDTO.getTitle() == null){
             return ResponseEntity.badRequest().header("Failure", "A post cannot have empty title ").build();
 
