@@ -111,7 +111,12 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Triggers 
 + Views / Materialized View 
 + Events
-+ Getting information about databases and table 
++ Getting information about databases and table
+    + Table: `SELECT SUM(DATA_LENGTH)/1024/1024 AS DATA_SIZE_MB, SUM(INDEX_LENGTH)/1024/1024 AS INDEX_SIZE_MB, SUM(DATA_FREE)/1024/1024 AS DATA_FREE_MB FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='forumblog';`
+    + Column: `SELECT * FROM COLUMNS WHERE TABLE_NAME='forumblog'\G`
+    + Files 
+    + InnoDB : ` SELECT * FROM INNODB_TABLESPACES WHERE NAME='employees/forumblog'\G`
+    + Process list : `SELECT * FROM PROCESSLIST\G`
 + Dump data 
 
 
