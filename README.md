@@ -93,26 +93,28 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 ### How to run the project
 + Initial installation 
     + Flyway : `brew install flyway`
-    + Solr : `brew install solr` 
+    + ElasticSearch : `brew install elasticsearch` 
     + Memcache :  
-    
+    + Redis : `brew install redis`
     
 + Flyway CLI Command 
     + `mvn flywayMigrate -i`   
     + `/flyway` 
     
-    
-+ Start Solr server (local)
-    + `solr start`
-    
++ Start Elasticsearch server(local) : `elasticsearch`
+   
   
     
     
 + Run with Docker  
     + `docker run --name user-mysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql:5.7`
-    +    
-    
-    
+    +  To run the ElasticSearch and the application 
+        + `docker-compose up `
+        + `docker run -p 9200:9200 -p 9300:9300 -v //c/Users/epiobob/Documents/Dev/elastic-spring/src/main/resources/c
+           ustom_elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml elasticsearch:2.4.6`  
++ Test when run with Docker 
+    + `docker-machine ip <name>`
+    + `http get ip:9200`
     
 + Paging: `?page=0&size=2`
 + Sorting: `?sort=title,asc&sort=id,desc`

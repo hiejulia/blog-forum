@@ -1,21 +1,38 @@
-
-db:
-    image: mysql:5.7
-    ports:
-        - "3307:3307"
-    environment:
-        MYSQL_USER: hien
-        MYSQL_PASSWORD: password
-        MYSQL_ROOT_PASSWORD: password
-        MYSQL_DATABASE: forumblog
-
-web:
-    image: java:openjdk-8-jdk
-    working_dir: /app
+#
+#db:
+#    image: mysql:5.7
+#    ports:
+#        - "3307:3307"
+#    environment:
+#        MYSQL_USER: hien
+#        MYSQL_PASSWORD: password
+#        MYSQL_ROOT_PASSWORD: password
+#        MYSQL_DATABASE: forumblog
+#
+#web:
+#    image: java:openjdk-8-jdk
+#    working_dir: /app
+#    volumes:
+#        - ./target:/app
+#    ports:
+#        - "8081:8081"
+#    command: java -jar /target/blog-forum-0.0.1-SNAPSHOT.jar
+#    links:
+#        - db:db
+version: '3'
+services:
+  web:
+    build: .
+    depends_on:
+      - elasticsearch
+  elasticsearch:
+    image: elasticsearch:2.4.6
     volumes:
-        - ./target:/app
+      - "./src/main/resources/custom_elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
+    expose:
+      - "9200"
+      - "9300"
     ports:
-        - "8081:8081"
-    command: java -jar /target/blog-forum-0.0.1-SNAPSHOT.jar
-    links:
-        - db:db
+      - "9200:9200"
+      - "9300:9300"
+
