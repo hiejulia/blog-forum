@@ -106,13 +106,15 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Select data into a file and table 
 + Load data into a table 
 + Join table 
+    + Identify duplicate using self join 
+    + using sub queries 
+    + finding mismatched rows between tables
 + Stored procedured 
 + Functions
 + Triggers 
 + Views / Materialized View 
 + Events
     + `SET GLOBAL event_scheduler = ON;`
-    + 
 + Getting information about databases and table
     + Table: `SELECT SUM(DATA_LENGTH)/1024/1024 AS DATA_SIZE_MB, SUM(INDEX_LENGTH)/1024/1024 AS INDEX_SIZE_MB, SUM(DATA_FREE)/1024/1024 AS DATA_FREE_MB FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='forumblog';`
     + Column: `SELECT * FROM COLUMNS WHERE TABLE_NAME='forumblog'\G`
