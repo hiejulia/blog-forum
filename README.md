@@ -85,6 +85,30 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + ES performance tuning 
 
 
+### Flyway migration 
++ `mvn flyway:info`
++ `mvn compile flyway:migrate`
+
+### MySQL 
++ Load sample data 
++ Group result (aggregate function)
++ Create user and grant privileges/ access 
++ Select data into a file and table 
++ Load data into a table 
++ Join table 
++ Stored procedured 
++ Functions
++ Triggers 
++ Views / Materialized View 
++ Events
++ Getting information about databases and table 
+
+
+
+
+
+
+
 
 ### Messaging JMS
 + Message Type: BytesMessage, MapMessage, ObjectMessage, StreamMessage, TextMesage 

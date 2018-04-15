@@ -44,15 +44,15 @@ public class ESPostService {
             esPostRepository.save(crusher);
         }
     }
-
-    public Page<Entity> findAllPaginatedAndSorted(int page, int size, String sortBy, String sortOrder) {
-        return repository.findAll(constructPageRequest(page, size, sortBy, sortOrder));
-    }
-
-
-    public Page<Entity> search(int page, int size, String sortBy, String sortOrder, Map<String, String[]> filters) {
-        QueryBuilder query = addFilters(filters);
-        return repository.search(query, constructPageRequest(page, size, sortBy, sortOrder));
-    }
+//
+//    public Page<Entity> findAllPaginatedAndSorted(int page, int size, String sortBy, String sortOrder) {
+//        return repository.findAll(constructPageRequest(page, size, sortBy, sortOrder));
+//    }
+//
+//
+//    public Page<Entity> search(int page, int size, String sortBy, String sortOrder, Map<String, String[]> filters) {
+//        QueryBuilder query = addFilters(filters);
+//        return repository.search(query, constructPageRequest(page, size, sortBy, sortOrder));
+//    }
 
 }

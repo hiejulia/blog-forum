@@ -12,7 +12,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "tag")
-//@Data
+@Document(indexName = "tags", type = "tags", shards = 1, replicas = 0, refreshInterval = "-1")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data

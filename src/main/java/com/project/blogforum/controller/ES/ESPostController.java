@@ -242,42 +242,42 @@ public class ESPostController {
 
 
     // ========== Update to new Post ES route
-    @RequestMapping(params = {"page", "size", "sortBy", "sortOrder"}, method = RequestMethod.GET)
-    @ApiOperation(value = "Find All Paginated And Sorted", nickname = "findAllPaginatedAndSorted", notes = "This endpoint supports generic filtering. Examples: " + "<br><ul>"
-            + "<li> match one field: `?field=value`" + "<li> match multiple fields: `?field1=value1&field2=value2`" + "<li> multiple values for field: `?field=value1&field=value2`"
-            + "<li> date time range filters: `?dateTimeFilter=field,fromDate,toDate`" + "</ul>")
-    public Page<Entity> findAllPaginatedAndSorted(@RequestParam("page") final int page,
-                                                  @RequestParam("size") final int size,
-                                                  @RequestParam("sortBy") final String sortBy,
-                                                  @RequestParam("sortOrder") final String sortOrder) {
-        return service.findAllPaginatedAndSorted(page, size, sortBy, sortOrder);
-    }
-
-    @RequestMapping(value = "/_search", params = {"page", "size", "sortBy", "sortOrder"}, method = RequestMethod.GET)
-    @ApiOperation(value = "search", nickname = "search", notes = "This endpoint supports generic filtering. Examples: " + "<br><ul>" + "<li> match one field: `?field=value`"
-            + "<li> match multiple fields: `?field1=value1&field2=value2`" + "<li> multiple values for field: `?field=value1&field=value2`" + "</ul>")
-    public Page<Entity> search(@RequestParam("page") final int page,
-                               @RequestParam("size") final int size,
-                               @RequestParam("sortBy") final String sortBy,
-                               @RequestParam("sortOrder") final String sortOrder) {
-        Map<String, String[]> filters = new HashMap<>(request.getParameterMap());
-        return service.search(page, size, sortBy, sortOrder, filters);
-    }
-
-    // Update Post
-
-    @ApiOperation(value = "Update Resource", notes = "Update the existing Post")
-    @RequestMapping(method = RequestMethod.PUT)
-    @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<?> updateContentById(
-            @ApiParam(value = "Updated post object", required = true) @Valid @RequestBody final PostDTO postDTO) {
-        Preconditions.checkNotNull(postDTO, "PostDTO provided is null");
-        postService.updateContentById(postDTO);
-        // Update from ES database
-        Optional<String> resourceId = Optional.ofNullable(resource.getId());
-        service.update(id, resource);
-        return new ResponseEntity<>(postDTO.getId(), HttpStatus.OK);
-    }
+//    @RequestMapping(params = {"page", "size", "sortBy", "sortOrder"}, method = RequestMethod.GET)
+//    @ApiOperation(value = "Find All Paginated And Sorted", nickname = "findAllPaginatedAndSorted", notes = "This endpoint supports generic filtering. Examples: " + "<br><ul>"
+//            + "<li> match one field: `?field=value`" + "<li> match multiple fields: `?field1=value1&field2=value2`" + "<li> multiple values for field: `?field=value1&field=value2`"
+//            + "<li> date time range filters: `?dateTimeFilter=field,fromDate,toDate`" + "</ul>")
+//    public Page<Entity> findAllPaginatedAndSorted(@RequestParam("page") final int page,
+//                                                  @RequestParam("size") final int size,
+//                                                  @RequestParam("sortBy") final String sortBy,
+//                                                  @RequestParam("sortOrder") final String sortOrder) {
+//        return service.findAllPaginatedAndSorted(page, size, sortBy, sortOrder);
+//    }
+//
+//    @RequestMapping(value = "/_search", params = {"page", "size", "sortBy", "sortOrder"}, method = RequestMethod.GET)
+//    @ApiOperation(value = "search", nickname = "search", notes = "This endpoint supports generic filtering. Examples: " + "<br><ul>" + "<li> match one field: `?field=value`"
+//            + "<li> match multiple fields: `?field1=value1&field2=value2`" + "<li> multiple values for field: `?field=value1&field=value2`" + "</ul>")
+//    public Page<Entity> search(@RequestParam("page") final int page,
+//                               @RequestParam("size") final int size,
+//                               @RequestParam("sortBy") final String sortBy,
+//                               @RequestParam("sortOrder") final String sortOrder) {
+//        Map<String, String[]> filters = new HashMap<>(request.getParameterMap());
+//        return service.search(page, size, sortBy, sortOrder, filters);
+//    }
+//
+//    // Update Post
+//
+//    @ApiOperation(value = "Update Resource", notes = "Update the existing Post")
+//    @RequestMapping(method = RequestMethod.PUT)
+//    @ResponseStatus(HttpStatus.OK)
+//    public ResponseEntity<?> updateContentById(
+//            @ApiParam(value = "Updated post object", required = true) @Valid @RequestBody final PostDTO postDTO) {
+//        Preconditions.checkNotNull(postDTO, "PostDTO provided is null");
+//        postService.updateContentById(postDTO);
+//        // Update from ES database
+//        Optional<String> resourceId = Optional.ofNullable(resource.getId());
+//        service.update(id, resource);
+//        return new ResponseEntity<>(postDTO.getId(), HttpStatus.OK);
+//    }
 
 
 

@@ -13,6 +13,9 @@ Big project : https://github.com/LushX/LushX-BE
 https://github.com/JerryOrange/Spring-Boot-Tech-Repository
 https://github.com/EugeneVanchugov/Android-REST-Server
 https://github.com/reydward/springboot
+https://github.com/pjjesus/poc-player-search
+https://github.com/hawkinshawk/elasticsearch-example
+https://github.com/f1024557668/SpringBoot
 
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/IsResultXaL/blog
@@ -67,6 +70,11 @@ FOR NEXT ES PROJECT
 https://github.com/svetli-n/es-watcher
 https://github.com/newlyfei/spring-boot-starter-elasticseach
 https://github.com/agebhar1/spring-boot-6508-jackson-elasticsearch
+https://github.com/mahieddine-ichir/elasticsearch-javaapi
+
+
+
+
 
 
 TODO
@@ -77,7 +85,7 @@ DONE: BOOK
 
 ------MySQL: dang check
 Book : MySQL
-+ MySQL 8 cookbook
++ (dang check)MySQL 8 cookbook(nhg chap can ap dug : 2, 3,4,5,6,7,8,-> het )
 + MySQL for Internet of things
 + Check nhug sach co chap ve MySQL : dang check
 + Youtube : MySQL with Spring boot
