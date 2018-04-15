@@ -71,6 +71,7 @@ https://github.com/svetli-n/es-watcher
 https://github.com/newlyfei/spring-boot-starter-elasticseach
 https://github.com/agebhar1/spring-boot-6508-jackson-elasticsearch
 https://github.com/mahieddine-ichir/elasticsearch-javaapi
+https://github.com/MrMoner/SpringBoot-Elasticsearch-example-using-JEST
 
 
 
