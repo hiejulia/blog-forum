@@ -31,6 +31,7 @@ import java.net.URISyntaxException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -90,6 +91,7 @@ public class ESPostController {
     public ResponseEntity<?> addNewPost(
             @ApiParam(value = "Created post object", required = true) @Valid @RequestBody final Post postDTO)  throws URISyntaxException {
         Preconditions.checkNotNull(postDTO, "Resource provided is null!!!");
+
         if(postDTO.getTitle() == null){
             return ResponseEntity.badRequest().header("Failure", "A post cannot have empty title ").build();
 
@@ -171,6 +173,7 @@ public class ESPostController {
     @RequestMapping(value = "/{id}",
             method = RequestMethod.DELETE,
             produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(HttpStatus.OK)
     public String delete(@PathVariable Long id) {
 
         postService.deletePostById(id);
@@ -250,5 +253,49 @@ public class ESPostController {
 //
 //        return PostDTO.builder().movies(moviePage.getContent()).build();
 //    }
+
+
+
+    // ========== Update to new Post ES route
+    @RequestMapping(params = {"page", "size", "sortBy", "sortOrder"}, method = RequestMethod.GET)
+    @ApiOperation(value = "Find All Paginated And Sorted", nickname = "findAllPaginatedAndSorted", notes = "This endpoint supports generic filtering. Examples: " + "<br><ul>"
+            + "<li> match one field: `?field=value`" + "<li> match multiple fields: `?field1=value1&field2=value2`" + "<li> multiple values for field: `?field=value1&field=value2`"
+            + "<li> date time range filters: `?dateTimeFilter=field,fromDate,toDate`" + "</ul>")
+    public Page<Entity> findAllPaginatedAndSorted(@RequestParam("page") final int page,
+                                                  @RequestParam("size") final int size,
+                                                  @RequestParam("sortBy") final String sortBy,
+                                                  @RequestParam("sortOrder") final String sortOrder) {
+        return service.findAllPaginatedAndSorted(page, size, sortBy, sortOrder);
+    }
+
+    @RequestMapping(value = "/_search", params = {"page", "size", "sortBy", "sortOrder"}, method = RequestMethod.GET)
+    @ApiOperation(value = "search", nickname = "search", notes = "This endpoint supports generic filtering. Examples: " + "<br><ul>" + "<li> match one field: `?field=value`"
+            + "<li> match multiple fields: `?field1=value1&field2=value2`" + "<li> multiple values for field: `?field=value1&field=value2`" + "</ul>")
+    public Page<Entity> search(@RequestParam("page") final int page,
+                               @RequestParam("size") final int size,
+                               @RequestParam("sortBy") final String sortBy,
+                               @RequestParam("sortOrder") final String sortOrder) {
+        Map<String, String[]> filters = new HashMap<>(request.getParameterMap());
+        return service.search(page, size, sortBy, sortOrder, filters);
+    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "Update Resource", notes = "Update the existing Resource")
+    public void update(@PathVariable("id") @ApiParam(value = "The Id of the Existing Resource to be Updated") final String id,
+                       @Valid @RequestBody @ApiParam(value = "The Resource to be Updated") final Entity resource) {
+        Preconditions.checkNotNull(resource, "Resource provided is null");
+        Optional<String> resourceId = Optional.ofNullable(resource.getId());
+        Preconditions.checkArgument(resourceId.isPresent() == false, "Resource should have no id.");
+        service.update(id, resource);
+    }
+
+    @RequestMapping(value = "/{id:.+}", method = RequestMethod.GET)
+    public Entity findOne(@PathVariable("id") @ApiParam(value = "The Id of the Existing Resource to be Retrieved") final String id) {
+        Entity crusher = service.findOne(id);
+        Preconditions.checkNotNull(crusher, "Entity not found by id = " + id);
+        return crusher;
+    }
+
 
 }
