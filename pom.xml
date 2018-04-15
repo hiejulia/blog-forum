@@ -222,7 +222,7 @@
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-rest-hal-browser</artifactId>
 		</dependency>
-		
+
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
