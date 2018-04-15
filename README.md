@@ -92,7 +92,17 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 ### MySQL 
 + Load sample data 
 + Group result (aggregate function)
-+ Create user and grant privileges/ access 
++ Create user and grant privileges/ access
+    +  `CREATE USER IF NOT EXISTS 'company_read_only'@'localhost' 
+        IDENTIFIED WITH mysql_native_password 
+        BY 'company_pass' 
+        WITH MAX_QUERIES_PER_HOUR 500 
+        MAX_UPDATES_PER_HOUR 100;`
+    + Grant privileges 
+        ` GRANT SELECT ON company.* TO 'company_read_only'@'localhost';`
+        `GRANT INSERT ON company.* TO 'company_insert_only'@'localhost' IDENTIFIED BY 'xxxx';`
+        `GRANT INSERT, DELETE, UPDATE ON company.* TO 'company_write'@'%' IDENTIFIED WITH mysql_native_password AS '*EBD9E3BFD1489CA1EB0D2B4F29F6665F321E8C18';`
+    + Create role for user : `CREATE ROLE 'app_read_only', 'app_writes', 'app_developer';`
 + Select data into a file and table 
 + Load data into a table 
 + Join table 
@@ -103,6 +113,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Events
 + Getting information about databases and table 
 + Dump data 
+
 
 
 
