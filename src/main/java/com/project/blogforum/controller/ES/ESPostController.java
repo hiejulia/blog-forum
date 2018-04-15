@@ -29,10 +29,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.net.URISyntaxException;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -128,19 +125,7 @@ public class ESPostController {
 //
 //    }
 
-    /**
-     * UPDATE ONE POST BY POST ID
-     */
 
-//    @ApiOperation(value = "Update post by id", notes = "By authenticated users only.", position = 5)
-//    @RequestMapping(method = RequestMethod.PUT)
-//    public ResponseEntity<?> updateContentById(
-//            @ApiParam(value = "Updated post object", required = true) @Valid @RequestBody PostDTO postDTO) {
-//        postService.updateContentById(postDTO);
-//        return new ResponseEntity<>(postDTO.getId(), HttpStatus.OK);
-//    }
-//
-//
 //    /**
 //     * DELETE ALL POSTS
 //     */
@@ -279,21 +264,29 @@ public class ESPostController {
         return service.search(page, size, sortBy, sortOrder, filters);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+    // Update Post
+
+    @ApiOperation(value = "Update Resource", notes = "Update the existing Post")
+    @RequestMapping(method = RequestMethod.PUT)
     @ResponseStatus(HttpStatus.OK)
-    @ApiOperation(value = "Update Resource", notes = "Update the existing Resource")
-    public void update(@PathVariable("id") @ApiParam(value = "The Id of the Existing Resource to be Updated") final String id,
-                       @Valid @RequestBody @ApiParam(value = "The Resource to be Updated") final Entity resource) {
-        Preconditions.checkNotNull(resource, "Resource provided is null");
+    public ResponseEntity<?> updateContentById(
+            @ApiParam(value = "Updated post object", required = true) @Valid @RequestBody final PostDTO postDTO) {
+        Preconditions.checkNotNull(postDTO, "PostDTO provided is null");
+        postService.updateContentById(postDTO);
+        // Update from ES database
         Optional<String> resourceId = Optional.ofNullable(resource.getId());
-        Preconditions.checkArgument(resourceId.isPresent() == false, "Resource should have no id.");
         service.update(id, resource);
+        return new ResponseEntity<>(postDTO.getId(), HttpStatus.OK);
     }
 
+
+
+    // Route get post by Id
     @RequestMapping(value = "/{id:.+}", method = RequestMethod.GET)
-    public Entity findOne(@PathVariable("id") @ApiParam(value = "The Id of the Existing Resource to be Retrieved") final String id) {
-        Entity crusher = service.findOne(id);
-        Preconditions.checkNotNull(crusher, "Entity not found by id = " + id);
+    public PostDTO findOne(@PathVariable("id") @ApiParam(value = "The Id of the Existing Resource to be Retrieved") final String id) {
+        Long postId = Long.parseLong("0", 10);
+        PostDTO crusher = esPostService.findOne(postId);
+        Preconditions.checkNotNull(crusher, "Post not found by id = " + id);
         return crusher;
     }
 
