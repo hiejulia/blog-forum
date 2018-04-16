@@ -1,0 +1,41 @@
+image: docker:latest
+
+services:
+  - docker:dind
+  - mysql:latest
+
+
+cache:
+ paths:
+ - /root/.m2/repository
+
+variables:
+  DOCKER_DRIVER: overlay
+  SPRING_PROFILES_ACTIVE: docker,localstorage
+  MYSQL_ROOT_PASSWORD: admin
+  MYSQL_DATABASE: belajar
+  MYSQL_USER: belajaruser
+  MYSQL_PASSWORD: belajarpaswd
+  SPRING_DATASOURCE_URL: jdbc:mysql://localhost/belajar
+
+stages:
+ - build
+ - deploy
+
+build:
+ stage: build
+ image: maven:3-jdk-8
+ script:
+ - mvn clean package
+
+deploy_dev:
+ stage: deploy
+ image: ruby:2.3
+ script:
+ - apt-get update -qy
+ - apt-get install -y ruby-dev
+ - gem install dpl
+ - dpl --provider=heroku --app=flyway-springboot-dev  --api-key=$HEROKU_API_KEY
+
+ only:
+ - master

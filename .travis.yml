@@ -1,0 +1,19 @@
+language: java
+
+sudo: false # faster builds
+
+jdk:
+- oraclejdk8
+services:
+- mysql
+before_install:
+- mysql -uroot -e "grant all on belajar.* to belajaruser@localhost identified by 'belajarpasswd'"
+- mysql -uroot -e "drop database if exists belajar"
+- mysql -uroot -e "create database belajar"
+deploy:
+  provider: heroku
+  api_key:
+    secure: u/iQdLp6v8q30avZ/dh23yGjri7hMekl+KUaY0hK3q6SwMSLqKbzWv7uWSPnxbahriIiOthw9l7pNOHjo6oiNZstSdHvFGror5yC/iYCYiyN8BFPRUy2NPW5lfPl+6BDz8aAEtc5BNcajnul/VZXtgzo80nK8MWNpvBNwaokQdMwo0yK2LJZ7/r+Up9LlUmpCuTVh7xCRGDK9HBulre8Vt+ImVqLgQrRclldGgUVSR47BPc91OSzsYW4fZv7IxmZUC5m8nUYgjBjMN2FmIfPdpFhVqVBoW0BeWblbrQ11XgkPFugSyXedBt6NII9xwxWOgZZhtZXhduQitf+WsJkQ6kQapGtiwUm167C4aIw0dVOR5ZrXTm4FaCR/CFmSnboSAdHgYrWEJgu/sOU8T9EYMWguIW7RpjKDVNIqC63gCTI2ewbS2fzxyhau7bxZ19WpeCQbcJg4aJdX+khCAgA91HmXQBYpae+x3Zt8FUw6bJ+AfXCbMs1ggIVwItQCbgo7pFszVHq6jJSjGF2kdH5k0B2uEdFnX68g4k1fMfRt70Q+PeCM/Hyur+pcRnknTnBMeoPADGAhrN5cbrdC2D2XIOj8txCDaIVYQn/Rp+fjBPCGqHN18VQUxDZ6PIDaaBCdPiYXB7RucBCmsi41pcyanh7nhm4k9CMSbN3ZArkLb0=
+  app: flyway-springboot
+  on:
+    repo: hiennguyen711/blog-forum
