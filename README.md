@@ -20,14 +20,11 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + JPA - Hibernate 
 + Docker 
 + Logback - LogStash  
-+ Messaging  
++ Messaging : RabbitMQ 
 + Spring Batch 
 + Spring Integration  
 + AOP - Aspect in Spring framework 
 + Audit entity 
-
-
-
 + Testing : JUnit, Selenium , Robot Framework
 
 
@@ -41,6 +38,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 ### Set up docker-compose
 + pack application : `mvn package`
 + start docker-compose : `docker-compose up`
++ Run RabbitMQ server with 
 
 
 ### ElasticSearch 

@@ -125,7 +125,6 @@ Book
 
 
 
-
 ------ Messaging - RabbitMQ - JMS - KAFKA - AMQP
 Book : Messaging
 + Spring boot messaging
@@ -150,6 +149,22 @@ Book for practice
 +
 
 
+
+Github project
+
+
+
+Tutorial / Article
+
+
+
+Youtube
+
+
+Documentation
+
+
+
 -----
 
 
@@ -158,9 +173,12 @@ Book for practice
 
 
 Github project
-+ Spring boot + Flyway
-+ Spring boot + Elasticsearch
-+ Spring boot + RabbitMQ
++ Spring boot + Flyway: dang check
++ Spring boot + Elasticsearch: dang check
++ Spring boot + RabbitMQ: dang check
++ Spring boot + Kafka
++ Spring boot + AMQP :
++ Spring boot + messaging/ message
 + Spring boot + Memcache
 + Spring boot + Redis
 +
