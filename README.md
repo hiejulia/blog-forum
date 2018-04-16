@@ -24,7 +24,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Spring Batch 
 + Spring Integration  
 + AOP - Aspect in Spring framework 
-
++ Audit entity 
 
 
 
@@ -44,6 +44,11 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 
 
 ### ElasticSearch 
++ Integrate ElasticSearch with Spring 
+    + Spring data elasticsearch 
+    + Native Elasticsearch Java API 
+    + Elasticsearch Rest API 
+    + Lightweight Jest client with ElasticSearch 
 + Scale ElasticSearch cluster (production)
 + Secure ElasticSearch cluster 
 + ElasticSearch data back up 

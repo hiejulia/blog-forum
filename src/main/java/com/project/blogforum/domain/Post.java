@@ -6,6 +6,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.elasticsearch.annotations.*;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 
 import javax.persistence.*;
@@ -17,6 +18,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "post")
+@EntityListeners(AuditingEntityListener.class)
 public class Post implements Serializable {
     @Id
     @Column(name = "id")

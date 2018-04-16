@@ -3,6 +3,7 @@ GITHUB PROJECT : spring-boot+ flyway(done),
 
 tham khao
 https://github.com/CornePlas/jpatest
+https://github.com/eanfs/jhipster-spring-boot-2-elasticsearch-sample
 Check json view : https://github.com/charlesheidemann/enron_web
 https://github.com/karlazzam/TvBuddy-api
 https://github.com/marvel80/SearchApi
@@ -17,7 +18,7 @@ https://github.com/pjjesus/poc-player-search
 https://github.com/hawkinshawk/elasticsearch-example
 https://github.com/f1024557668/SpringBoot
 https://github.com/LiHongTai/spring-boot-elasticsearch
-
+https://github.com/marcoPicPic/SpringBoot-2-Elasticsearch-5.x-Artemis-1.5
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/IsResultXaL/blog
 https://github.com/chaokunyang/amanda
@@ -77,17 +78,23 @@ https://github.com/Baozi2/spring-boot-elasticsearch
 https://github.com/myrepozz/spring-boot-elasticsearch
 https://github.com/gaowenming/spring-boot-elasticsearch
 https://github.com/Fillavacancy/spring-boot-elasticsearch-demo
-
+https://github.com/LenoXian/elastic-demo
 
 
 
 
 
 TODO
-ELasticSearch - Spring boot
-DONE: BOOK
-------Book : - ElasticSearch: DONE
+ELasticSearch - Spring boot(done checking)
+DONE: BOOK - Nhung sach kia se implement khi lam project with Elasticsearch rest api
+DONE------Book : - ElasticSearch: DONE
 
+Github project: dang check
+DONE + Book (google)
+DONE + Book : lien quan den elasticsearch : done
+DONE + Doc documentation
++ Youtube
++ Github project
 
 ------MySQL: dang check
 Book : MySQL
@@ -99,10 +106,10 @@ Book : MySQL
 
 ------Flyway
 DONE - Book : - Flyway (check nhung sach co bai lien quan den Flyway )
-+ Doc documentation :
-+ Book (Search google)
-+ Youtube : Flyway with Spring boot(dang check)
-
+DONE + Doc documentation :
+DONE + Book (Search google)
+DONE + Youtube : Flyway with Spring boot
++ Github project (dang check)
 
 ------ Spring boot
 Book
