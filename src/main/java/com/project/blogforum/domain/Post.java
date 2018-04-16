@@ -4,6 +4,7 @@ package com.project.blogforum.domain;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.elasticsearch.annotations.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -45,6 +46,7 @@ public class Post implements Serializable {
 
     // join author = user
     @Column(name = "author", length = 50)
+    @CreatedBy
     private String author;
 
     @Field(type = FieldType.String)
@@ -76,6 +78,9 @@ public class Post implements Serializable {
 
     @OneToMany
     @JoinColumn(name = "post_id",referencedColumnName = "id")
+//    @ManyToMany(cascade=CascadeType.ALL)
+//    @JoinTable(name="blogpost_tag", joinColumns={@JoinColumn(name="tag_id")},
+//            inverseJoinColumns={@JoinColumn(name="blogpost_id")})
     private List<Tag> tagList;
 
     public Post() {
