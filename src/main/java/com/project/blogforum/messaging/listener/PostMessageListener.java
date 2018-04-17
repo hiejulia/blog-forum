@@ -1,5 +1,6 @@
 package com.project.blogforum.messaging.listener;
 
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.apache.logging.log4j.LogManager;
@@ -20,5 +21,10 @@ public class PostMessageListener {
         log.info(message);
         Long id = Long.valueOf(message.get("id"));
         log.info("Message processed..."+id);
+    }
+
+    @RabbitListener(queues = "postQueue")
+    public void receiveMessage1(Map<String, Long> message) {
+        System.out.println(message);
     }
 }
