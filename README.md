@@ -26,7 +26,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + AOP - Aspect in Spring framework 
 + Audit entity 
 + Testing : JUnit, Selenium , Robot Framework
-
++ Spring Scheduling 
 
 
 ### Features of the project 
@@ -138,7 +138,8 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 ### Messaging JMS - RabbitMQ
 + Fanout and Topic exchange 
 + Message Type: BytesMessage, MapMessage, ObjectMessage, StreamMessage, TextMesage 
-+ 
++ Enable RabbitMQ plugin : `sudo rabbitmq-plugins enable rabbitmq_management`
+
 
 ### How to run the project
 + Initial installation 

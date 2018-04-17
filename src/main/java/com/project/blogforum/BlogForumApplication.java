@@ -16,6 +16,7 @@ import com.mangofactory.swagger.plugin.EnableSwagger;
 //import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import com.project.blogforum.messaging.receiver.Receiver;
 import org.flywaydb.core.Flyway;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -49,13 +50,14 @@ import java.net.InetAddress;
 @SpringBootApplication
 @EnableScheduling
 @EnableSwagger
-@EnableTransactionManagement
+//@EnableTransactionManagement
 //@EnableElasticsearchRepositories(basePackages = "com.project.blogforum.search")
 //@EnableSolrRepositories("com.project.blogforum.solr")
 @EnableJpaRepositories(basePackages = {"com.project.blogforum.repository"})
 @EnableAsync
 @ComponentScan
 @EnableCaching
+@EnableRabbit
 public class BlogForumApplication {
 	// Topic exchange
 	static final String topicExchangeName = "topic1"; // topic exchange
@@ -175,6 +177,8 @@ public class BlogForumApplication {
 		MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
 		return converter;
 	}
+
+
 
 
 	public static void main(String[] args) {
