@@ -139,7 +139,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Fanout and Topic exchange 
 + Message Type: BytesMessage, MapMessage, ObjectMessage, StreamMessage, TextMesage 
 + Enable RabbitMQ plugin : `sudo rabbitmq-plugins enable rabbitmq_management`
-
++ Async/Sync RabbitTemplate 
 
 ### How to run the project
 + Initial installation 

@@ -68,6 +68,16 @@ https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/bl
 
 
 
+
+https://github.com/shidongdong1010/spring-boot-rabbitmq
+
+
+
+
+
+
+
+
 FOR NEXT ES PROJECT
 https://github.com/svetli-n/es-watcher
 https://github.com/newlyfei/spring-boot-starter-elasticseach
@@ -97,9 +107,10 @@ DONE + Doc documentation
 + Github project
 
 ------MySQL: dang check
-Book : MySQL
+Book : MySQL(done checking)
 + (dang check)MySQL 8 cookbook(nhg chap can ap dug : 2, 3,4,5,6,7,8,-> het )
-+ MySQL for Internet of things
++ MySQL 8 for big data
++ MySQL 8 administrator guide
 + Check nhug sach co chap ve MySQL : dang check
 + Youtube : MySQL with Spring boot
 

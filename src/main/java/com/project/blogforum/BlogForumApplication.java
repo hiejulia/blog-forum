@@ -16,6 +16,7 @@ import com.mangofactory.swagger.plugin.EnableSwagger;
 //import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import com.project.blogforum.messaging.receiver.Receiver;
 import org.flywaydb.core.Flyway;
+import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -33,10 +34,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.amqp.core.Binding;
-import org.springframework.amqp.core.BindingBuilder;
-import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
 import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
@@ -67,6 +64,8 @@ public class BlogForumApplication {
 	static final String queueName = "test1";
 
 	static final String queueNamePost = "postQueue";
+
+	public static final String HEADERS_EXCHANGE = "headersExchage";
 
 	@Autowired
 	private MappingJackson2MessageConverter mappingJackson2MessageConverter;
@@ -177,6 +176,22 @@ public class BlogForumApplication {
 		MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
 		return converter;
 	}
+
+	@Bean
+	public HeadersExchange headersExchange() {
+		return new HeadersExchange(HEADERS_EXCHANGE);
+	}
+
+//	@Bean
+//	public Binding fanoutBinding1() {
+//		return BindingBuilder.bind(topicExchangeName).to(fanoutExchange());
+//	}
+//
+//	@Bean
+//	public Binding fanoutBinding2() {
+//		return BindingBuilder.bind(topicQueue2()).to(fanoutExchange());
+//	}
+
 
 
 

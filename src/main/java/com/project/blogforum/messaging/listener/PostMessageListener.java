@@ -1,5 +1,6 @@
 package com.project.blogforum.messaging.listener;
 
+import com.project.blogforum.service.impl.PostService;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,6 +17,8 @@ public class PostMessageListener {
 
     private static final Logger log = LogManager.getLogger(PostMessageListener.class);
 
+    @Autowired
+    private PostService postService;
 
     public void receiveMessage(Map<String, String> message) {
         log.info(message);
@@ -25,6 +28,6 @@ public class PostMessageListener {
 
     @RabbitListener(queues = "postQueue")
     public void receiveMessage1(Map<String, Long> message) {
-        System.out.println(message);
+        System.out.println(message.get("id"));
     }
 }
