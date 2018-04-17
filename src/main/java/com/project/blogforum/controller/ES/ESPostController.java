@@ -41,7 +41,6 @@ public class ESPostController {
 //    @Autowired
 //    private ElasticsearchOperations es;
 
-
     @Autowired
     ElasticsearchOperations operations;
 
@@ -54,10 +53,7 @@ public class ESPostController {
 
 
 
-//
-//
-//
-//
+
 //    @RequestMapping(method = RequestMethod.GET,value = "/test")
 //    public ResponseEntity<Page<Post>> getAllPosts(Pageable pageable){
 //        esPostService.save(new Post( "Elasticsearch Basics", "Rambabu Posa", "23.01.2017","A","B"));

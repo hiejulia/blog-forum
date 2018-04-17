@@ -53,9 +53,13 @@ import java.net.InetAddress;
 @EnableCaching
 public class BlogForumApplication {
 	// Topic exchange
-	static final String topicExchangeName = "topic1";
+	static final String topicExchangeName = "topic1"; // topic exchange
+
+	static final String getTopicExchangeNamePost = "postTopic";
 
 	static final String queueName = "test1";
+
+	static final String queueNamePost = "postQueue";
 
 	@Value("${spring.datasource.url}")
 	private String url;
@@ -123,12 +127,12 @@ public class BlogForumApplication {
 
 	@Bean
 	Queue queue() {
-		return new Queue(queueName, false);
+		return new Queue(queueNamePost, false);
 	}
 
 	@Bean
 	TopicExchange exchange() {
-		return new TopicExchange(topicExchangeName);
+		return new TopicExchange(getTopicExchangeNamePost);
 	}
 
 	@Bean

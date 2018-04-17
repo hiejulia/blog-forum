@@ -13,7 +13,7 @@ import java.util.Map;
 @Component
 public class PostMessageListener {
 
-    private static final Logger log = LogManager.getLogger(PostMessageListener.class);i
+    private static final Logger log = LogManager.getLogger(PostMessageListener.class);
 
 
     public void receiveMessage(Map<String, String> message) {
