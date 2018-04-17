@@ -126,9 +126,15 @@ public class BlogForumApplication {
 
 
 	@Bean
-	Queue queue() {
+	Queue queueNewPost() {
 		return new Queue(queueNamePost, false);
 	}
+
+	@Bean
+	Queue queue() {
+		return new Queue(queueName, false);
+	}
+
 
 	@Bean
 	TopicExchange exchange() {
@@ -136,8 +142,8 @@ public class BlogForumApplication {
 	}
 
 	@Bean
-	Binding binding(Queue queue, TopicExchange exchange) {
-		return BindingBuilder.bind(queue).to(exchange).with("foo.bar.#");
+	Binding bindingNewPost(Queue queue, TopicExchange exchange) {
+		return BindingBuilder.bind(queue).to(exchange).with("create.post.#");
 	}
 
 	@Bean

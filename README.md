@@ -41,6 +41,11 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Run RabbitMQ server with 
 
 
+### Set up RabbitMQ with Vagrant
++ `vagrant up` : start the RabbitMQ with Vagrant box 
++ `vagrant halt`: stop the RabbitMQ with Vagrant box 
++ Go to : `http://localhost:15672`
+
 ### ElasticSearch 
 + Integrate ElasticSearch with Spring 
     + Spring data elasticsearch 
@@ -133,7 +138,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 ### Messaging JMS - RabbitMQ
 + Fanout and Topic exchange 
 + Message Type: BytesMessage, MapMessage, ObjectMessage, StreamMessage, TextMesage 
-
++ 
 
 ### How to run the project
 + Initial installation 

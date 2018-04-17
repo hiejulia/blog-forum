@@ -131,6 +131,9 @@ Book : Messaging
 + Check nhug book co chap ve messaging(dang check )
 
 Book : RabbitMQ
++ Mastering RabbitMQ
++ RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao
++ Nhug sach co RabbitMQ
 
 
 Book : JMS
