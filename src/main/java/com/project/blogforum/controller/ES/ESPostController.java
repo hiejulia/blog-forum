@@ -53,6 +53,7 @@ public class ESPostController {
     private PostService postService;
 
 
+
 //
 //
 //
@@ -106,6 +107,8 @@ public class ESPostController {
         post1.setId(p.getId());
 
         esPostService.save(post1);
+        // Send message to queue postQueue
+        postService.sendPostMessage(p.getId());
         // take the id
         return new ResponseEntity<>(post1,HttpStatus.CREATED);
     }

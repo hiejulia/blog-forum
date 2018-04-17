@@ -6,6 +6,7 @@ import com.project.blogforum.dto.PostDTO;
 import com.project.blogforum.event.NewPostEvent;
 import com.project.blogforum.search.ESPostRepository;
 import com.project.blogforum.util.PageableUtils;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationEventPublisher;
@@ -13,7 +14,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class ESPostService {
@@ -54,5 +58,15 @@ public class ESPostService {
 //        QueryBuilder query = addFilters(filters);
 //        return repository.search(query, constructPageRequest(page, size, sortBy, sortOrder));
 //    }
+
+    // Find all post
+    public List<PostDTO> listAll() {
+        List<PostDTO> posts = new ArrayList<>();
+        esPostRepository.findAll().forEach(posts::add);
+        return posts;
+    }
+
+
+
 
 }

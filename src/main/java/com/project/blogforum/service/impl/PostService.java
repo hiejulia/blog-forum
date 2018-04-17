@@ -2,16 +2,23 @@ package com.project.blogforum.service.impl;
 import com.project.blogforum.domain.Post;
 import com.project.blogforum.dto.PostDTO;
 import com.project.blogforum.repository.PostRepository;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 @Service
 @Transactional
 public class PostService {
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
     @Autowired
     private PostRepository postRepository;
@@ -39,5 +46,14 @@ public class PostService {
 
     public void deleteAllPosts() {
         postRepository.deleteAll();
+    }
+
+    // Send post message
+    final String queuePost = "postQueue";
+
+    public void sendPostMessage(Long productId) {
+        Map<String, Long> actionmap = new HashMap<>();
+        actionmap.put("id", productId);
+        rabbitTemplate.convertAndSend(queuePost, actionmap);
     }
 }
