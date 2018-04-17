@@ -130,7 +130,8 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 
 
 
-### Messaging JMS
+### Messaging JMS - RabbitMQ
++ Fanout and Topic exchange 
 + Message Type: BytesMessage, MapMessage, ObjectMessage, StreamMessage, TextMesage 
 
 

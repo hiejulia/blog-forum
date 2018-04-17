@@ -125,7 +125,7 @@ Book
 
 
 
------- Messaging - RabbitMQ - JMS - KAFKA - AMQP
+------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
 Book : Messaging
 + Spring boot messaging
 + Check nhug book co chap ve messaging(dang check )
