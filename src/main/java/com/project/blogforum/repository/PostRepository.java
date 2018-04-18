@@ -1,6 +1,7 @@
 package com.project.blogforum.repository;
 
 import com.project.blogforum.domain.Post;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -37,6 +38,7 @@ public interface PostRepository extends JpaRepository<Post, Long>{
      * DELETE ONE POST BY ID
      */
     @Modifying
+    @CacheEvict(value = "post", key = "#id")
     @Query(value = "delete from Post p where p.id=?1")
     void delete(Long id);
 

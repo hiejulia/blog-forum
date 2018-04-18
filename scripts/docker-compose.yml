@@ -20,6 +20,14 @@ services:
     ports:
       - "5672:5672"
       - "15672:15672"
+  memcached-1:
+    image: memcached:alpine
+    ports:
+      - 11211:11211
+  memcached-2:
+    image: memcached:alpine
+    ports:
+      - 11212:11211
 
 
 

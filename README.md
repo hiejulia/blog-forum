@@ -1,5 +1,5 @@
 # blog-forum
-Medium clone with ElasticSearch indexing and Memcache(or Redis ) 
+Medium clone with ElasticSearch indexing and Memcache 
 
 ### Tech stack 
 + Java 8+
@@ -16,7 +16,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + REST doc : Swagger (docs, UI)
 + ElasticSearch - Kibana (visualize ElasticSearch)
 + JPA - Hibernate 
-+ Docker 
++ Docker - Docker-compose
 + Logback - LogStash  
 + Messaging : RabbitMQ 
 + Spring Batch 

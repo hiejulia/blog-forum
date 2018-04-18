@@ -41,7 +41,7 @@ public class PostService {
     }
 
 
-    @Cacheable("onePost")
+    @Cacheable(value="post", key="#id")
     public Post findOnePostById(Long id) {
         return postRepository.findOnePostById(id);
     }
