@@ -5,6 +5,7 @@ import com.project.blogforum.repository.PostRepository;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.messaging.converter.MappingJackson2MessageConverter;
@@ -33,9 +34,13 @@ public class PostService {
 //    private MessageConverter messageConverter;
 
 
+
+    @Cacheable("posts")
     public Page<Post> findAll(Pageable pageable) {
         return postRepository.findAll(pageable);
     }
+
+
 
     public Post findOnePostById(Long id) {
         return postRepository.findOnePostById(id);

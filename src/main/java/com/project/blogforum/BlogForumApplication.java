@@ -54,9 +54,9 @@ import java.net.InetAddress;
 @EnableJpaRepositories(basePackages = {"com.project.blogforum.repository"})
 @EnableAsync
 @ComponentScan
-@EnableCaching
+@EnableCaching// enable caching
 @EnableRabbit
-@EnableMemcached
+@EnableMemcached// enable memcache
 public class BlogForumApplication {
 	// Topic exchange
 	static final String topicExchangeName = "topic1"; // topic exchange
