@@ -135,7 +135,51 @@ Medium clone with ElasticSearch indexing and Memcache
 + Message Type: BytesMessage, MapMessage, ObjectMessage, StreamMessage, TextMesage 
 + Enable RabbitMQ plugin : `sudo rabbitmq-plugins enable rabbitmq_management`
 + Async/Sync RabbitTemplate 
-+ Messaging type: Fanout, Header, 
++ Messaging type: Fanout, Header
++ Configuration file 
+    + auth_
+    + default_user
+    + default_pass
+    + default_permission
+    + disk_free_limit
+    + heartbeat
+    + hipe_compile
+    + log_level
+    + tcp_listener
+    + ssl_
+    + vm_memory_
+    + Runtime parameters
++ Clustering RabbitMQ and high availability 
++ Federation in RabbitMQ 
++ Clustering settings 
+    + install federation plugin `rabbitmq-plugins enable rabbitmq_federation`
+    + install management plugin `rabbitmq-plugins enable rabbitmq_federation_management`
+    + Replicate data/states across all the nodes 
+    + Create cluster 
+    + Start each of server node : ` rabbitmq-server –detached`
+    + Check cluster status from management plugin : rabbitmqctl cluster_status
+    + Instance name / port 
++ Load balancing for queues 
+    + Load balancing system 
+        + TCP load balancer 
+        + HAProxy 
++ Management RabbitMQ server 
+    + Send / receive message 
+    + JSON 
+    + Purging queue 
+    + Monitor queue length, message rate , connection
+    + rabbitmqctl plugin 
+    + Enable web plugin : rabbitmq-plugins enable rabbitmq_management
+    + Rest API : `localhost:55672/api/overview` and `/api/queues`, /connections, /channels,/bindings,
+    +  
++ Security in rabbitmq 
+    + Access control 
+    + SASL authentication 
+    + SSL support 
++ Monitor RabbitMQ 
+    + Command line tool 
+    + Web plugins 
+
 
 
 ### Memcached 

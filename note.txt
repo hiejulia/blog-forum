@@ -58,11 +58,14 @@ https://github.com/jcrosswh/SpringBootBlog/blob/master/src/main/java/us/xwhite/b
 https://github.com/JohnnyLe/Modern-Ecommerce/tree/master/backend-rest-api/src/main/java/com/nitsoft/ecommerce
 https://dzone.com/articles/spring-boot-creating
 https://github.com/FireYao/SpringBootOrder
+https://github.com/loliksamuel/SpringBoot-es-mongo-rabbitMq
 
 https://github.com/loroxxx/luo-blog/tree/master/src/main/java/com/luo/modules/app/entity
 
 https://github.com/paulwinner1995/web-store
 https://github.com/cristianprofile/spring-boot-rabbitmq-integration-test
+https://github.com/mhaddon/SimpleFacts-SpringBoot
+https://github.com/Murugar/SpringBoot1.5.10ReactRabbitmqDockerRedis
 
 https://github.com/wenfengSAT/spring-boot-rabbitmq
 https://github.com/gessnerfl/rabbitmq-queue-management
@@ -74,6 +77,7 @@ https://github.com/shekhargulati/blogger/blob/master/src/test/java/com/example/b
 https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/blog/domain
 
 
+https://github.com/DQMT/springBootDemo
 
 
 https://github.com/shidongdong1010/spring-boot-rabbitmq
@@ -144,7 +148,7 @@ Book : Messaging
 + Check nhug book co chap ve messaging(dang check )
 
 Book : RabbitMQ
-+ Mastering RabbitMQ
+done + Mastering RabbitMQ
 + RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao
 + Nhug sach co RabbitMQ
 
@@ -178,11 +182,14 @@ Youtube
 
 
 Documentation
+
+
 ----- Spring boot - Memcache
 
 DONE + Article/ Tutorial
 + Github project
-+
+DONE + Book
+    DONE + Check nhug sach co memcached :
 
 
 -----
