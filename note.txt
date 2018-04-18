@@ -57,10 +57,17 @@ https://github.com/JamesonNetworks/blog/tree/master/src/main/java/com/jamesonnet
 https://github.com/jcrosswh/SpringBootBlog/blob/master/src/main/java/us/xwhite/blog/controller/ArticlesController.java
 https://github.com/JohnnyLe/Modern-Ecommerce/tree/master/backend-rest-api/src/main/java/com/nitsoft/ecommerce
 https://dzone.com/articles/spring-boot-creating
+https://github.com/FireYao/SpringBootOrder
 
 https://github.com/loroxxx/luo-blog/tree/master/src/main/java/com/luo/modules/app/entity
 
 https://github.com/paulwinner1995/web-store
+https://github.com/cristianprofile/spring-boot-rabbitmq-integration-test
+
+https://github.com/wenfengSAT/spring-boot-rabbitmq
+https://github.com/gessnerfl/rabbitmq-queue-management
+https://github.com/vhoang55/blog-app-react-redux-es-rabbit-docker
+https://github.com/amardeepkhera/rabbitmq-spring-examples
 
 test:
 https://github.com/shekhargulati/blogger/blob/master/src/test/java/com/example/blogger/services/BlogServiceTests.java

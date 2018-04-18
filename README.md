@@ -1,8 +1,6 @@
 # blog-forum
 Medium clone with ElasticSearch indexing and Memcache(or Redis ) 
 
-
-
 ### Tech stack 
 + Java 8+
 + Spring boot
@@ -13,7 +11,7 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
     + Pagination 
     + Sorting 
     + Hateoas
-+ Memcache or redis 
++ Memcache
 + MySQL - with Flyway migration 
 + REST doc : Swagger (docs, UI)
 + ElasticSearch - Kibana (visualize ElasticSearch)
@@ -28,18 +26,15 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Testing : JUnit, Selenium , Robot Framework
 + Spring Scheduling 
 
-
 ### Features of the project 
 + Database schema as part of Continuous Delivery 
 + Database migration tool - stored in the version control system 
 + Docker image to start MySQL database 
-+ 
 
 ### Set up docker-compose
 + pack application : `mvn package`
 + start docker-compose : `docker-compose up`
 + Run RabbitMQ server with 
-
 
 ### Set up RabbitMQ with Vagrant
 + `vagrant up` : start the RabbitMQ with Vagrant box 
@@ -140,6 +135,18 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Message Type: BytesMessage, MapMessage, ObjectMessage, StreamMessage, TextMesage 
 + Enable RabbitMQ plugin : `sudo rabbitmq-plugins enable rabbitmq_management`
 + Async/Sync RabbitTemplate 
++ Messaging type: Fanout, Header, 
+
+
+### Memcached 
+
+
+
+
+
+
+
+
 
 ### How to run the project
 + Initial installation 

@@ -280,6 +280,15 @@
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 
+
+
+		<!--Add memcache dependencies-->
+		<dependency>
+			<groupId>com.btmatthews.springboot</groupId>
+			<artifactId>memcached-spring-boot-starter</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+
 		<!--<dependency>-->
 			<!--<scope>test</scope>-->
 			<!--<groupId>org.elasticsearch</groupId>-->
