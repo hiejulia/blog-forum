@@ -138,11 +138,6 @@ Book
 
 
 
-
-
-
-
-
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
 Book : Messaging
 + Spring boot messaging
@@ -183,7 +178,11 @@ Youtube
 
 
 Documentation
+----- Spring boot - Memcache
 
+DONE + Article/ Tutorial
++ Github project
++
 
 
 -----
