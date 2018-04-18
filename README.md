@@ -162,7 +162,9 @@ Medium clone with ElasticSearch indexing and Memcache(or Redis )
 + Start Elasticsearch server(local) : `elasticsearch`
    
   
-    
++ Install and run memcache server(local)
+    + `brew installl memcache`
+    + 
     
 + Run with Docker  
     + `docker run --name user-mysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql:5.7`

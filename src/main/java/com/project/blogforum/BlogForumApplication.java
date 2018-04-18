@@ -1,5 +1,6 @@
 package com.project.blogforum;
 
+import com.btmatthews.springboot.memcached.EnableMemcached;
 import com.mangofactory.swagger.plugin.EnableSwagger;
 //import org.flywaydb.core.Flyway;
 //import org.elasticsearch.action.index.IndexResponse;
@@ -55,6 +56,7 @@ import java.net.InetAddress;
 @ComponentScan
 @EnableCaching
 @EnableRabbit
+@EnableMemcached
 public class BlogForumApplication {
 	// Topic exchange
 	static final String topicExchangeName = "topic1"; // topic exchange
