@@ -59,6 +59,7 @@ https://github.com/JohnnyLe/Modern-Ecommerce/tree/master/backend-rest-api/src/ma
 https://dzone.com/articles/spring-boot-creating
 https://github.com/FireYao/SpringBootOrder
 https://github.com/loliksamuel/SpringBoot-es-mongo-rabbitMq
+https://github.com/ItGeneral/springBoot-rabbitmq-mysql-durid
 
 https://github.com/loroxxx/luo-blog/tree/master/src/main/java/com/luo/modules/app/entity
 
@@ -102,9 +103,6 @@ https://github.com/Fillavacancy/spring-boot-elasticsearch-demo
 https://github.com/LenoXian/elastic-demo
 
 
-
-
-
 TODO
 ELasticSearch - Spring boot(done checking)
 DONE: BOOK - Nhung sach kia se implement khi lam project with Elasticsearch rest api
@@ -125,7 +123,6 @@ Book : MySQL(done checking)
 + Check nhug sach co chap ve MySQL : dang check
 + Youtube : MySQL with Spring boot
 
-
 ------Flyway
 DONE - Book : - Flyway (check nhung sach co bai lien quan den Flyway )
 DONE + Doc documentation :
@@ -140,50 +137,24 @@ Book
 
 ------ Java 8/ 9
 
-
-
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
 Book : Messaging
 + Spring boot messaging
 + Check nhug book co chap ve messaging(dang check )
 
 Book : RabbitMQ
-done + Mastering RabbitMQ
++ Mastering RabbitMQ(project portfolio : chap 9  )
 + RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao
 + Nhug sach co RabbitMQ
-
-
 Book : JMS
-
-
 Book : Kafka
-
-
 Book : AMQP
-
-
-
-
-
 Book for practice
 +
-
-
-
 Github project
-
-
-
 Tutorial / Article
-
-
-
 Youtube
-
-
 Documentation
-
-
 ----- Spring boot - Memcache
 
 DONE + Article/ Tutorial
