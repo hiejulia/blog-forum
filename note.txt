@@ -71,6 +71,15 @@ https://github.com/JerryOrange/orangeplus
 https://github.com/sbilinski/spring-rabbitmq-chat
 https://github.com/ricardobaumann/spring_stream_example
 https://github.com/growup818/email-server
+https://github.com/wizaord/catalog
+https://github.com/monteirocicero/delivery-services
+https://github.com/netshoes/athena-dependency-analyzer
+https://github.com/kuldeepsingh99/event-driven
+https://github.com/wenfengSAT/Spring-rabbitMQ
+https://github.com/nileshbhosale/event-stream
+https://github.com/b2stry/seckill
+https://github.com/olle/rabbitmq-auth
+https://github.com/societe-generale/rabbitmq-advanced-spring-boot-starter
 
 https://github.com/olle/contessa
 https://github.com/selzlein/spring-websockets-rabbitmq-demo
@@ -111,32 +120,17 @@ https://github.com/shidongdong1010/spring-boot-rabbitmq
 
 
 
-
-
-FOR NEXT ES PROJECT
-https://github.com/svetli-n/es-watcher
-https://github.com/newlyfei/spring-boot-starter-elasticseach
-https://github.com/agebhar1/spring-boot-6508-jackson-elasticsearch
-https://github.com/mahieddine-ichir/elasticsearch-javaapi
-https://github.com/MrMoner/SpringBoot-Elasticsearch-example-using-JEST
-https://github.com/Baozi2/spring-boot-elasticsearch
-https://github.com/myrepozz/spring-boot-elasticsearch
-https://github.com/gaowenming/spring-boot-elasticsearch
-https://github.com/Fillavacancy/spring-boot-elasticsearch-demo
-https://github.com/LenoXian/elastic-demo
-
-
 TODO
-ELasticSearch - Spring boot(done checking)
+DONE ----- ELasticSearch - Spring boot(done checking)
 DONE: BOOK - Nhung sach kia se implement khi lam project with Elasticsearch rest api
 DONE------Book : - ElasticSearch: DONE
 
-Github project: dang check
+DONE + Github project: dang check
 DONE + Book (google)
 DONE + Book : lien quan den elasticsearch : done
 DONE + Doc documentation
-+ Youtube
-+ Github project
+DONE + Youtube
+
 
 ------MySQL: dang check
 Book : MySQL(done checking)
@@ -171,18 +165,17 @@ Book
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
 Book : Messaging
 + Spring boot messaging
-+ Check nhug book co chap ve messaging(dang check )
+DONE + Check nhug book co chap ve messaging
 
 Book : RabbitMQ
 + Mastering RabbitMQ(project portfolio : chap 9  )
 + RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao
-+ Nhug sach co RabbitMQ
+DONE + Nhug sach co RabbitMQ
 Book : JMS
-Book : Kafka
 Book : AMQP
 Book for practice
 +
-Github project
+DONE + Github project
 Tutorial / Article
 Youtube
 Documentation
@@ -209,5 +202,11 @@ Github project
 + Spring boot + AMQP :
 + Spring boot + messaging/ message
 + Spring boot + Memcache
-+ Spring boot + Redis
-+
+
+
+
+
+----------- CON LAI
+1/ CHECK ELASTICSEARCH YOUTUBE
+2/ HOAN THANH ELASTICSEARCH GITHUB PROJECT
+3/
