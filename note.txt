@@ -60,6 +60,29 @@ https://dzone.com/articles/spring-boot-creating
 https://github.com/FireYao/SpringBootOrder
 https://github.com/loliksamuel/SpringBoot-es-mongo-rabbitMq
 https://github.com/ItGeneral/springBoot-rabbitmq-mysql-durid
+https://github.com/MontealegreLuis/spring-blog
+https://github.com/forkdaemon/Rabbit-Job-Consumer
+https://github.com/fakarakas/springboot-rabbitmq-sample
+https://github.com/Kalwador/SpringBoot
+https://github.com/MontealegreLuis/jms-rabbitmq-demo
+https://github.com/zshatzov/spring-boot-web/tree/master/src/main/java/com/apress/spring
+https://github.com/YangfeiLi/Real-time-Car-Location-Monitoring-System
+https://github.com/JerryOrange/orangeplus
+https://github.com/sbilinski/spring-rabbitmq-chat
+https://github.com/ricardobaumann/spring_stream_example
+https://github.com/growup818/email-server
+
+https://github.com/olle/contessa
+https://github.com/selzlein/spring-websockets-rabbitmq-demo
+https://github.com/georgevazj/mailman
+https://github.com/kurron/amqp-bare-metal-producer
+https://github.com/njxiaohan/TransPalServerTemplate
+https://github.com/apulbere/cprocessor
+https://github.com/bharat-srinivasan/my-axonbank
+https://github.com/lklacar/bulk-email-service
+https://github.com/sixhours-team/memcached-spring-boot
+https://github.com/FurionCS/dubbo-shop
+https://github.com/apulbere/rhodos
 
 https://github.com/loroxxx/luo-blog/tree/master/src/main/java/com/luo/modules/app/entity
 
@@ -136,6 +159,14 @@ Book
 
 
 ------ Java 8/ 9
+
++ Book
+
+
++ Article/ Tuts
+
+
++ Github project
 
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
 Book : Messaging
