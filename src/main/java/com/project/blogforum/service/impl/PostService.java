@@ -5,6 +5,8 @@ import com.project.blogforum.repository.PostRepository;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -41,6 +43,7 @@ public class PostService {
     }
 
 
+    // Add cache
     @Cacheable(value="post", key="#id")
     public Post findOnePostById(Long id) {
         return postRepository.findOnePostById(id);
@@ -51,10 +54,13 @@ public class PostService {
         return post;
     }
 
+    @CacheEvict(value = "post",key = "#id")
     public void deletePostById(Long id) {
         postRepository.delete(id);
     }
 
+
+    @CachePut(value = "post",key="#id")
     public void updateContentById(PostDTO postDTO) {
         postRepository.updateContentById(postDTO.getContent(), postDTO.getId());
     }

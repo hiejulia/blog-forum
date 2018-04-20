@@ -1,28 +1,29 @@
-GITHUB PROJECT : spring-boot+ flyway(done),
+BIG  PROJECT
+https://github.com/f1024557668/SpringBoot
+https://github.com/marvel80/SearchApi
+https://github.com/JerryOrange/orangeplus
 
 
-tham khao
-https://github.com/CornePlas/jpatest
+
+----------------------------------------------------------------------
+
+
+
+
+
 https://github.com/eanfs/jhipster-spring-boot-2-elasticsearch-sample
 Check json view : https://github.com/charlesheidemann/enron_web
 https://github.com/karlazzam/TvBuddy-api
-https://github.com/marvel80/SearchApi
 https://github.com/CherishCai/blog
 https://github.com/anirban99/SpringBootElasticSearch
 https://github.com/rnkoaa/spring-boot-batch
 Big project : https://github.com/LushX/LushX-BE
-https://github.com/JerryOrange/Spring-Boot-Tech-Repository
-https://github.com/EugeneVanchugov/Android-REST-Server
-https://github.com/reydward/springboot
 https://github.com/pjjesus/poc-player-search
-https://github.com/hawkinshawk/elasticsearch-example
-https://github.com/f1024557668/SpringBoot
 https://github.com/LiHongTai/spring-boot-elasticsearch
 https://github.com/marcoPicPic/SpringBoot-2-Elasticsearch-5.x-Artemis-1.5
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/IsResultXaL/blog
 https://github.com/chaokunyang/amanda
-https://github.com/Nasruddin/spring-boot-samples
 https://github.com/lucky-star-freedom/spring-boot-blog/blob/master/src/main/java/com/cornerkick/domain/Blog.java
 https://github.com/LaunchCodeEducation/blogz-spring/blob/master/src/main/java/org/launchcode/blogz/models/Post.java
 https://github.com/reljicd/spring-boot-blog/tree/master/src/main/java/com/reljicd/model
@@ -56,7 +57,7 @@ https://github.com/gulijian/joingu
 https://github.com/JamesonNetworks/blog/tree/master/src/main/java/com/jamesonnetworks/blog/domain/entry
 https://github.com/jcrosswh/SpringBootBlog/blob/master/src/main/java/us/xwhite/blog/controller/ArticlesController.java
 https://github.com/JohnnyLe/Modern-Ecommerce/tree/master/backend-rest-api/src/main/java/com/nitsoft/ecommerce
-https://dzone.com/articles/spring-boot-creating
+
 https://github.com/FireYao/SpringBootOrder
 https://github.com/loliksamuel/SpringBoot-es-mongo-rabbitMq
 https://github.com/ItGeneral/springBoot-rabbitmq-mysql-durid
@@ -67,7 +68,6 @@ https://github.com/Kalwador/SpringBoot
 https://github.com/MontealegreLuis/jms-rabbitmq-demo
 https://github.com/zshatzov/spring-boot-web/tree/master/src/main/java/com/apress/spring
 https://github.com/YangfeiLi/Real-time-Car-Location-Monitoring-System
-https://github.com/JerryOrange/orangeplus
 https://github.com/sbilinski/spring-rabbitmq-chat
 https://github.com/ricardobaumann/spring_stream_example
 https://github.com/growup818/email-server
@@ -80,7 +80,9 @@ https://github.com/nileshbhosale/event-stream
 https://github.com/b2stry/seckill
 https://github.com/olle/rabbitmq-auth
 https://github.com/societe-generale/rabbitmq-advanced-spring-boot-starter
-
+https://github.com/satishsahuec/MTL
+https://github.com/michaellihs/spring-rabbitmq
+https://springbootdev.com/2017/09/15/spring-boot-and-rabbitmq-direct-exchange-example-messaging-custom-java-objects-and-consumes-with-a-listener/
 https://github.com/olle/contessa
 https://github.com/selzlein/spring-websockets-rabbitmq-demo
 https://github.com/georgevazj/mailman
@@ -92,67 +94,51 @@ https://github.com/lklacar/bulk-email-service
 https://github.com/sixhours-team/memcached-spring-boot
 https://github.com/FurionCS/dubbo-shop
 https://github.com/apulbere/rhodos
-
+https://github.com/kazi-imran/springboot-react-rabbitmq-docker-redis
+https://github.com/shoecillo/rabbitMQSpringBoot
 https://github.com/loroxxx/luo-blog/tree/master/src/main/java/com/luo/modules/app/entity
-
 https://github.com/paulwinner1995/web-store
 https://github.com/cristianprofile/spring-boot-rabbitmq-integration-test
 https://github.com/mhaddon/SimpleFacts-SpringBoot
 https://github.com/Murugar/SpringBoot1.5.10ReactRabbitmqDockerRedis
-
 https://github.com/wenfengSAT/spring-boot-rabbitmq
 https://github.com/gessnerfl/rabbitmq-queue-management
 https://github.com/vhoang55/blog-app-react-redux-es-rabbit-docker
 https://github.com/amardeepkhera/rabbitmq-spring-examples
-
 test:
 https://github.com/shekhargulati/blogger/blob/master/src/test/java/com/example/blogger/services/BlogServiceTests.java
 https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/blog/domain
-
-
 https://github.com/DQMT/springBootDemo
-
-
 https://github.com/shidongdong1010/spring-boot-rabbitmq
 
 
 
 
-
-
 TODO
-DONE ----- ELasticSearch - Spring boot(done checking)
-DONE: BOOK - Nhung sach kia se implement khi lam project with Elasticsearch rest api
-DONE------Book : - ElasticSearch: DONE
-
-DONE + Github project: dang check
-DONE + Book (google)
-DONE + Book : lien quan den elasticsearch : done
-DONE + Doc documentation
-DONE + Youtube
+DONE ----- ELasticSearch - Spring boot
 
 
-------MySQL: dang check
-Book : MySQL(done checking)
-+ (dang check)MySQL 8 cookbook(nhg chap can ap dug : 2, 3,4,5,6,7,8,-> het )
-+ MySQL 8 for big data
-+ MySQL 8 administrator guide
-+ Check nhug sach co chap ve MySQL : dang check
-+ Youtube : MySQL with Spring boot
+DONE ------ MySQL: dang check
+DONE + Book : MySQL(done checking)
+(dang check)MySQL 8 cookbook(nhg chap can ap dug : 2, 3,4,5,6,7,8,-> het )
+MySQL 8 for big data
+MySQL 8 administrator guide
+DONE + Check nhug sach co chap ve MySQL : dang check
+DONE + Youtube : MySQL with Spring boot
 
-------Flyway
+DONE ------Flyway
 DONE - Book : - Flyway (check nhung sach co bai lien quan den Flyway )
 DONE + Doc documentation :
 DONE + Book (Search google)
 DONE + Youtube : Flyway with Spring boot
-+ Github project (dang check)
+DONE + Github project (dang check)
 
------- Spring boot
+DONE ------ Spring boot
 Book
 + Spring boot 2.0 cookbook - second edition
 
 
------- Java 8/ 9
+DONE ------ Java 8/ 9
 
 + Book
 
@@ -163,34 +149,35 @@ Book
 + Github project
 
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
-Book : Messaging
+DONE + Book : Messaging
 + Spring boot messaging
 DONE + Check nhug book co chap ve messaging
 
-Book : RabbitMQ
++ DONE Book : RabbitMQ
 + Mastering RabbitMQ(project portfolio : chap 9  )
 + RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao
 DONE + Nhug sach co RabbitMQ
 Book : JMS
 Book : AMQP
 Book for practice
-+
+
 DONE + Github project
-Tutorial / Article
-Youtube
-Documentation
+DONE Tutorial / Article
+DONE + Youtube
+DONE + Documentation
+
+
+
 ----- Spring boot - Memcache
 
 DONE + Article/ Tutorial
-+ Github project
+DONE + Github project
 DONE + Book
-    DONE + Check nhug sach co memcached :
+    DONE + Check nhug sach co memcached
+DONE + YOUTUBE
 
 
 -----
-
-
-
 
 
 
@@ -198,7 +185,7 @@ Github project
 + Spring boot + Flyway: dang check
 + Spring boot + Elasticsearch: dang check
 + Spring boot + RabbitMQ: dang check
-+ Spring boot + Kafka
++ Spring boot + Kafka : dang check
 + Spring boot + AMQP :
 + Spring boot + messaging/ message
 + Spring boot + Memcache
@@ -209,4 +196,20 @@ Github project
 ----------- CON LAI
 1/ CHECK ELASTICSEARCH YOUTUBE
 2/ HOAN THANH ELASTICSEARCH GITHUB PROJECT
-3/
+3/ CHECK YOUTUBE MYSQL - SPRING BOOT 
+4/ DOC HET SACH MYSQL VA LIST RA HET TAT CA CHAP CAN PRACTICE PROJECT PORTFOLIO
+5/ HOAN THANH HET PROJECT PORTFOLIO MYSQL 
+6/ HOAN THANH YOUTUBE: MYSQL AND SPRING BOOT 
+7/ HOAN THANH GITHUB PROJECT FLYWAY      
+8/ DOC HET + PRACTICE  + Spring boot 2.0 cookbook - second edition
+9/ CHECK BOOK FOR JAVA 8/ JAVA 9 
+10/ HOAN THANH PROJECT PORTFOLIO FOR JAVA 8/ JAVA 9 
+11/ DOC HET BOOK FOR SPRING MESSAGING - KAFKA - JMS 
+12/ HOAN THANH HET PROJECT PORTFOLIO FOR MESSAGING - JMS - SPRING BOOT
+13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS 
+14/ HOAN THANH DOC HET SACH VE MESSAGING - RABBITMQ - KAFKA -
+15/ XEM HET YOUTUBE VE SPRING BOOT - MESSAGING - RABBITMQ - KAFKA
+16/ HOAN THANH PRACTICE HET NHUNG BOOK VE SPRING BOOT MESSAGING
+17/ CHECK HET DOCUMENTATION OF RABBITMQ - KAFKA - MESSAGING
+18/ HOAN THANH HET MEMCACHED GITHUB PROJECT
+19/ HOAN THANH HET YOUTUBE MEMCACHED SPRING BOOT
