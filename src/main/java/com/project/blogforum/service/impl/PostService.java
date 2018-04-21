@@ -1,7 +1,11 @@
 package com.project.blogforum.service.impl;
+import com.oracle.webservices.internal.api.databinding.Databinding;
 import com.project.blogforum.domain.Post;
 import com.project.blogforum.dto.PostDTO;
 import com.project.blogforum.repository.PostRepository;
+import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.search.SearchHits;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +18,8 @@ import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.awt.print.Book;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,6 +44,7 @@ public class PostService {
 
 
     @Cacheable("posts")
+    @Transactional(readOnly = true)
     public Page<Post> findAll(Pageable pageable) {
         return postRepository.findAll(pageable);
     }
@@ -78,4 +85,6 @@ public class PostService {
         actionmap.put("id", productId);
         rabbitTemplate.convertAndSend(queuePost, actionmap);
     }
+
+
 }

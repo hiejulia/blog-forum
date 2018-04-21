@@ -128,6 +128,17 @@ Medium clone with ElasticSearch indexing and Memcache
 
 
 
+### Docker 
++ `docker images`
++ `docker run -p -d --name `
++ View log : `docker logs `
++ View docker container : `docker ps`
++ Manage the container 
+    + `docker stop ...`
+    + `docker start ...` 
+
+
+
 
 
 ### Messaging JMS - RabbitMQ

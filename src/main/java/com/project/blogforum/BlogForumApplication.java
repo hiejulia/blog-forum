@@ -46,7 +46,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import java.net.InetAddress;
 
 @SpringBootApplication
-@EnableScheduling
+@EnableScheduling // Enable scheduling
 @EnableSwagger
 //@EnableTransactionManagement
 //@EnableElasticsearchRepositories(basePackages = "com.project.blogforum.search")

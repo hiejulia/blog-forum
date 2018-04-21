@@ -2,14 +2,12 @@ BIG  PROJECT
 https://github.com/f1024557668/SpringBoot
 https://github.com/marvel80/SearchApi
 https://github.com/JerryOrange/orangeplus
+https://github.com/FurionCS/dubbo-shop
+
 
 
 
 ----------------------------------------------------------------------
-
-
-
-
 
 https://github.com/eanfs/jhipster-spring-boot-2-elasticsearch-sample
 Check json view : https://github.com/charlesheidemann/enron_web
@@ -19,13 +17,9 @@ https://github.com/anirban99/SpringBootElasticSearch
 https://github.com/rnkoaa/spring-boot-batch
 Big project : https://github.com/LushX/LushX-BE
 https://github.com/pjjesus/poc-player-search
-https://github.com/LiHongTai/spring-boot-elasticsearch
 https://github.com/marcoPicPic/SpringBoot-2-Elasticsearch-5.x-Artemis-1.5
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
-https://github.com/IsResultXaL/blog
-https://github.com/chaokunyang/amanda
 https://github.com/lucky-star-freedom/spring-boot-blog/blob/master/src/main/java/com/cornerkick/domain/Blog.java
-https://github.com/LaunchCodeEducation/blogz-spring/blob/master/src/main/java/org/launchcode/blogz/models/Post.java
 https://github.com/reljicd/spring-boot-blog/tree/master/src/main/java/com/reljicd/model
 https://github.com/dotdoppler/Blog/tree/master/src/main/java/com/doppler/blog
 https://github.com/alikemalocalan/MicroBlog
@@ -34,9 +28,8 @@ https://github.com/ncuwaln/springBootBlog/tree/master/src/main/java/com/blog/mod
 https://github.com/laidu/LD_blog/tree/master/src/main/java/org/laidu/blog
 https://github.com/ashofthephoenix/Blog/tree/master/src/main/java/com/paulthemenace/blog
 https://github.com/HelloHang/blog/tree/master/src/main/java/com/blog/dao
-https://github.com/nkonev/blog
+
 https://github.com/johnspade/blog/tree/master/src/main/java/ru/johnspade/dao
-https://github.com/T-PWK/jpanda-old
 https://github.com/mmdsyl/BlogSource_springboot/tree/master/new-star-blog/src/main/java/cn/syl/spring/boot/blog/domain
 https://github.com/fmendozaro/spring-blog/tree/master/src/main/java/com/codeup
 https://github.com/zicla/blog/tree/master/src/main/java/cn/eyeblue/blog
@@ -47,17 +40,14 @@ https://github.com/mcgivrer/blog-spring/tree/master/src/main/java/com/webcontext
 https://github.com/xieyizun/spring-boot-blog/tree/master/src/main/java/cn/com/xyz/blog/entity
 https://github.com/brandon-sylee/brandon-blogs/tree/master/src/main/java/com/brandon/controllers
 https://github.com/haksunkim/blog-service/tree/master/src/main/java/com/haksunkim/blog/middleware/domain
-https://github.com/haksunkim/blog-service/tree/master/src/main/java/com/haksunkim/blog/middleware/domain
 https://github.com/ricardobaumann/spring_blog_api/tree/master/src/main/java/com/github/ricardobaumann/spring_blog_api/models
 https://github.com/Rospaccio/bootlog/tree/master/src/main/java/xyz/codevomit/bootlog/entity
 https://github.com/zhangyimin426/z-blog/tree/master/src/main/java/com/zym/blog
-https://github.com/Byt3/piby-blog/tree/master/src/main/java/com/piby/blog/entities
 https://github.com/malinowskij/BlogIT/tree/master/src/main/java/com/malinowski/blog/model
 https://github.com/gulijian/joingu
 https://github.com/JamesonNetworks/blog/tree/master/src/main/java/com/jamesonnetworks/blog/domain/entry
 https://github.com/jcrosswh/SpringBootBlog/blob/master/src/main/java/us/xwhite/blog/controller/ArticlesController.java
 https://github.com/JohnnyLe/Modern-Ecommerce/tree/master/backend-rest-api/src/main/java/com/nitsoft/ecommerce
-
 https://github.com/FireYao/SpringBootOrder
 https://github.com/loliksamuel/SpringBoot-es-mongo-rabbitMq
 https://github.com/ItGeneral/springBoot-rabbitmq-mysql-durid
@@ -88,12 +78,9 @@ https://github.com/selzlein/spring-websockets-rabbitmq-demo
 https://github.com/georgevazj/mailman
 https://github.com/kurron/amqp-bare-metal-producer
 https://github.com/njxiaohan/TransPalServerTemplate
-https://github.com/apulbere/cprocessor
 https://github.com/bharat-srinivasan/my-axonbank
 https://github.com/lklacar/bulk-email-service
 https://github.com/sixhours-team/memcached-spring-boot
-https://github.com/FurionCS/dubbo-shop
-https://github.com/apulbere/rhodos
 https://github.com/kazi-imran/springboot-react-rabbitmq-docker-redis
 https://github.com/shoecillo/rabbitMQSpringBoot
 https://github.com/loroxxx/luo-blog/tree/master/src/main/java/com/luo/modules/app/entity
@@ -121,7 +108,7 @@ DONE ----- ELasticSearch - Spring boot
 DONE ------ MySQL: dang check
 DONE + Book : MySQL(done checking)
 (dang check)MySQL 8 cookbook(nhg chap can ap dug : 2, 3,4,5,6,7,8,-> het )
-MySQL 8 for big data
+DANG CHECK - MySQL 8 for big data(project portfolio: 3, 4, 5, 6, 7,  )
 MySQL 8 administrator guide
 DONE + Check nhug sach co chap ve MySQL : dang check
 DONE + Youtube : MySQL with Spring boot
@@ -137,16 +124,6 @@ DONE ------ Spring boot
 Book
 + Spring boot 2.0 cookbook - second edition
 
-
-DONE ------ Java 8/ 9
-
-+ Book
-
-
-+ Article/ Tuts
-
-
-+ Github project
 
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
 DONE + Book : Messaging
@@ -193,23 +170,16 @@ Github project
 
 
 
------------ CON LAI
-1/ CHECK ELASTICSEARCH YOUTUBE
+----------- CON LAI - DONE CHECKING
 2/ HOAN THANH ELASTICSEARCH GITHUB PROJECT
-3/ CHECK YOUTUBE MYSQL - SPRING BOOT 
-4/ DOC HET SACH MYSQL VA LIST RA HET TAT CA CHAP CAN PRACTICE PROJECT PORTFOLIO
-5/ HOAN THANH HET PROJECT PORTFOLIO MYSQL 
-6/ HOAN THANH YOUTUBE: MYSQL AND SPRING BOOT 
+4/ DOC HET SACH MYSQL VA LIST RA HET TAT CA CHAP CAN PRACTICE PROJECT PORTFOLIO : dang check
+5/ HOAN THANH HET PROJECT PORTFOLIO MYSQL
 7/ HOAN THANH GITHUB PROJECT FLYWAY      
 8/ DOC HET + PRACTICE  + Spring boot 2.0 cookbook - second edition
-9/ CHECK BOOK FOR JAVA 8/ JAVA 9 
-10/ HOAN THANH PROJECT PORTFOLIO FOR JAVA 8/ JAVA 9 
 11/ DOC HET BOOK FOR SPRING MESSAGING - KAFKA - JMS 
 12/ HOAN THANH HET PROJECT PORTFOLIO FOR MESSAGING - JMS - SPRING BOOT
-13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS 
+THU 2 -----  13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS
 14/ HOAN THANH DOC HET SACH VE MESSAGING - RABBITMQ - KAFKA -
-15/ XEM HET YOUTUBE VE SPRING BOOT - MESSAGING - RABBITMQ - KAFKA
 16/ HOAN THANH PRACTICE HET NHUNG BOOK VE SPRING BOOT MESSAGING
 17/ CHECK HET DOCUMENTATION OF RABBITMQ - KAFKA - MESSAGING
 18/ HOAN THANH HET MEMCACHED GITHUB PROJECT
-19/ HOAN THANH HET YOUTUBE MEMCACHED SPRING BOOT
