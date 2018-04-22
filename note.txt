@@ -22,19 +22,16 @@ https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-Postg
 https://github.com/lucky-star-freedom/spring-boot-blog/blob/master/src/main/java/com/cornerkick/domain/Blog.java
 https://github.com/reljicd/spring-boot-blog/tree/master/src/main/java/com/reljicd/model
 https://github.com/dotdoppler/Blog/tree/master/src/main/java/com/doppler/blog
-https://github.com/alikemalocalan/MicroBlog
 https://github.com/liudonghua123/spring-boot-web/tree/master/src/main/java/com/liudonghua/tutorials/spring_boot_web
 https://github.com/ncuwaln/springBootBlog/tree/master/src/main/java/com/blog/model
 https://github.com/laidu/LD_blog/tree/master/src/main/java/org/laidu/blog
 https://github.com/ashofthephoenix/Blog/tree/master/src/main/java/com/paulthemenace/blog
 https://github.com/HelloHang/blog/tree/master/src/main/java/com/blog/dao
-
 https://github.com/johnspade/blog/tree/master/src/main/java/ru/johnspade/dao
 https://github.com/mmdsyl/BlogSource_springboot/tree/master/new-star-blog/src/main/java/cn/syl/spring/boot/blog/domain
-https://github.com/fmendozaro/spring-blog/tree/master/src/main/java/com/codeup
 https://github.com/zicla/blog/tree/master/src/main/java/cn/eyeblue/blog
 https://github.com/franklinexpress/SpringBootBlog/tree/master/src/main/java/com/cooksys/my/spring/app
-https://github.com/d-sauer/SpringBootBlog/tree/master/src/main/java/com/davorsauer/domain
+
 https://github.com/paul8263/SpringBootThymeleafBlog/blob/master/src/main/java/com/paultech/web/validators/UserValidator.java
 https://github.com/mcgivrer/blog-spring/tree/master/src/main/java/com/webcontext/apps/blog/model
 https://github.com/xieyizun/spring-boot-blog/tree/master/src/main/java/cn/com/xyz/blog/entity
@@ -51,11 +48,6 @@ https://github.com/JohnnyLe/Modern-Ecommerce/tree/master/backend-rest-api/src/ma
 https://github.com/FireYao/SpringBootOrder
 https://github.com/loliksamuel/SpringBoot-es-mongo-rabbitMq
 https://github.com/ItGeneral/springBoot-rabbitmq-mysql-durid
-https://github.com/MontealegreLuis/spring-blog
-https://github.com/forkdaemon/Rabbit-Job-Consumer
-https://github.com/fakarakas/springboot-rabbitmq-sample
-https://github.com/Kalwador/SpringBoot
-https://github.com/MontealegreLuis/jms-rabbitmq-demo
 https://github.com/zshatzov/spring-boot-web/tree/master/src/main/java/com/apress/spring
 https://github.com/YangfeiLi/Real-time-Car-Location-Monitoring-System
 https://github.com/sbilinski/spring-rabbitmq-chat
@@ -80,7 +72,6 @@ https://github.com/kurron/amqp-bare-metal-producer
 https://github.com/njxiaohan/TransPalServerTemplate
 https://github.com/bharat-srinivasan/my-axonbank
 https://github.com/lklacar/bulk-email-service
-https://github.com/sixhours-team/memcached-spring-boot
 https://github.com/kazi-imran/springboot-react-rabbitmq-docker-redis
 https://github.com/shoecillo/rabbitMQSpringBoot
 https://github.com/loroxxx/luo-blog/tree/master/src/main/java/com/luo/modules/app/entity
@@ -105,13 +96,12 @@ TODO
 DONE ----- ELasticSearch - Spring boot
 
 
-DONE ------ MySQL: dang check
+DONE ------ MySQL
 DONE + Book : MySQL(done checking)
-(dang check)MySQL 8 cookbook(nhg chap can ap dug : 2, 3,4,5,6,7,8,-> het )
+MySQL 8 cookbook(nhg chap can ap dug : 2, 3,4,5,6,7,8,-> het )
 DANG CHECK - MySQL 8 for big data(project portfolio: 3, 4, 5, 6, 7,  )
-MySQL 8 administrator guide
-DONE + Check nhug sach co chap ve MySQL : dang check
-DONE + Youtube : MySQL with Spring boot
+DANG CHECK - MySQL 8 administrator guide(project portfolio chap : 3, 4, 5, ...-> het )
+
 
 DONE ------Flyway
 DONE - Book : - Flyway (check nhung sach co bai lien quan den Flyway )
@@ -172,14 +162,14 @@ Github project
 
 ----------- CON LAI - DONE CHECKING
 2/ HOAN THANH ELASTICSEARCH GITHUB PROJECT
-4/ DOC HET SACH MYSQL VA LIST RA HET TAT CA CHAP CAN PRACTICE PROJECT PORTFOLIO : dang check
-5/ HOAN THANH HET PROJECT PORTFOLIO MYSQL
-7/ HOAN THANH GITHUB PROJECT FLYWAY      
-8/ DOC HET + PRACTICE  + Spring boot 2.0 cookbook - second edition
-11/ DOC HET BOOK FOR SPRING MESSAGING - KAFKA - JMS 
 12/ HOAN THANH HET PROJECT PORTFOLIO FOR MESSAGING - JMS - SPRING BOOT
 THU 2 -----  13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS
-14/ HOAN THANH DOC HET SACH VE MESSAGING - RABBITMQ - KAFKA -
+14/ HOAN THANH DOC HET SACH VE MESSAGING - RABBITMQ - KAFKA - dang lam 
 16/ HOAN THANH PRACTICE HET NHUNG BOOK VE SPRING BOOT MESSAGING
-17/ CHECK HET DOCUMENTATION OF RABBITMQ - KAFKA - MESSAGING
-18/ HOAN THANH HET MEMCACHED GITHUB PROJECT
+
+
+Hom nay done checking :
+11/ DOC HET BOOK FOR SPRING MESSAGING - KAFKA - JMS
+5/ HOAN THANH HET PROJECT PORTFOLIO MYSQL
+8/ DOC HET + PRACTICE  + Spring boot 2.0 cookbook - second edition
+7/ HOAN THANH GITHUB PROJECT FLYWAY      
