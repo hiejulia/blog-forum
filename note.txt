@@ -3,6 +3,9 @@ https://github.com/f1024557668/SpringBoot
 https://github.com/marvel80/SearchApi
 https://github.com/JerryOrange/orangeplus
 https://github.com/FurionCS/dubbo-shop
+https://github.com/monteirocicero/delivery-services
+https://github.com/b2stry/seckill
+https://github.com/olle/rabbitmq-auth
 
 
 
@@ -17,21 +20,15 @@ https://github.com/anirban99/SpringBootElasticSearch
 https://github.com/rnkoaa/spring-boot-batch
 Big project : https://github.com/LushX/LushX-BE
 https://github.com/pjjesus/poc-player-search
-https://github.com/marcoPicPic/SpringBoot-2-Elasticsearch-5.x-Artemis-1.5
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/lucky-star-freedom/spring-boot-blog/blob/master/src/main/java/com/cornerkick/domain/Blog.java
 https://github.com/reljicd/spring-boot-blog/tree/master/src/main/java/com/reljicd/model
 https://github.com/dotdoppler/Blog/tree/master/src/main/java/com/doppler/blog
 https://github.com/liudonghua123/spring-boot-web/tree/master/src/main/java/com/liudonghua/tutorials/spring_boot_web
-https://github.com/ncuwaln/springBootBlog/tree/master/src/main/java/com/blog/model
 https://github.com/laidu/LD_blog/tree/master/src/main/java/org/laidu/blog
 https://github.com/ashofthephoenix/Blog/tree/master/src/main/java/com/paulthemenace/blog
 https://github.com/HelloHang/blog/tree/master/src/main/java/com/blog/dao
 https://github.com/johnspade/blog/tree/master/src/main/java/ru/johnspade/dao
-https://github.com/mmdsyl/BlogSource_springboot/tree/master/new-star-blog/src/main/java/cn/syl/spring/boot/blog/domain
-https://github.com/zicla/blog/tree/master/src/main/java/cn/eyeblue/blog
-https://github.com/franklinexpress/SpringBootBlog/tree/master/src/main/java/com/cooksys/my/spring/app
-
 https://github.com/paul8263/SpringBootThymeleafBlog/blob/master/src/main/java/com/paultech/web/validators/UserValidator.java
 https://github.com/mcgivrer/blog-spring/tree/master/src/main/java/com/webcontext/apps/blog/model
 https://github.com/xieyizun/spring-boot-blog/tree/master/src/main/java/cn/com/xyz/blog/entity
@@ -53,17 +50,10 @@ https://github.com/YangfeiLi/Real-time-Car-Location-Monitoring-System
 https://github.com/sbilinski/spring-rabbitmq-chat
 https://github.com/ricardobaumann/spring_stream_example
 https://github.com/growup818/email-server
-https://github.com/wizaord/catalog
-https://github.com/monteirocicero/delivery-services
 https://github.com/netshoes/athena-dependency-analyzer
-https://github.com/kuldeepsingh99/event-driven
 https://github.com/wenfengSAT/Spring-rabbitMQ
 https://github.com/nileshbhosale/event-stream
-https://github.com/b2stry/seckill
-https://github.com/olle/rabbitmq-auth
 https://github.com/societe-generale/rabbitmq-advanced-spring-boot-starter
-https://github.com/satishsahuec/MTL
-https://github.com/michaellihs/spring-rabbitmq
 https://springbootdev.com/2017/09/15/spring-boot-and-rabbitmq-direct-exchange-example-messaging-custom-java-objects-and-consumes-with-a-listener/
 https://github.com/olle/contessa
 https://github.com/selzlein/spring-websockets-rabbitmq-demo
@@ -87,7 +77,7 @@ test:
 https://github.com/shekhargulati/blogger/blob/master/src/test/java/com/example/blogger/services/BlogServiceTests.java
 https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/blog/domain
 https://github.com/DQMT/springBootDemo
-https://github.com/shidongdong1010/spring-boot-rabbitmq
+
 
 
 
@@ -97,66 +87,45 @@ DONE ----- ELasticSearch - Spring boot
 
 
 DONE ------ MySQL
-DONE + Book : MySQL(done checking)
-MySQL 8 cookbook(nhg chap can ap dug : 2, 3,4,5,6,7,8,-> het )
 DANG CHECK - MySQL 8 for big data(project portfolio: 3, 4, 5, 6, 7,  )
 DANG CHECK - MySQL 8 administrator guide(project portfolio chap : 3, 4, 5, ...-> het )
+MySQL 8 cookbook : project portfolio: start from replication -> het
 
-
-DONE ------Flyway
-DONE - Book : - Flyway (check nhung sach co bai lien quan den Flyway )
-DONE + Doc documentation :
-DONE + Book (Search google)
-DONE + Youtube : Flyway with Spring boot
-DONE + Github project (dang check)
-
-DONE ------ Spring boot
-Book
-+ Spring boot 2.0 cookbook - second edition
 
 
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
 DONE + Book : Messaging
 + Spring boot messaging
-DONE + Check nhug book co chap ve messaging
 
-+ DONE Book : RabbitMQ
-+ Mastering RabbitMQ(project portfolio : chap 9  )
-+ RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao
+
+
+
+DONE + Check nhug book co chap ve messaging : RabbitMQ(done) , Kafka, JMS, ActiveMQ
+
+
+
++ RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao : DANG DOC SACH NAY
+
+KAFKA
+
++ Kafka : the definitive guide : dang doc
+
+
++ Apache Kafka 1.0 Cookbook : dang check
+
+
++ Building data streaming applications with Apache Kafka : dang doc
+
+
++ Big data SMACK : a guide to Apache Spark, Mesos, Akka, Cassandra, Kafka
+
+
+
+
+
 DONE + Nhug sach co RabbitMQ
 Book : JMS
 Book : AMQP
-Book for practice
-
-DONE + Github project
-DONE Tutorial / Article
-DONE + Youtube
-DONE + Documentation
-
-
-
------ Spring boot - Memcache
-
-DONE + Article/ Tutorial
-DONE + Github project
-DONE + Book
-    DONE + Check nhug sach co memcached
-DONE + YOUTUBE
-
-
------
-
-
-
-Github project
-+ Spring boot + Flyway: dang check
-+ Spring boot + Elasticsearch: dang check
-+ Spring boot + RabbitMQ: dang check
-+ Spring boot + Kafka : dang check
-+ Spring boot + AMQP :
-+ Spring boot + messaging/ message
-+ Spring boot + Memcache
-
 
 
 

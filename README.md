@@ -125,6 +125,44 @@ Medium clone with ElasticSearch indexing and Memcache
     + InnoDB : ` SELECT * FROM INNODB_TABLESPACES WHERE NAME='employees/forumblog'\G`
     + Process list : `SELECT * FROM PROCESSLIST\G`
 + Dump data 
++ Binary log 
+    + Replication 
+    + Point in time recovery 
+    + Enable binary logs - expire binary log 
++ Back up database project 
+    + Logical back up 
+    + Physical back up 
++ Replication 
+    + Master-master replication
+    + Multi source replication 
+    + Master-slave replication 
++ Security : 
+    + Secure installation 
+    + Restrict networks and users 
+    + Password-less authentication using mysql_config_editor 
+    + Reset the root password 
+    + Set up encrypted connections using X509 
+    + Set up SSL replication
++ Performance tuning 
+    + explain plan 
+    + benchmarking queries and the server 
+    + add index 
+    + invisible index 
+    + descending index 
+    + analyzing slow queries using pt-query-digest 
+    + optimizing data type 
+    + check index usage 
+    + query optimizer 
+    + index hint
+    + index for json 
+    + resource group 
+    + performance_schema 
+    + sys schema 
+
+
+
+
+
 
 
 

@@ -2,6 +2,7 @@ package com.project.blogforum.service.impl;
 import com.project.blogforum.domain.User;
 import com.project.blogforum.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -45,4 +46,13 @@ public class UserService {
         u.setPassword(password);// set raw password for dev / on staging & prod : use MD5 or Hash / encrypt lib from spring security
         userRepository.save(u);
     }
+
+    @EventListener
+    public void on(UserAddedEvent event) {
+
+        UserDetails userDetails = event.getUserDetails();
+        logger().info("Creating new user {}", userDetails);
+        this.manager.createUser(userDetails);
+    }
+
 }
