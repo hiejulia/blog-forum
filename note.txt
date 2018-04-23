@@ -6,28 +6,25 @@ https://github.com/FurionCS/dubbo-shop
 https://github.com/monteirocicero/delivery-services
 https://github.com/b2stry/seckill
 https://github.com/olle/rabbitmq-auth
+https://github.com/JohnnyLe/Modern-Ecommerce
+https://github.com/eanfs/jhipster-spring-boot-2-elasticsearch-sample
 
 
 
 
 ----------------------------------------------------------------------
 
-https://github.com/eanfs/jhipster-spring-boot-2-elasticsearch-sample
+
 Check json view : https://github.com/charlesheidemann/enron_web
 https://github.com/karlazzam/TvBuddy-api
 https://github.com/CherishCai/blog
 https://github.com/anirban99/SpringBootElasticSearch
 https://github.com/rnkoaa/spring-boot-batch
 Big project : https://github.com/LushX/LushX-BE
-https://github.com/pjjesus/poc-player-search
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/lucky-star-freedom/spring-boot-blog/blob/master/src/main/java/com/cornerkick/domain/Blog.java
-https://github.com/reljicd/spring-boot-blog/tree/master/src/main/java/com/reljicd/model
 https://github.com/dotdoppler/Blog/tree/master/src/main/java/com/doppler/blog
 https://github.com/liudonghua123/spring-boot-web/tree/master/src/main/java/com/liudonghua/tutorials/spring_boot_web
-https://github.com/laidu/LD_blog/tree/master/src/main/java/org/laidu/blog
-https://github.com/ashofthephoenix/Blog/tree/master/src/main/java/com/paulthemenace/blog
-https://github.com/HelloHang/blog/tree/master/src/main/java/com/blog/dao
 https://github.com/johnspade/blog/tree/master/src/main/java/ru/johnspade/dao
 https://github.com/paul8263/SpringBootThymeleafBlog/blob/master/src/main/java/com/paultech/web/validators/UserValidator.java
 https://github.com/mcgivrer/blog-spring/tree/master/src/main/java/com/webcontext/apps/blog/model
@@ -38,10 +35,8 @@ https://github.com/ricardobaumann/spring_blog_api/tree/master/src/main/java/com/
 https://github.com/Rospaccio/bootlog/tree/master/src/main/java/xyz/codevomit/bootlog/entity
 https://github.com/zhangyimin426/z-blog/tree/master/src/main/java/com/zym/blog
 https://github.com/malinowskij/BlogIT/tree/master/src/main/java/com/malinowski/blog/model
-https://github.com/gulijian/joingu
 https://github.com/JamesonNetworks/blog/tree/master/src/main/java/com/jamesonnetworks/blog/domain/entry
 https://github.com/jcrosswh/SpringBootBlog/blob/master/src/main/java/us/xwhite/blog/controller/ArticlesController.java
-https://github.com/JohnnyLe/Modern-Ecommerce/tree/master/backend-rest-api/src/main/java/com/nitsoft/ecommerce
 https://github.com/FireYao/SpringBootOrder
 https://github.com/loliksamuel/SpringBoot-es-mongo-rabbitMq
 https://github.com/ItGeneral/springBoot-rabbitmq-mysql-durid
@@ -59,7 +54,6 @@ https://github.com/olle/contessa
 https://github.com/selzlein/spring-websockets-rabbitmq-demo
 https://github.com/georgevazj/mailman
 https://github.com/kurron/amqp-bare-metal-producer
-https://github.com/njxiaohan/TransPalServerTemplate
 https://github.com/bharat-srinivasan/my-axonbank
 https://github.com/lklacar/bulk-email-service
 https://github.com/kazi-imran/springboot-react-rabbitmq-docker-redis
@@ -69,14 +63,13 @@ https://github.com/paulwinner1995/web-store
 https://github.com/cristianprofile/spring-boot-rabbitmq-integration-test
 https://github.com/mhaddon/SimpleFacts-SpringBoot
 https://github.com/Murugar/SpringBoot1.5.10ReactRabbitmqDockerRedis
-https://github.com/wenfengSAT/spring-boot-rabbitmq
 https://github.com/gessnerfl/rabbitmq-queue-management
 https://github.com/vhoang55/blog-app-react-redux-es-rabbit-docker
 https://github.com/amardeepkhera/rabbitmq-spring-examples
 test:
 https://github.com/shekhargulati/blogger/blob/master/src/test/java/com/example/blogger/services/BlogServiceTests.java
 https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/blog/domain
-https://github.com/DQMT/springBootDemo
+
 
 
 
