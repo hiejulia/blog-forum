@@ -2,6 +2,7 @@ package com.project.blogforum.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.annotation.CreatedBy;
@@ -25,6 +26,7 @@ import java.util.Objects;
 @EntityListeners(AuditingEntityListener.class)
 @XmlRootElement(name="post")
 @XmlAccessorType(XmlAccessType.PROPERTY)
+@JsonIgnoreProperties({"createdAt","date"})
 public class Post implements Serializable {
     @Id
     @Column(name = "id")
