@@ -195,7 +195,15 @@ Medium clone with ElasticSearch indexing and Memcache
     + Index JSON data 
         + Virtual generaated column 
         + Stored generated columns
-        
++ Full text search index
++ Natural language fulltext search on InnoDB and MyISAM
+    + 
+
+
++ Spartial index 
+    + geo data 
+    + multidimensional data 
+    + 
 
 
 

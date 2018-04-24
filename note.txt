@@ -30,6 +30,7 @@ https://github.com/karlazzam/TvBuddy-api
 https://github.com/Murugar/SpringBoot1.5.10ReactRabbitmqDockerRedis
 https://github.com/lklacar/bulk-email-service
 https://github.com/vhoang55/blog-app-react-redux-es-rabbit-docker
+https://github.com/gessnerfl/rabbitmq-queue-management
 
 
 ----------------------------------------------------------------------
