@@ -145,20 +145,43 @@ Medium clone with ElasticSearch indexing and Memcache
     + Set up SSL replication
 + Performance tuning 
     + explain plan 
-    + benchmarking queries and the server 
+    + benchmarking queries and the server
+        + Time query report 
+        + mysqlslap utility 
+        + run multiple sqls in a file 
+        + emulate client load using mysqlslap  
     + add index 
     + invisible index 
     + descending index 
-    + analyzing slow queries using pt-query-digest 
+    + analyzing slow queries using pt-query-digest
+        + slow query log 
+        + general query log 
+        + process list 
+        + binary log 
+        + TCP dump  
     + optimizing data type 
+        + procedure analyzer 
     + check index usage 
-    + query optimizer 
+        + pt-index-usage 
+        + sys schema
+    + query optimizer
+        + passing hints to the query / or by adjust  
     + index hint
     + index for json 
     + resource group 
     + performance_schema 
     + sys schema 
-
+    + remove redundant index 
+        + tool: pt-duplicate-key-checker, mysqlindexcheck, sys schema 
++ Managing logs 
+    + Error log 
+        + `SELECT @@global.log_error_services;`
+        + Config error log 
+        
+    + Query log 
+    + Binary log
+    + Relay log 
+    + DDL log 
 
 
 
@@ -228,7 +251,10 @@ Medium clone with ElasticSearch indexing and Memcache
 + Monitor RabbitMQ 
     + Command line tool 
     + Web plugins 
-
++ Available profiles 
+    + fanout 
+    + direct 
+    + topic 
 
 
 ### Memcached 

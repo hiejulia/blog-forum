@@ -1,0 +1,1 @@
+ALTER TABLE tag ADD INDEX name_desc(name ASC);
