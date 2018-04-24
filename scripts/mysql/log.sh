@@ -37,3 +37,27 @@ sudo vi /etc/my.cnf
 log-error=/var/log/mysql/mysqld.log
 # Restart the MySQL 
 sudo systemctl restart mysql
+
+
+
+# Show the query log file 
+sudo cat /var/log/mysql/general_query_log
+
+# Binary log 
+mysqlbinlogpurge --master=dbadmin:<pass>@master:3306 --slaves=dbadmin:<pass>@slave1:3306,dbadmin:<pass>@slave2:3306
+
+
+mysqlbinlogpurge --master=dbadmin:<pass>@master:3306 --slaves=dbadmin:<pass>@slave1:3306,dbadmin:<pass>@slave2:3306
+
+# Latest binlog file replicated by all slaves: master-bin.000022
+# Purging binary logs prior to 'master-bin.000023'
+
+# Set the report host and report port and then resatart the server 
+sudo vi /etc/my.cnf
+[mysqld]
+report-host     = slave1
+report-port     = 3306
+
+# Restart the server
+
+# 

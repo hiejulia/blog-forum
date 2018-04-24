@@ -177,12 +177,25 @@ Medium clone with ElasticSearch indexing and Memcache
     + Error log 
         + `SELECT @@global.log_error_services;`
         + Config error log 
-        
+        + Rotate the log - write a bash script to automate - put into cron 
+        + Error log in JSON format 
     + Query log 
+        + Specify the file for logging 
+        + Enable general query log 
+            + `SET GLOBAL general_log = 'ON';`
     + Binary log
+        + Check fot the slave servers in binary log 
+        + Connect to any of the servers and execute the mysqlbinlogpurge script:    
     + Relay log 
-    + DDL log 
-
+    + DDL log
++ Table maintainance 
+    + 
++ Index data with high performance data 
+    + Index structure: Bitmap, Sparse, Dense, B Tree, Hash index 
+    + Index JSON data 
+        + Virtual generaated column 
+        + Stored generated columns
+        
 
 
 

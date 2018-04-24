@@ -21,55 +21,24 @@ https://github.com/kurron/amqp-bare-metal-producer
 https://github.com/Rospaccio/bootlog
 https://github.com/shoecillo/rabbitMQSpringBoot
 https://github.com/paulwinner1995/web-store
-
+https://github.com/nileshbhosale/event-stream
+https://github.com/societe-generale/rabbitmq-advanced-spring-boot-starter
+https://github.com/mhaddon/SimpleFacts-SpringBoot
+https://github.com/kazi-imran/springboot-react-rabbitmq-docker-redis
+https://github.com/cristianprofile/spring-boot-rabbitmq-integration-test
+https://github.com/karlazzam/TvBuddy-api
+https://github.com/Murugar/SpringBoot1.5.10ReactRabbitmqDockerRedis
+https://github.com/lklacar/bulk-email-service
+https://github.com/vhoang55/blog-app-react-redux-es-rabbit-docker
 
 
 ----------------------------------------------------------------------
-https://github.com/karlazzam/TvBuddy-api
-https://github.com/anirban99/SpringBootElasticSearch
-https://github.com/lucky-star-freedom/spring-boot-blog/blob/master/src/main/java/com/cornerkick/domain/Blog.java
-https://github.com/liudonghua123/spring-boot-web/tree/master/src/main/java/com/liudonghua/tutorials/spring_boot_web
-https://github.com/paul8263/SpringBootThymeleafBlog/blob/master/src/main/java/com/paultech/web/validators/UserValidator.java
-https://github.com/mcgivrer/blog-spring/tree/master/src/main/java/com/webcontext/apps/blog/model
-https://github.com/xieyizun/spring-boot-blog/tree/master/src/main/java/cn/com/xyz/blog/entity
-https://github.com/brandon-sylee/brandon-blogs/tree/master/src/main/java/com/brandon/controllers
-https://github.com/haksunkim/blog-service/tree/master/src/main/java/com/haksunkim/blog/middleware/domain
-https://github.com/sbilinski/spring-rabbitmq-chat
-https://github.com/ricardobaumann/spring_stream_example
-https://github.com/growup818/email-server
-https://github.com/nileshbhosale/event-stream
-https://github.com/societe-generale/rabbitmq-advanced-spring-boot-starter
-https://springbootdev.com/2017/09/15/spring-boot-and-rabbitmq-direct-exchange-example-messaging-custom-java-objects-and-consumes-with-a-listener/
-https://github.com/olle/contessa
-https://github.com/selzlein/spring-websockets-rabbitmq-demo
-https://github.com/georgevazj/mailman
-https://github.com/bharat-srinivasan/my-axonbank
-https://github.com/lklacar/bulk-email-service
-https://github.com/kazi-imran/springboot-react-rabbitmq-docker-redis
-https://github.com/loroxxx/luo-blog/tree/master/src/main/java/com/luo/modules/app/entity
-https://github.com/cristianprofile/spring-boot-rabbitmq-integration-test
-https://github.com/mhaddon/SimpleFacts-SpringBoot
-https://github.com/Murugar/SpringBoot1.5.10ReactRabbitmqDockerRedis
-https://github.com/gessnerfl/rabbitmq-queue-management
-https://github.com/vhoang55/blog-app-react-redux-es-rabbit-docker
-
-test:
-https://github.com/shekhargulati/blogger/blob/master/src/test/java/com/example/blogger/services/BlogServiceTests.java
-https://github.com/parviz-93/blog-test/tree/master/src/main/java/com/rozikovp/blog/domain
-
-
-
-
-
-
-TODO
-DONE ----- ELasticSearch - Spring boot
 
 
 DONE ------ MySQL
-DANG CHECK - MySQL 8 for big data(project portfolio: 3, 4, 5, 6, 7,  )
+DANG CHECK - MySQL 8 for big data(project portfolio: 3, 4, 5, 6, 7,  -> het )
 DANG CHECK - MySQL 8 administrator guide(project portfolio chap : 3, 4, 5, ...-> het )
-MySQL 8 cookbook : project portfolio: start from replication -> het
+MySQL 8 cookbook : project portfolio: start from replication -> het : dang check 
 
 
 
