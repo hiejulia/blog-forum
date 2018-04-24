@@ -5,23 +5,16 @@ https://github.com/JerryOrange/orangeplus
 https://github.com/FurionCS/dubbo-shop
 https://github.com/monteirocicero/delivery-services
 https://github.com/b2stry/seckill
-https://github.com/olle/rabbitmq-auth
-https://github.com/JohnnyLe/Modern-Ecommerce
 https://github.com/eanfs/jhipster-spring-boot-2-elasticsearch-sample
 Check json view : https://github.com/charlesheidemann/enron_web
 Big project : https://github.com/LushX/LushX-BE
-https://github.com/CherishCai/blog
 https://github.com/BohdanMelnyk/Build-a-prototype-using-Spring-Boot-Docker-PostgreSQL-ElasticSearch
 https://github.com/rnkoaa/spring-boot-batch
-https://github.com/dotdoppler/Blog
 https://github.com/FireYao/SpringBootOrder
 https://github.com/ItGeneral/springBoot-rabbitmq-mysql-durid
 https://github.com/YangfeiLi/Real-time-Car-Location-Monitoring-System
-https://github.com/kurron/amqp-bare-metal-producer
-https://github.com/Rospaccio/bootlog
 https://github.com/shoecillo/rabbitMQSpringBoot
 https://github.com/paulwinner1995/web-store
-https://github.com/nileshbhosale/event-stream
 https://github.com/societe-generale/rabbitmq-advanced-spring-boot-starter
 https://github.com/mhaddon/SimpleFacts-SpringBoot
 https://github.com/kazi-imran/springboot-react-rabbitmq-docker-redis
@@ -30,13 +23,10 @@ https://github.com/karlazzam/TvBuddy-api
 https://github.com/Murugar/SpringBoot1.5.10ReactRabbitmqDockerRedis
 https://github.com/lklacar/bulk-email-service
 https://github.com/vhoang55/blog-app-react-redux-es-rabbit-docker
-https://github.com/gessnerfl/rabbitmq-queue-management
-
 
 ----------------------------------------------------------------------
 
 
-DONE ------ MySQL
 DANG CHECK - MySQL 8 for big data(project portfolio: 3, 4, 5, 6, 7,  -> het )
 DANG CHECK - MySQL 8 administrator guide(project portfolio chap : 3, 4, 5, ...-> het )
 MySQL 8 cookbook : project portfolio: start from replication -> het : dang check 
@@ -45,6 +35,8 @@ MySQL 8 cookbook : project portfolio: start from replication -> het : dang check
 
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
 DONE + Book : Messaging
+
+
 + Spring boot messaging
 
 
@@ -64,18 +56,8 @@ KAFKA
 + Apache Kafka 1.0 Cookbook : dang check
 
 
-+ Building data streaming applications with Apache Kafka : dang doc
-
-
 + Big data SMACK : a guide to Apache Spark, Mesos, Akka, Cassandra, Kafka
 
-
-
-
-
-DONE + Nhug sach co RabbitMQ
-Book : JMS
-Book : AMQP
 
 
 
