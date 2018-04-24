@@ -80,17 +80,13 @@ Medium clone with ElasticSearch indexing and Memcache
 + View mappings 
     + `curl –XGET localhost:9200/index_name/_mapping?pretty`
     + `curl –XGET localhost:9200/index_name/type_name/_mapping?pretty`
-    
-    
-
-
-
 + ES performance tuning 
 
 
 ### Flyway migration 
 + `mvn flyway:info`
 + `mvn compile flyway:migrate`
++ location : `<location>filesystem:${project.basedir}/src/main/resources/db/migration</location>`
 
 ### MySQL 
 + Load sample data 
