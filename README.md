@@ -197,12 +197,6 @@ Medium clone with ElasticSearch indexing and Memcache
 + Spartial index 
     + geo data 
     + multidimensional data 
-    + 
-
-
-
-
-
 
 ### Docker 
 + Install Docker (locally)
@@ -215,10 +209,6 @@ Medium clone with ElasticSearch indexing and Memcache
 + Manage the container 
     + `docker stop ...`
     + `docker start ...` 
-
-
-
-
 
 ### Messaging JMS - RabbitMQ
 + Fanout and Topic exchange 

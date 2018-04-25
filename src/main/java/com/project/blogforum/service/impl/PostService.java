@@ -3,6 +3,7 @@ import com.oracle.webservices.internal.api.databinding.Databinding;
 import com.project.blogforum.domain.Post;
 import com.project.blogforum.dto.PostDTO;
 import com.project.blogforum.repository.PostRepository;
+import lombok.RequiredArgsConstructor;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
@@ -27,6 +28,7 @@ import java.util.Map;
 
 @Service
 @Transactional
+@RequiredArgsConstructor
 public class PostService {
 
     @Autowired

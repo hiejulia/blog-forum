@@ -24,29 +24,13 @@ DONE + Book : Messaging
 + Spring boot messaging
 
 
-
-
 DONE + Check nhug book co chap ve messaging : RabbitMQ(done) , Kafka, JMS, ActiveMQ
 
-
-
 + RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao : DANG DOC SACH NAY
-
-KAFKA
-
-+ Kafka : the definitive guide : dang doc
-
-
-+ Apache Kafka 1.0 Cookbook : dang check
-
-
-+ Big data SMACK : a guide to Apache Spark, Mesos, Akka, Cassandra, Kafka
-
 
 
 
 ----------- CON LAI - DONE CHECKING
-2/ HOAN THANH ELASTICSEARCH GITHUB PROJECT
 12/ HOAN THANH HET PROJECT PORTFOLIO FOR MESSAGING - JMS - SPRING BOOT
 THU 2 -----  13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS
 14/ HOAN THANH DOC HET SACH VE MESSAGING - RABBITMQ - KAFKA - dang lam 
@@ -54,7 +38,5 @@ THU 2 -----  13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS
 
 
 Hom nay done checking :
-11/ DOC HET BOOK FOR SPRING MESSAGING - KAFKA - JMS
 5/ HOAN THANH HET PROJECT PORTFOLIO MYSQL
 8/ DOC HET + PRACTICE  + Spring boot 2.0 cookbook - second edition
-7/ HOAN THANH GITHUB PROJECT FLYWAY      
