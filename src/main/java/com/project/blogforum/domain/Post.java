@@ -2,6 +2,7 @@ package com.project.blogforum.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.context.annotation.ComponentScan;
@@ -69,6 +70,10 @@ public class Post implements Serializable {
     private Date lastModifiedDate;
 
 
+    // Add version
+    @Version
+    @JsonIgnore
+    private Long version;
 
     // Post created date
 

@@ -8,12 +8,15 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+import static org.springframework.data.elasticsearch.annotations.FieldIndex.not_analyzed;
+
 @Document(indexName = "posts", type = "posts", shards = 1, replicas = 0, refreshInterval = "-1")
 @Data
 public class PostDTO implements Serializable {
     private Long id;
     @Field(type = FieldType.String)
     private String title;
+
     private String subtitle;
     private String content;
     private String date;
@@ -26,11 +29,11 @@ public class PostDTO implements Serializable {
     @Field(type = FieldType.Nested)
     private List<Tag> tagList;
 
-    @Field(type = FieldType.Date, index = FieldIndex.not_analyzed, store = true,
+    @Field(type = FieldType.Date, index = not_analyzed, store = true,
             format = DateFormat.custom, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZZ")
     private Date createdAt;
 
-    @Field(type = FieldType.Date, index = FieldIndex.not_analyzed, store = true,
+    @Field(type = FieldType.Date, index = not_analyzed, store = true,
             format = DateFormat.custom, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZZ")
     private Date lastModifiedDate;
 
