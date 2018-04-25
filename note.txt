@@ -11,8 +11,11 @@ https://github.com/b2stry/seckill
 ----------------------------------------------------------------------
 
 
-DANG CHECK - MySQL 8 for big data(project portfolio: 3, 4, 5, 6, 7,  -> het )
-DANG CHECK - MySQL 8 administrator guide(project portfolio chap : 3, 4, 5, ...-> het )
+DANG CHECK - MySQL 8 for big data(project portfolio: 3, 5, 6, 7,  -> het )
+
+
+
+MySQL 8 administrator guide(project portfolio chap : 3, 4, 5, ...-> het )
 MySQL 8 cookbook : project portfolio: start from replication -> het : dang check 
 
 

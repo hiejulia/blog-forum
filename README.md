@@ -191,12 +191,55 @@ Medium clone with ElasticSearch indexing and Memcache
         + Stored generated columns
 + Full text search index
 + Natural language fulltext search on InnoDB and MyISAM
-    + 
-
-
 + Spartial index 
     + geo data 
     + multidimensional data 
++ Using memcached with Mysql 
+    + Set up Memcached 
+        + Install Memcache plugin : daemon_memcached 
+        + Config script : `source <MYSQL_HOME>/share/innodb_memcached_config.sql` (execute script)
+        + Activate daemon_memcached plugin : `INSTALL PLUGIN daemon_memcached soname "libmemcached.so";`
+    + Analyze data stored in memcached
+        + check `telnet 11211`
+    + Memcached replication config
+        + Enable binary log replication 
+        + Edit the config file 
+        + Set the replication master and slave 
+        + Take a backup of the master database and restore it in all of the slave server 
+        + Obtain master binary log 
+        + Start slave server 
++ Partitioning data 
+    + Horizontal partitioning
+        + Each partition of the table contains the same number of columns 
+        + Range partitioning
+            + `PARTITION BY RANGE (UNIX_TIMESTAMP(access_date)) ( 
+PARTITION p0 VALUES LESS THAN (UNIX_TIMESTAMP('2017-05-01 00:00:00')), 
+PARTITION p1 VALUES LESS THAN (UNIX_TIMESTAMP('2017-09-01 00:00:00')), 
+PARTITION p2 VALUES LESS THAN (UNIX_TIMESTAMP('2018-01-01 00:00:00')), 
+PARTITION p3 VALUES LESS THAN (UNIX_TIMESTAMP('2018-05-01 00:00:00')), 
+PARTITION p4 VALUES LESS THAN (UNIX_TIMESTAMP('2018-09-01 00:00:00')), 
+PARTITION p5 VALUES LESS THAN (UNIX_TIMESTAMP('2019-01-01 00:00:00')), 
+);`
+        + List partitioning
+            + `PARTITION BY LIST(website_id) ( 
+PARTITION PartitionNorth VALUES IN (1,2), 
+PARTITION PartitionSouth VALUES IN (3,4), 
+PARTITION PartitionWest VALUES IN (5,6), 
+PARTITION PartitionEast VALUES IN (7,8) 
+);`
+
+        + Hash partitioning 
+        + Columns partitioning
+        + Key partitioning 
+        + Sub partitioning
+    + Vertical partitioning 
+        + Normalize the table 
+    + Pruning partitioning
+    + Query on partitioned data 
+
++ Replication 
+
++ 
 
 ### Docker 
 + Install Docker (locally)
