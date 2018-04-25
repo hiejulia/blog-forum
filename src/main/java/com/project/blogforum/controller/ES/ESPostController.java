@@ -127,7 +127,6 @@ public class ESPostController {
 //
 //    }
 
-
 //    /**
 //     * DELETE ALL POSTS
 //     */

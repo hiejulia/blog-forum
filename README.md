@@ -205,6 +205,9 @@ Medium clone with ElasticSearch indexing and Memcache
 
 
 ### Docker 
++ Install Docker (locally)
++ Usinng docker-compose 
++ Using docker-swarm 
 + `docker images`
 + `docker run -p -d --name `
 + View log : `docker logs `
@@ -273,9 +276,9 @@ Medium clone with ElasticSearch indexing and Memcache
 
 
 ### Memcached 
-
-
-
++ Install Memcached (locally)
++ Config Memcache config : locally 
++ 
 
 
 
