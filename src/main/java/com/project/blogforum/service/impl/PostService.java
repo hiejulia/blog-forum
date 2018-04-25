@@ -56,6 +56,8 @@ public class PostService {
         return postRepository.findOnePostById(id);
     }
 
+    // Add cache 
+    @CacheEvict(value = "post", allEntries = true)
     public Post save(Post post) {
         postRepository.save(post);
         return post;

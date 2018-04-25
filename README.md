@@ -81,8 +81,6 @@ Medium clone with ElasticSearch indexing and Memcache
     + `curl –XGET localhost:9200/index_name/_mapping?pretty`
     + `curl –XGET localhost:9200/index_name/type_name/_mapping?pretty`
 + ES performance tuning 
-
-
 ### Flyway migration 
 + `mvn flyway:info`
 + `mvn compile flyway:migrate`
@@ -275,7 +273,6 @@ Medium clone with ElasticSearch indexing and Memcache
 
 
 ### Memcached 
-
 
 
 
