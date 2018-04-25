@@ -1,5 +1,6 @@
 package com.project.blogforum.controller.ES;
 
+import com.fasterxml.jackson.annotation.JsonView;
 import com.google.common.base.Preconditions;
 import com.project.blogforum.domain.Comment;
 import com.project.blogforum.domain.Post;
@@ -12,6 +13,8 @@ import com.project.blogforum.search.ESPostService;
 import com.project.blogforum.service.impl.CommentService;
 import com.project.blogforum.service.impl.PostService;
 import com.project.blogforum.service.impl.TagService;
+import com.project.blogforum.views.Views;
+
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -147,6 +150,7 @@ public class ESPostController {
 
 
     @GetMapping(value = "/all")
+    @JsonView(Views.Basics.class)
     public List<PostDTO> searchAll() {
         List<PostDTO> postList = new ArrayList<>();
         Iterable<PostDTO> userses = esPostService.findAll();
@@ -169,6 +173,7 @@ public class ESPostController {
     @RequestMapping(value = "/{id}",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
+    @JsonView(Views.Details.class)
     public ResponseEntity<Post> get(@PathVariable Long id) {
         return Optional.ofNullable(postService.findOnePostById(id))
                 .map(p -> new ResponseEntity<>(

@@ -5,7 +5,6 @@ import com.project.blogforum.dto.PostDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.annotations.Query;
-/*import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;*/
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
@@ -18,13 +17,10 @@ public interface ESPostRepository extends ElasticsearchRepository<PostDTO, Long>
     @Query("{\"bool\": {\"must\": [{\"match\": {\"authors.name\": \"?0\"}}]}}")
     Page<Post> findByAuthorsNameUsingCustomQuery(String name, Pageable pageable);
 
-    // Find post by author
     Page<PostDTO> findByAuthor(String author, Pageable pageable);
 
-    // Find post by title
     List<PostDTO> findByTitle(String title);
 
-    // Find by tag name
     List<PostDTO> findByTagList(String tag);
 
     // Find by category like

@@ -14,6 +14,7 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -68,7 +69,7 @@ public class PostService {
         postRepository.delete(id);
     }
 
-
+    @Modifying
     @CachePut(value = "post",key="#id")
     public void updateContentById(PostDTO postDTO) {
         postRepository.updateContentById(postDTO.getContent(), postDTO.getId());

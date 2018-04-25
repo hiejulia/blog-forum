@@ -1,24 +1,11 @@
 BIG  PROJECT
-https://github.com/f1024557668/SpringBoot
-https://github.com/marvel80/SearchApi
-https://github.com/JerryOrange/orangeplus
-https://github.com/FurionCS/dubbo-shop
-https://github.com/monteirocicero/delivery-services
-https://github.com/b2stry/seckill
-https://github.com/eanfs/jhipster-spring-boot-2-elasticsearch-sample
-Check json view : https://github.com/charlesheidemann/enron_web
-Big project : https://github.com/LushX/LushX-BE
-https://github.com/rnkoaa/spring-boot-batch
-https://github.com/FireYao/SpringBootOrder
-https://github.com/YangfeiLi/Real-time-Car-Location-Monitoring-System
-https://github.com/paulwinner1995/web-store
-https://github.com/societe-generale/rabbitmq-advanced-spring-boot-starter
-https://github.com/mhaddon/SimpleFacts-SpringBoot
-https://github.com/kazi-imran/springboot-react-rabbitmq-docker-redis
-https://github.com/cristianprofile/spring-boot-rabbitmq-integration-test
 https://github.com/karlazzam/TvBuddy-api
-https://github.com/Murugar/SpringBoot1.5.10ReactRabbitmqDockerRedis
-https://github.com/lklacar/bulk-email-service
+https://github.com/LushX/LushX-BE
+https://github.com/YangfeiLi/Real-time-Car-Location-Monitoring-System
+https://github.com/b2stry/seckill
+
+
+
 
 
 ----------------------------------------------------------------------
