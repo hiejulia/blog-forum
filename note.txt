@@ -3,6 +3,7 @@ https://github.com/karlazzam/TvBuddy-api
 https://github.com/LushX/LushX-BE
 https://github.com/YangfeiLi/Real-time-Car-Location-Monitoring-System
 https://github.com/b2stry/seckill
+https://github.com/netshoes/athena-dependency-analyzer
 
 
 
@@ -11,7 +12,7 @@ https://github.com/b2stry/seckill
 ----------------------------------------------------------------------
 
 
-DANG CHECK - MySQL 8 for big data(project portfolio: 3, 5, 6, 7,  -> het )
+DANG CHECK - MySQL 8 for big data(project portfolio: 3, 5, 6, 7,  -> het ): bai Replication (check lai 2 phan GTIDs replication,Multi-source replication ), va partitioning data 
 
 
 
@@ -36,10 +37,11 @@ DONE + Check nhug book co chap ve messaging : RabbitMQ(done) , Kafka, JMS, Activ
 ----------- CON LAI - DONE CHECKING
 12/ HOAN THANH HET PROJECT PORTFOLIO FOR MESSAGING - JMS - SPRING BOOT
 THU 2 -----  13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS
-14/ HOAN THANH DOC HET SACH VE MESSAGING - RABBITMQ - KAFKA - dang lam 
 16/ HOAN THANH PRACTICE HET NHUNG BOOK VE SPRING BOOT MESSAGING
-
-
-Hom nay done checking :
-5/ HOAN THANH HET PROJECT PORTFOLIO MYSQL
 8/ DOC HET + PRACTICE  + Spring boot 2.0 cookbook - second edition
+
+
+
+
+---------
+Check testing with Java 

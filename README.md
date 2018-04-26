@@ -227,19 +227,87 @@ PARTITION PartitionSouth VALUES IN (3,4),
 PARTITION PartitionWest VALUES IN (5,6), 
 PARTITION PartitionEast VALUES IN (7,8) 
 );`
-
         + Hash partitioning 
+            + `PARTITION BY HASH(website_id) 
+PARTITIONS 4;
+`
         + Columns partitioning
+            + Range column partition
+            + List column partition 
         + Key partitioning 
         + Sub partitioning
     + Vertical partitioning 
         + Normalize the table 
     + Pruning partitioning
     + Query on partitioned data 
+        + 
 
 + Replication 
 
-+ 
++ Mysql benchmark and configuration 
++ Resource utilization : IO, CPU 
++ Set up MySQL metrics : sysbench 
++ Concurrency 
++ Optimizer 
++ Fetch all table / column name from InnoDB table 
+    + SELECT t.table_schema, t.table_name, c.column_name
+FROM information_schema.tables t,
+information_schema.columns c
+WHERE t.table_schema = c.table_schema
+AND t.table_name = c.table_name
+AND t.engine='InnoDB';
++ Best practice for queries : 
+    + Data type 
+    + Not null
+    + Index 
+    + Compound index 
+    + Do not use fetch all `select *`
+    + Analyze slow query 
+    + Using explain for query explain
+    + Backlog queue limit 
+    + Large page support 
+    + Infrastructure sizing 
+    + Write scalability 
+        + Multi master to distribute load
++ Replication 
+    + High availability 
+    + Replication 
+    + Group replication 
+    + Master-slave replication 
+    + MySLQ cluster 
+    + MySQL with Solaris cluster 
+    + Data replication 
+    + Clustered and virtualized system 
+    + Replication : master-slave 
+        + Write : master 
+        + Read : slave 
+        + Sync between master and slave through configuration 
+    + Scalable system :     
++ Security : back up MySQL database 
++ Method for replication
+    + Read the binary logs : sync between master - slave 
+    + Replication using global transaction identifiers
+    + Replication configuration
+    + Replication master config - replication for 
++ GTID replication - transaction-base 
++ MySQL multisource replication 
+
++ Group replication 
+    + Transaction 
+    + Server commit files
+    + Group replication diagram 
+    + Group repication config
+    + Group replication settings
+    + Choose single master or multi-master 
+    + Host-specific configuration 
+    + Config replication user and enable group replication plugin 
+    + Start group replication
+
++ Multi-source replication 
+
+
+
+
 
 ### Docker 
 + Install Docker (locally)
