@@ -305,6 +305,12 @@ AND t.engine='InnoDB';
 
 + Multi-source replication 
 
++ Globalization in MySQL 
+    + Character sets 
+    + Language selection 
++ Server SQL mode 
+    + 
+
 
 
 

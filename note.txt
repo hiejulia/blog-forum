@@ -9,39 +9,18 @@ https://github.com/netshoes/athena-dependency-analyzer
 
 
 
-----------------------------------------------------------------------
-
-
-DANG CHECK - MySQL 8 for big data(project portfolio: 3, 5, 6, 7,  -> het ): bai Replication (check lai 2 phan GTIDs replication,Multi-source replication ), va partitioning data 
-
-
-
+Toi ve nha check lai : gan het roi - MySQL 8 for big data(project portfolio: 3, 5, 6, 7,  -> het ): bai Replication (check lai 2 phan GTIDs replication,Multi-source replication ), va partitioning data  
 MySQL 8 administrator guide(project portfolio chap : 3, 4, 5, ...-> het )
 MySQL 8 cookbook : project portfolio: start from replication -> het : dang check 
-
-
-
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
-DONE + Book : Messaging
-
-
-+ Spring boot messaging
-
-
-DONE + Check nhug book co chap ve messaging : RabbitMQ(done) , Kafka, JMS, ActiveMQ
 
 + RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao : DANG DOC SACH NAY
 
 
 
 ----------- CON LAI - DONE CHECKING
-12/ HOAN THANH HET PROJECT PORTFOLIO FOR MESSAGING - JMS - SPRING BOOT
-THU 2 -----  13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS
-16/ HOAN THANH PRACTICE HET NHUNG BOOK VE SPRING BOOT MESSAGING
+13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS
+16/ HOAN THANH PRACTICE HET NHUNG BOOK VE SPRING BOOT MESSAGING: rr
 8/ DOC HET + PRACTICE  + Spring boot 2.0 cookbook - second edition
 
 
-
-
----------
-Check testing with Java 
