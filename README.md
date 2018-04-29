@@ -332,12 +332,51 @@ AND t.engine='InnoDB';
 
 + Partitioning in MySQL 
     + Range partition 
+        + `CREATE TABLE employee (
+    employee_id INT NOT NULL,
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    hired_date DATE NOT NULL DEFAULT '1990-01-01',
+    termination_date DATE NOT NULL DEFAULT '9999-12-31',
+    job_code INT NOT NULL,
+    store_id INT NOT NULL
+)
+PARTITION BY RANGE (store_id) (
+    PARTITION p0 VALUES LESS THAN (6),
+    PARTITION p1 VALUES LESS THAN (11),
+    PARTITION p2 VALUES LESS THAN (16),
+    PARTITION p3 VALUES LESS THAN (21),
+    PARTITION p4 VALUES LESS THAN (26)
+);`
     + List partition 
+        + `CREATE TABLE tpl (
+    cl1 INT,
+    cl2 INT
+)
+PARTITION BY LIST (cl1) (
+    PARTITION p0 VALUES IN (1,3,4,5),
+    PARTITION p1 VALUES IN (2,6,7,8)
+);`
     + Columns partition 
+        + Range column partition 
+        + List column partition 
     + Hash partition 
+        + Hash partition 
+        + Linear hash partition 
     + Key partition
     + Subpartitioning
     + Handle NULL in partition 
+    + Manage partition 
+        + Partition maintainance 
+        + Rebuild partitions 
+        + Optimize partitions 
+        + Analyze partition 
+        + Repair partitions
+        + Check partition
+        + Optain partition information : `show create table <table-name>`
+    + Pruning partition 
+        + 
+
 
 
 ### Docker 
