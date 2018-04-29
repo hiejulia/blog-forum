@@ -4,12 +4,11 @@ https://github.com/LushX/LushX-BE
 https://github.com/YangfeiLi/Real-time-Car-Location-Monitoring-System
 https://github.com/b2stry/seckill
 https://github.com/netshoes/athena-dependency-analyzer
+https://github.com/eanfs/jhipster-spring-boot-2-elasticsearch-sample
 
 
 
-
-
-Toi ve nha check lai : gan het roi - MySQL 8 for big data(project portfolio: 3, 5, 6, 7,  -> het ): bai Replication (check lai 2 phan GTIDs replication,Multi-source replication ), va partitioning data  
+MySQL 8 for big data(project portfolio: 3, 5, 6, 7,  -> het ): bai Replication (check lai 2 phan GTIDs replication,Multi-source replication ), va partitioning data  
 MySQL 8 administrator guide(project portfolio chap : 3, 4, 5, ...-> het )
 MySQL 8 cookbook : project portfolio: start from replication -> het : dang check 
 ------ Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS

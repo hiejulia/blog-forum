@@ -311,8 +311,33 @@ AND t.engine='InnoDB';
 + Server SQL mode 
     + 
 
++ Scalability and high availability
+    + Replication 
+        + Master-slave 
+    + Cluster : automate sharing 
++ Scaling MySQL 8 
+    + Scaling using cluster 
+        + Client node 
+        + Application node 
+        + Management node 
+        + Data node 
+            + Data storage and management of disk based and in memory data 
+            + Partitioning of tables or sharding of tables 
+            + Sync data replication between data nodes
+            + Data retrieve and transaction 
+            + Re sync 
+            + Scale memcached 
 
++ High availability 
 
++ Partitioning in MySQL 
+    + Range partition 
+    + List partition 
+    + Columns partition 
+    + Hash partition 
+    + Key partition
+    + Subpartitioning
+    + Handle NULL in partition 
 
 
 ### Docker 
