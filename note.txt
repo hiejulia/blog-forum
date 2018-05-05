@@ -9,17 +9,14 @@ https://github.com/eanfs/jhipster-spring-boot-2-elasticsearch-sample
 
 
 MySQL 8 for big data(project portfolio: 3, 5, 6, 7,  -> het ): bai Replication (check lai 2 phan GTIDs replication,Multi-source replication ), va partitioning data  
-MySQL 8 administrator guide(project portfolio chap : 3, 4, 5, ...-> het )
-MySQL 8 cookbook : project portfolio: start from replication -> het : dang check 
------- Messaging - RabbitMQ - JMS  - AMQP : co the la chi can Messaging - and RabbitMQ and JMS
+MySQL 8 cookbook : project portfolio: start from replication -> het : dang check  : Chap : 
 
 + RabbitMQ in depth:dag doc, chua den phai quyet dinh se project portfolio chap nao : DANG DOC SACH NAY
 
 
 
 ----------- CON LAI - DONE CHECKING
-13/ HOAN THANH YOUTUBE SPRING BOOT - MESSAGING - RABBITMQ - JMS
-16/ HOAN THANH PRACTICE HET NHUNG BOOK VE SPRING BOOT MESSAGING: rr
+16/ HOAN THANH PRACTICE HET NHUNG BOOK VE SPRING BOOT MESSAGING: Check lai 
 8/ DOC HET + PRACTICE  + Spring boot 2.0 cookbook - second edition
-
+CHECK LAI YOUTUBE MESSAGING - RABBITMQ - KAFKA 
 

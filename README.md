@@ -377,7 +377,20 @@ PARTITION BY LIST (cl1) (
     + Pruning partition 
         + 
 
++ Binary log 
+    Using binary logging
+        + Enable binary log 
+        + Expire binary log 
+    Binary log format
+        + Statement 
+        + Row
+        + Mixed 
+    Extracting statements from a binary log
+        + Use mysqlbinlog utility shiped with MySQL 
+    Ignoring databases to write to a binary log
+    Relocating binary logs
 
++ Restore data 
 
 ### Docker 
 + Install Docker (locally)
